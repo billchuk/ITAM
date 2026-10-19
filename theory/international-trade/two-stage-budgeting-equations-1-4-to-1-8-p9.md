@@ -28,7 +28,9 @@
 
 **式（1.4）**
 
-$$\boxed{ u=U\left[x_0,\left(\sum_{i=1}^{n}x_i^\rho\right)^{1/\rho}\right], \qquad 0<\rho<1. }$$
+```math
+\boxed{ u=U\left[x_0,\left(\sum_{i=1}^{n}x_i^\rho\right)^{1/\rho}\right], \qquad 0<\rho<1. }
+```
 
 定义差异化商品的 CES 复合数量：
 
@@ -54,7 +56,9 @@ $$u=U(x_0,Y).$$
 
 组内替代弹性记为：
 
-$$\boxed{\sigma_{\mathrm{in}}=\frac{1}{1-\rho}>1.}$$
+```math
+\boxed{\sigma_{\mathrm{in}}=\frac{1}{1-\rho}>1.}
+```
 
 **注意符号冲突**：之前公式（1.1）—（1.2）中的 $`\sigma`$ 是**品种之间**的替代弹性；本页（1.8）的 $`\sigma(q)`$ 指**两个部门/两种复合商品之间**的替代弹性。两个层级不可混淆。
 
@@ -82,7 +86,9 @@ $$\boxed{x_0+qY=I.}$$
 
 对任意给定的目标综合数量 $`\bar Y>0`$，选择 $`\{x_i\}`$ 使支出最小：
 
-$$\begin{aligned} \min_{\{x_i\ge0\}}\quad &E_D=\sum_{i=1}^n p_ix_i,\\ \text{s.t.}\quad&\sum_{i=1}^{n}x_i^\rho=\bar Y^\rho. \end{aligned}$$
+```math
+\begin{aligned} \min_{\{x_i\ge0\}}\quad &E_D=\sum_{i=1}^n p_ix_i,\\ \text{s.t.}\quad&\sum_{i=1}^{n}x_i^\rho=\bar Y^\rho. \end{aligned}
+```
 
 构造拉格朗日函数：
 
@@ -112,7 +118,9 @@ $$\boxed{x_i=A\,p_i^{-\sigma_{\mathrm{in}}}.}$$
 
 定义正参数：
 
-$$\boxed{\beta\equiv\frac{1-\rho}{\rho}>0.}$$
+```math
+\boxed{\beta\equiv\frac{1-\rho}{\rho}>0.}
+```
 
 则：
 
@@ -130,7 +138,9 @@ $$x_i=A\,p_i^{-(1+1/\beta)}.$$
 
 将式 (C) 代入 $`Y`$：
 
-$$\begin{aligned} Y &=\left(\sum_i (A p_i^{-\sigma_{\mathrm{in}}})^\rho\right)^{1/\rho}\\ &=A\left(\sum_i p_i^{-\sigma_{\mathrm{in}}\rho}\right)^{1/\rho}. \end{aligned}$$
+```math
+\begin{aligned} Y &=\left(\sum_i (A p_i^{-\sigma_{\mathrm{in}}})^\rho\right)^{1/\rho}\\ &=A\left(\sum_i p_i^{-\sigma_{\mathrm{in}}\rho}\right)^{1/\rho}. \end{aligned}
+```
 
 由于：
 
@@ -144,7 +154,9 @@ $$\boxed{ Y=A\left(\sum_i p_i^{-1/\beta}\right)^{1/\rho}. }$$
 
 总支出则为：
 
-$$\begin{aligned} E_D &=\sum_i p_i x_i\\ &=A\sum_i p_i^{1-\sigma_{\mathrm{in}}}\\ &=A\sum_i p_i^{-1/\beta}. \end{aligned}$$
+```math
+\begin{aligned} E_D &=\sum_i p_i x_i\\ &=A\sum_i p_i^{1-\sigma_{\mathrm{in}}}\\ &=A\sum_i p_i^{-1/\beta}. \end{aligned}
+```
 
 因此：
 
@@ -156,7 +168,9 @@ $$\boxed{E_D=A\sum_i p_i^{-1/\beta}.}$$
 
 定义 $`q`$ 为 $`E_D/Y`$：
 
-$$\begin{aligned} q =\frac{E_D}{Y} &=\frac{A\sum_i p_i^{-1/\beta}} {A\left(\sum_i p_i^{-1/\beta}\right)^{1/\rho}}\\ &=\left(\sum_i p_i^{-1/\beta}\right)^{1-1/\rho}. \end{aligned}$$
+```math
+\begin{aligned} q =\frac{E_D}{Y} &=\frac{A\sum_i p_i^{-1/\beta}} {A\left(\sum_i p_i^{-1/\beta}\right)^{1/\rho}}\\ &=\left(\sum_i p_i^{-1/\beta}\right)^{1-1/\rho}. \end{aligned}
+```
 
 利用：
 
@@ -240,7 +254,9 @@ $$\boxed{ Y=I\frac{s(q)}{q}, \qquad x_0=I[1-s(q)]. }$$
 
 **式（1.8）**
 
-$$\boxed{ \theta(q)=[1-\sigma(q)]\,[1-s(q)]<1. }$$
+```math
+\boxed{ \theta(q)=[1-\sigma(q)]\,[1-s(q)]<1. }
+```
 
 为避免与组内 $`\sigma_{\mathrm{in}}`$ 混淆，这里先将原书的 $`\sigma(q)`$ 记为 $`\sigma_{\mathrm{out}}(q)`$。
 
@@ -290,7 +306,9 @@ $$\frac{\mathrm d}{\mathrm d\ln q} \left[\ln q+\ln\left(\frac{Y}{x_0}\right)\rig
 
 左侧注意链式法则：
 
-$$\begin{aligned} \frac{\mathrm d}{\mathrm d\ln q} \{\ln s(q)-\ln[1-s(q)]\} &=\left[\frac1{s(q)}+\frac1{1-s(q)}\right] \frac{\mathrm d s(q)}{\mathrm d\ln q}\\[4pt] &=\frac{q\,s'(q)}{s(q)[1-s(q)]}. \end{aligned}$$
+```math
+\begin{aligned} \frac{\mathrm d}{\mathrm d\ln q} \{\ln s(q)-\ln[1-s(q)]\} &=\left[\frac1{s(q)}+\frac1{1-s(q)}\right] \frac{\mathrm d s(q)}{\mathrm d\ln q}\\[4pt] &=\frac{q\,s'(q)}{s(q)[1-s(q)]}. \end{aligned}
+```
 
 因此：
 
@@ -312,7 +330,9 @@ $$\boxed{ \theta(q)= [1-\sigma_{\mathrm{out}}(q)]\,[1-s(q)]. }$$
 
 恢复原书记号 $`\sigma_{\mathrm{out}}(q)=\sigma(q)`$，即为：
 
-$$\boxed{ \theta(q)=[1-\sigma(q)][1-s(q)]<1. }$$
+```math
+\boxed{ \theta(q)=[1-\sigma(q)][1-s(q)]<1. }
+```
 
 若为严格内点 $`0<s(q)<1`$，且替代弹性 $`\sigma_{\mathrm{out}}(q)>0`$，则 $`1-s(q)\in(0,1)`$，$`1-\sigma_{\mathrm{out}}(q)<1`$，所以 $`\theta(q)<1`$。注意 **$`\theta(q)`$ 不一定大于零**。
 
@@ -352,7 +372,9 @@ $$\underbrace{\theta(q)}_{\substack{\text{份额}\\\text{价格弹性}}} = \unde
 
 令：
 
-$$U(x_0,Y)=x_0^{1-\alpha}Y^\alpha,\qquad 0<\alpha<1.$$
+```math
+U(x_0,Y)=x_0^{1-\alpha}Y^\alpha,\qquad 0<\alpha<1.
+```
 
 组间最优分配为：
 
@@ -366,7 +388,9 @@ $$\theta(q)=\frac{qs'(q)}{s(q)}=0 =(1-1)(1-\alpha).$$
 
 令（为区分组内 $`\rho`$，这里使用另一参数 $`\eta>0`$）：
 
-$$U(x_0,Y)= \left[a\,x_0^{(\eta-1)/\eta} +b\,Y^{(\eta-1)/\eta}\right]^{\eta/(\eta-1)}, \quad a,b>0,\quad \eta\ne1.$$
+```math
+U(x_0,Y)= \left[a\,x_0^{(\eta-1)/\eta} +b\,Y^{(\eta-1)/\eta}\right]^{\eta/(\eta-1)}, \quad a,b>0,\quad \eta\ne1.
+```
 
 一阶条件 $`U_Y/U_{x_0}=q`$ 给出：
 
