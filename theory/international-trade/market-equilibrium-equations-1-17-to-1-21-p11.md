@@ -10,17 +10,19 @@
 有 $`n`$ 家活跃企业，各生产一种差异化品种。企业生产 $`x_i`$ 单位的总成本为：
 
 ```math
-C_i(x_i)=a+c x_i,\qquad a>0,\quad c>0.
+C_i(x_i)=a+c x_i,\qquad a\gt 0,\quad c\gt 0.
 ```
 
 这里 $`a`$ 为固定成本，$`c`$ 为不变的边际成本。企业收入和利润分别为：
 
-$$r_i=p_i x_i,\qquad \pi_i=(p_i-c)x_i-a.$$
+```math
+r_i=p_i x_i,\qquad \pi_i=(p_i-c)x_i-a.
+```
 
 差异化品种的组内 CES 参数为：
 
 ```math
-0<\rho<1,\qquad \beta=\frac{1-\rho}{\rho}>0,\qquad \sigma_{\mathrm{in}}=\frac{1}{1-\rho} =\frac{1+\beta}{\beta}>1.
+0\lt \rho\lt 1,\qquad \beta=\frac{1-\rho}{\rho}\gt 0,\qquad \sigma_{\mathrm{in}}=\frac{1}{1-\rho} =\frac{1+\beta}{\beta}\gt 1.
 ```
 
 注意 **$`\sigma_{\mathrm{in}}`$ 是品种间替代弹性**，与上一页（1.8）讨论的部门间替代弹性 $`\sigma_{\mathrm{out}}(q)`$ 不相同。
@@ -31,13 +33,17 @@ $$r_i=p_i x_i,\qquad \pi_i=(p_i-c)x_i-a.$$
 
 **式（1.12）**
 
-$$\boxed{q=p\,n^{-\beta}.}$$
+```math
+\boxed{q=p\,n^{-\beta}.}
+```
 
 **② 对称企业需求**：
 
 **式（1.13）**
 
-$$\boxed{x=\frac{I\,s(q)}{p n}.}$$
+```math
+\boxed{x=\frac{I\,s(q)}{p n}.}
+```
 
 其中 $`I`$ 为消费者名义收入，$`s(q)`$ 为差异化商品部门在总支出中的份额。模型令上层偏好满足将其写成 $`s(q)`$ 的条件（例如位似偏好），并考虑内点解。此处 $`s(q)`$ 与部分印刷公式里的大写 $`S(q)`$ 均指同一支出份额函数。
 
@@ -45,13 +51,17 @@ $$\boxed{x=\frac{I\,s(q)}{p n}.}$$
 
 **式（1.11）**
 
-$$\boxed{ \varepsilon_{\mathrm{dd}} =\frac{\partial\ln x_i}{\partial\ln p_i} \simeq-\sigma_{\mathrm{in}} =-\frac{1+\beta}{\beta}. }$$
+```math
+\boxed{ \varepsilon_{\mathrm{dd}} =\frac{\partial\ln x_i}{\partial\ln p_i} \simeq-\sigma_{\mathrm{in}} =-\frac{1+\beta}{\beta}. }
+```
 
 **④ 预算份额弹性**：
 
 **式（A）**
 
-$$\boxed{ \theta(q)\equiv\frac{\mathrm d\ln s(q)}{\mathrm d\ln q} =\frac{q\,s'(q)}{s(q)}. }$$
+```math
+\boxed{ \theta(q)\equiv\frac{\mathrm d\ln s(q)}{\mathrm d\ln q} =\frac{q\,s'(q)}{s(q)}. }
+```
 
 本页在均衡计算中，将总名义收入规范化为 $`I=1`$。**收入的规范化并非总需求自然等于 1 的经济事实**，而是选择了计量单位。
 
@@ -59,19 +69,27 @@ $$\boxed{ \theta(q)\equiv\frac{\mathrm d\ln s(q)}{\mathrm d\ln q} =\frac{q\,s'(q
 
 在竞争对手价格给定时，企业 $`i`$ 选择自己的价格 $`p_i`$，最大化利润：
 
-$$\max_{p_i}\;\pi_i(p_i) =(p_i-c)x_i(p_i)-a.$$
+```math
+\max_{p_i}\;\pi_i(p_i) =(p_i-c)x_i(p_i)-a.
+```
 
 对 $`p_i`$ 求一阶条件：
 
-$$\frac{\partial \pi_i}{\partial p_i} =x_i+(p_i-c)\frac{\partial x_i}{\partial p_i}=0.$$
+```math
+\frac{\partial \pi_i}{\partial p_i} =x_i+(p_i-c)\frac{\partial x_i}{\partial p_i}=0.
+```
 
-假设内点且 $`x_i>0`$，两边除以 $`x_i`$：
+假设内点且 $`x_i\gt 0`$，两边除以 $`x_i`$：
 
-$$1+(p_i-c)\frac{1}{x_i}\frac{\partial x_i}{\partial p_i}=0.$$
+```math
+1+(p_i-c)\frac{1}{x_i}\frac{\partial x_i}{\partial p_i}=0.
+```
 
 由对数导数恒等式
 
-$$\frac{\partial\ln x_i}{\partial\ln p_i} =\frac{p_i}{x_i}\frac{\partial x_i}{\partial p_i},$$
+```math
+\frac{\partial\ln x_i}{\partial\ln p_i} =\frac{p_i}{x_i}\frac{\partial x_i}{\partial p_i},
+```
 
 因此
 
@@ -81,33 +99,47 @@ $$\frac{\partial\ln x_i}{\partial\ln p_i} =\frac{p_i}{x_i}\frac{\partial x_i}{\p
 
 代入大品种数情况下的 CES 弹性：
 
-$$1-\frac{p_i-c}{p_i}\frac{1+\beta}{\beta}=0.$$
+```math
+1-\frac{p_i-c}{p_i}\frac{1+\beta}{\beta}=0.
+```
 
 整理得到：
 
-$$\frac{p_i-c}{p_i} =\frac{\beta}{1+\beta} =1-\rho.$$
+```math
+\frac{p_i-c}{p_i} =\frac{\beta}{1+\beta} =1-\rho.
+```
 
 所以：
 
-$$p_i\left(1-\frac{\beta}{1+\beta}\right)=c,$$
+```math
+p_i\left(1-\frac{\beta}{1+\beta}\right)=c,
+```
 
-$$\frac{p_i}{1+\beta}=c,$$
+```math
+\frac{p_i}{1+\beta}=c,
+```
 
 即对称企业的均衡加成价格：
 
 **式（1.17）**
 
-$$\boxed{ p_e=c(1+\beta)=\frac{c}{\rho}. }$$
+```math
+\boxed{ p_e=c(1+\beta)=\frac{c}{\rho}. }
+```
 
 这也可写成标准垄断竞争公式：
 
-$$\boxed{ p_e =\frac{\sigma_{\mathrm{in}}}{\sigma_{\mathrm{in}}-1}c. }$$
+```math
+\boxed{ p_e =\frac{\sigma_{\mathrm{in}}}{\sigma_{\mathrm{in}}-1}c. }
+```
 
 **经济解释**：替代弹性 $`\sigma_{\mathrm{in}}`$ 越大，消费者越容易转买其他品种，企业能收取的价格加成越小。
 
 有两种容易混淆的加成比例：
 
-$$\frac{p_e-c}{p_e}=\frac{\beta}{1+\beta} =\frac1{\sigma_{\mathrm{in}}}, \qquad \frac{p_e-c}{c}=\beta.$$
+```math
+\frac{p_e-c}{p_e}=\frac{\beta}{1+\beta} =\frac1{\sigma_{\mathrm{in}}}, \qquad \frac{p_e-c}{c}=\beta.
+```
 
 前者是相对于**售价**的 Lerner 指数；后者是相对于**边际成本**的加成率。
 
@@ -119,31 +151,43 @@ $$\frac{p_e-c}{p_e}=\frac{\beta}{1+\beta} =\frac1{\sigma_{\mathrm{in}}}, \qquad 
 
 **式（B）**
 
-$$\boxed{ \pi_e=(p_e-c)x_e-a=0. }$$
+```math
+\boxed{ \pi_e=(p_e-c)x_e-a=0. }
+```
 
 由式（1.17）：
 
-$$p_e-c =c(1+\beta)-c =\beta c.$$
+```math
+p_e-c =c(1+\beta)-c =\beta c.
+```
 
 所以零利润条件化为：
 
 **式（C）**
 
-$$\boxed{ \beta c\,x_e=a \quad\Longrightarrow\quad x_e=\frac{a}{\beta c}. }$$
+```math
+\boxed{ \beta c\,x_e=a \quad\Longrightarrow\quad x_e=\frac{a}{\beta c}. }
+```
 
 接下来利用对称需求（1.13）：
 
-$$x_e=\frac{I\,s(q_e)}{p_e n_e}, \qquad q_e=p_e n_e^{-\beta}.$$
+```math
+x_e=\frac{I\,s(q_e)}{p_e n_e}, \qquad q_e=p_e n_e^{-\beta}.
+```
 
 把两式代入式 (C)：
 
-$$\frac{I\,s(p_e n_e^{-\beta})}{p_e n_e} =\frac{a}{\beta c}.$$
+```math
+\frac{I\,s(p_e n_e^{-\beta})}{p_e n_e} =\frac{a}{\beta c}.
+```
 
 最后根据原书此处的**名义收入规范化 $`I=1`$**：
 
 **式（1.18）**
 
-$$\boxed{ \frac{s(p_e n_e^{-\beta})}{p_e n_e} =\frac{a}{\beta c}. }$$
+```math
+\boxed{ \frac{s(p_e n_e^{-\beta})}{p_e n_e} =\frac{a}{\beta c}. }
+```
 
 这是一条关于未知数 $`n_e`$ 的**隐式均衡方程**：价格 $`p_e`$ 已由（1.17）确定，但 $`n_e`$ 一般还要通过此方程求解。
 
@@ -156,11 +200,15 @@ $$\boxed{ \frac{s(p_e n_e^{-\beta})}{p_e n_e} =\frac{a}{\beta c}. }$$
 
 **式（D）**
 
-$$\boxed{ s(q_e)=\frac{a(1+\beta)}{\beta}\,n_e \quad (I=1). }$$
+```math
+\boxed{ s(q_e)=\frac{a(1+\beta)}{\beta}\,n_e \quad (I=1). }
+```
 
 若保留 $`I`$，则对应为：
 
-$$I\,s(q_e)=\frac{a(1+\beta)}{\beta}\,n_e.$$
+```math
+I\,s(q_e)=\frac{a(1+\beta)}{\beta}\,n_e.
+```
 
 这个等式表示：差异化部门总支出全部用于支付活跃企业的可变成本以及零利润均衡下恰好得到补偿的固定成本。
 
@@ -170,15 +218,21 @@ $$I\,s(q_e)=\frac{a(1+\beta)}{\beta}\,n_e.$$
 
 固定已经由（1.17）确定的 $`p_e`$，把（1.18）的左边写为企业数的函数：
 
-$$f(n)=\frac{s(p_e n^{-\beta})}{p_e n}.$$
+```math
+f(n)=\frac{s(p_e n^{-\beta})}{p_e n}.
+```
 
 令 $`q(n)=p_e n^{-\beta}`$，则
 
-$$\ln f(n)=\ln s(q(n))-\ln p_e-\ln n.$$
+```math
+\ln f(n)=\ln s(q(n))-\ln p_e-\ln n.
+```
 
 因为 $`p_e`$ 固定，有：
 
-$$\frac{\mathrm d\ln q}{\mathrm d\ln n}=-\beta.$$
+```math
+\frac{\mathrm d\ln q}{\mathrm d\ln n}=-\beta.
+```
 
 对 $`\ln n`$ 求导，应用链式法则：
 
@@ -189,7 +243,7 @@ $$\frac{\mathrm d\ln q}{\mathrm d\ln n}=-\beta.$$
 要求**企业数增加时每家企业获得的需求严格下降**，即
 
 ```math
-\frac{\mathrm d\ln f(n)}{\mathrm d\ln n}<0,
+\frac{\mathrm d\ln f(n)}{\mathrm d\ln n}\lt 0,
 ```
 
 便得到：
@@ -197,20 +251,22 @@ $$\frac{\mathrm d\ln q}{\mathrm d\ln n}=-\beta.$$
 **式（1.19）**
 
 ```math
--[1+\beta\theta(q)]<0 \quad\Longleftrightarrow\quad \boxed{1+\beta\theta(q)>0}.
+-[1+\beta\theta(q)]\lt 0 \quad\Longleftrightarrow\quad \boxed{1+\beta\theta(q)\gt 0}.
 ```
 
-由于 $`\beta>0`$，它与 P10 的（1.15）
+由于 $`\beta\gt 0`$，它与 P10 的（1.15）
 
 ```math
-\frac1\beta+\theta(q)>0
+\frac1\beta+\theta(q)\gt 0
 ```
 
 完全等价（两边乘以 $`\beta`$）。
 
 **为什么它有助于唯一性？** 因为零利润方程是
 
-$$f(n_e)=\frac{a}{\beta c}.$$
+```math
+f(n_e)=\frac{a}{\beta c}.
+```
 
 如果 $`f(n)`$ 在所有相关候选 $`n`$ 上连续且**严格递减**，那么水平线 $`a/(\beta c)`$ **最多只能与其相交一次**，因此**至多一个**均衡企业数 $`n_e`$。
 
@@ -222,13 +278,17 @@ $$f(n_e)=\frac{a}{\beta c}.$$
 
 **式（1.20）**
 
-$$\boxed{x_e=\frac{a}{\beta c}.}$$
+```math
+\boxed{x_e=\frac{a}{\beta c}.}
+```
 
 无需重复求解 $`n_e`$。
 
 结合 $`p_e=c(1+\beta)`$，还可以核查：
 
-$$(p_e-c)x_e =\beta c\frac{a}{\beta c} =a.$$
+```math
+(p_e-c)x_e =\beta c\frac{a}{\beta c} =a.
+```
 
 这里有一个值得注意的模型含义：**在固定加成、相同技术、自由进入的对称均衡条件下**，单个企业的长期均衡规模取决于 $`a,c,\beta`$，并不直接取决于总收入或活跃企业数。
 
@@ -240,53 +300,73 @@ $$(p_e-c)x_e =\beta c\frac{a}{\beta c} =a.$$
 
 **式（1.21）**
 
-$$\boxed{ s_e=s(q_e), \qquad q_e=p_e n_e^{-\beta}. }$$
+```math
+\boxed{ s_e=s(q_e), \qquad q_e=p_e n_e^{-\beta}. }
+```
 
 这里 $`p_e`$ 由（1.17）决定，$`n_e`$ 由（1.18）决定，故 $`q_e`$ 和 $`s_e`$ 随之确定。
 
 特别地：
 
-$$\boxed{ q_e=c(1+\beta)n_e^{-\beta}, \qquad s_e=s\!\left(c(1+\beta)n_e^{-\beta}\right). }$$
+```math
+\boxed{ q_e=c(1+\beta)n_e^{-\beta}, \qquad s_e=s\!\left(c(1+\beta)n_e^{-\beta}\right). }
+```
 
-**综合价格指数 $`q_e`$ 不等于单个商品价格 $`p_e`$**：它体现差异化品种数以及 CES 需求结构；因为 $`\beta>0`$，在单品种价格给定时，更多品种对应更低的 CES 单位支出指数。
+**综合价格指数 $`q_e`$ 不等于单个商品价格 $`p_e`$**：它体现差异化品种数以及 CES 需求结构；因为 $`\beta\gt 0`$，在单品种价格给定时，更多品种对应更低的 CES 单位支出指数。
 
 ## 6. 用一个数值例子验证五个公式
 
 为了让全部结果可以手算，选外层 Cobb–Douglas 偏好，其差异化部门支出份额恒定：
 
-$$s(q)=\alpha=\frac12, \qquad \theta(q)=0.$$
+```math
+s(q)=\alpha=\frac12, \qquad \theta(q)=0.
+```
 
 取：
 
-$$I=1,\quad c=2,\quad a=0.005,\quad \beta=1,\quad \rho=\frac12.$$
+```math
+I=1,\quad c=2,\quad a=0.005,\quad \beta=1,\quad \rho=\frac12.
+```
 
 1. **价格（1.17）**：
 
-$$p_e=c(1+\beta)=2(2)=4.$$
+```math
+p_e=c(1+\beta)=2(2)=4.
+```
 
 2. **规模（1.20）**：
 
-$$x_e=\frac{a}{\beta c} =\frac{0.005}{2}=0.0025.$$
+```math
+x_e=\frac{a}{\beta c} =\frac{0.005}{2}=0.0025.
+```
 
 3. **企业数（1.18）**：因为 $`s=0.5`$，
 
-$$\frac{0.5}{4n_e}=\frac{0.005}{2} \quad\Longrightarrow\quad n_e=50.$$
+```math
+\frac{0.5}{4n_e}=\frac{0.005}{2} \quad\Longrightarrow\quad n_e=50.
+```
 
 4. **价格指数和份额（1.21）**：
 
-$$q_e=4\times50^{-1}=0.08, \qquad s_e=0.5.$$
+```math
+q_e=4\times50^{-1}=0.08, \qquad s_e=0.5.
+```
 
 5. **唯一性条件（1.19）**：
 
 ```math
-1+\beta\theta(q_e)=1+1\times0=1>0.
+1+\beta\theta(q_e)=1+1\times0=1\gt 0.
 ```
 
 最后检查总支出以及单个企业利润：
 
-$$n_e p_e x_e =50\times4\times0.0025 =0.5 =I s_e,$$
+```math
+n_e p_e x_e =50\times4\times0.0025 =0.5 =I s_e,
+```
 
-$$\pi_e=(4-2)\times0.0025-0.005=0.$$
+```math
+\pi_e=(4-2)\times0.0025-0.005=0.
+```
 
 全部关系一致。
 
@@ -296,7 +376,7 @@ $$\pi_e=(4-2)\times0.0025-0.005=0.$$
 | :--- | :--- | :--- |
 | （1.17） | $`p_e=c(1+\beta)=c/\rho`$ | 企业利润最大化 + 众多小企业的 CES 需求弹性 |
 | （1.18） | $`s(p_e n_e^{-\beta})/(p_e n_e)=a/(\beta c)`$ | 零利润 + 对称需求 + 收入单位规范化 $`I=1`$ |
-| （1.19） | $`1+\beta\theta(q)>0`$ | 使企业人均需求随 $`n`$ 严格递减，因而至多一个均衡解 |
+| （1.19） | $`1+\beta\theta(q)\gt 0`$ | 使企业人均需求随 $`n`$ 严格递减，因而至多一个均衡解 |
 | （1.20） | $`x_e=a/(\beta c)`$ | 固定加成下的零利润条件 |
 | （1.21） | $`s_e=s(q_e)`$、$`q_e=p_e n_e^{-\beta}`$ | 将部门价格指数和预算份额代入均衡值 |
 
