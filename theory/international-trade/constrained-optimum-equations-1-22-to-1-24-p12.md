@@ -11,7 +11,9 @@
 
 在前文两阶段预算模型、名义收入 $`I=1`$ 的规范化下，若外层偏好满足相应条件，则对于给定预算，降低差异化商品综合价格指数 $`q`$ 可以提高福利。因此原书把问题写成：
 
-$$\min_{n>0,\ p>c}\quad q(p,n)=p n^{-\beta}, \qquad \beta=\frac{1-\rho}{\rho}>0.$$
+```math
+\min_{n>0,\ p>c}\quad q(p,n)=p n^{-\beta}, \qquad \beta=\frac{1-\rho}{\rho}>0.
+```
 
 这里
 
@@ -84,11 +86,15 @@ $$\ln F=\ln(p-c)+\ln s(q)-\ln p-\ln n.$$
 
 对 $`p`$ 的对数微分（$`n`$ 固定时 $`\partial\ln q/\partial\ln p=1`$）：
 
-$$\begin{aligned} \frac{\partial\ln F}{\partial\ln p} &=\frac{p}{p-c} +\theta(q)-1\\ &=\boxed{\frac{c}{p-c}+\theta(q)}. \end{aligned}$$
+```math
+\begin{aligned} \frac{\partial\ln F}{\partial\ln p} &=\frac{p}{p-c} +\theta(q)-1\\ &=\boxed{\frac{c}{p-c}+\theta(q)}. \end{aligned}
+```
 
 对 $`n`$ 的对数微分（$`p`$ 固定时 $`\partial\ln q/\partial\ln n=-\beta`$）：
 
-$$\begin{aligned} \frac{\partial\ln F}{\partial\ln n} &=\theta(q)(-\beta)-1\\ &=\boxed{-[1+\beta\theta(q)]}. \end{aligned}$$
+```math
+\begin{aligned} \frac{\partial\ln F}{\partial\ln n} &=\theta(q)(-\beta)-1\\ &=\boxed{-[1+\beta\theta(q)]}. \end{aligned}
+```
 
 因为约束要求 $`F=a`$ 保持不变，因此：
 
