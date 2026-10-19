@@ -25,7 +25,9 @@ $$Y_1=\left(\sum_{i_1=1}^{n_1}x_{i_1}^{\rho_1}\right)^{1/\rho_1}, \qquad Y_2=\le
 
 原书的效用函数：
 
-$$\boxed{ u=x_0^{1-s}\left\{ \left[\sum_{i_1=1}^{n_1}x_{i_1}^{\rho_1}\right]^{1/\rho_1} + \left[\sum_{i_2=1}^{n_2}x_{i_2}^{\rho_2}\right]^{1/\rho_2} \right\}^{s}. } \tag{1.54}$$
+**式（1.54）**
+
+$$\boxed{ u=x_0^{1-s}\left\{ \left[\sum_{i_1=1}^{n_1}x_{i_1}^{\rho_1}\right]^{1/\rho_1} + \left[\sum_{i_2=1}^{n_2}x_{i_2}^{\rho_2}\right]^{1/\rho_2} \right\}^{s}. }$$
 
 记 $`Y=Y_1+Y_2`$，则简写为：
 
@@ -33,7 +35,9 @@ $$u=x_0^{1-s}Y^s.$$
 
 组内 CES 单位综合数量的最小支出（价格指数）分别为：
 
-$$\boxed{ q_k=\left(\sum_{i=1}^{n_k}p_{ki}^{-1/\beta_k}\right)^{-\beta_k}, \quad k=1,2. } \tag{A}$$
+**式（A）**
+
+$$\boxed{ q_k=\left(\sum_{i=1}^{n_k}p_{ki}^{-1/\beta_k}\right)^{-\beta_k}, \quad k=1,2. }$$
 
 因为组间 $`Y=Y_1+Y_2`$ 线性相加，对给定 $`Y`$ 的支出最小化问题是：
 
@@ -58,11 +62,15 @@ $$x_0+q_kY_k=1.$$
 
 Cobb–Douglas 内点最优时：
 
-$$\boxed{x_0=1-s,\qquad q_kY_k=s.} \tag{B}$$
+**式（B）**
+
+$$\boxed{x_0=1-s,\qquad q_kY_k=s.}$$
 
 对应对称企业：
 
-$$\boxed{n_kp_kx_k=s,\qquad q_k=p_kn_k^{-\beta_k}.} \tag{C}$$
+**式（C）**
+
+$$\boxed{n_kp_kx_k=s,\qquad q_k=p_kn_k^{-\beta_k}.}$$
 
 ### 2.2 CES dd 需求与企业加成
 
@@ -80,7 +88,9 @@ $$1+\frac{p_{ki}-c_k}{p_{ki}}\varepsilon_{ki}=0.$$
 
 解得：
 
-$$\frac{p_k-c_k}{p_k}=\frac{\beta_k}{1+\beta_k}, \qquad \boxed{p_k=c_k(1+\beta_k)}. \tag{D}$$
+**式（D）**
+
+$$\frac{p_k-c_k}{p_k}=\frac{\beta_k}{1+\beta_k}, \qquad \boxed{p_k=c_k(1+\beta_k)}.$$
 
 ### 2.3 自由进入零利润决定单企业规模
 
@@ -90,25 +100,33 @@ $$(p_k-c_k)x_k=a_k.$$
 
 由 $`p_k-c_k=c_k\beta_k`$：
 
-$$\boxed{x_k=\frac{a_k}{c_k\beta_k}}. \tag{E}$$
+**式（E）**
+
+$$\boxed{x_k=\frac{a_k}{c_k\beta_k}}.$$
 
 ### 2.4 部门预算决定企业数
 
 由（C），$`\ n_kp_kx_k=s`$，故：
 
-$$\begin{aligned} n_k &=\frac{s}{p_kx_k}\\ &=\frac{s}{c_k(1+\beta_k)\cdot a_k/(c_k\beta_k)}\\ &=\boxed{\frac{s\beta_k}{a_k(1+\beta_k)}}. \end{aligned} \tag{F}$$
+**式（F）**
+
+$$\begin{aligned} n_k &=\frac{s}{p_kx_k}\\ &=\frac{s}{c_k(1+\beta_k)\cdot a_k/(c_k\beta_k)}\\ &=\boxed{\frac{s\beta_k}{a_k(1+\beta_k)}}. \end{aligned}$$
 
 这里的 $`n_k`$ 是连续变量近似结果；当企业必须取整数，需另行使用整数进入的利润不等式。推导（D）亦使用大品种数的需求近似，若计算出非常小的 $`n_k`$，相关公式的自洽性需要特别检查。
 
 ### 2.5 综合价格指数
 
-$$\begin{aligned} q_k &=p_kn_k^{-\beta_k}\\ &=c_k(1+\beta_k) \left[\frac{s\beta_k}{a_k(1+\beta_k)}\right]^{-\beta_k}\\ &=\boxed{ c_k(1+\beta_k)^{1+\beta_k} \left(\frac{a_k}{s\beta_k}\right)^{\beta_k} }. \end{aligned} \tag{G}$$
+**式（G）**
+
+$$\begin{aligned} q_k &=p_kn_k^{-\beta_k}\\ &=c_k(1+\beta_k) \left[\frac{s\beta_k}{a_k(1+\beta_k)}\right]^{-\beta_k}\\ &=\boxed{ c_k(1+\beta_k)^{1+\beta_k} \left(\frac{a_k}{s\beta_k}\right)^{\beta_k} }. \end{aligned}$$
 
 ### 2.6 单一商品组的总效用
 
 由（B），$`x_0=1-s`$、$`Y_k=s/q_k`$：
 
-$$\begin{aligned} u_k &=(1-s)^{1-s}(s/q_k)^s\\ &=\boxed{s^s(1-s)^{1-s}q_k^{-s}}. \end{aligned} \tag{H}$$
+**式（H）**
+
+$$\begin{aligned} u_k &=(1-s)^{1-s}(s/q_k)^s\\ &=\boxed{s^s(1-s)^{1-s}q_k^{-s}}. \end{aligned}$$
 
 当外层参数 $`s`$ 固定、资源/收入单位相同，**哪个候选组的复合价格指数较低，哪个候选方案的间接效用就较高**。
 
@@ -116,7 +134,9 @@ $$\begin{aligned} u_k &=(1-s)^{1-s}(s/q_k)^s\\ &=\boxed{s^s(1-s)^{1-s}q_k^{-s}}.
 
 以上通用式（D）—（H）令 $`k=1`$，得到原书（1.55a）：
 
-$$\boxed{ \begin{aligned} \bar x_1&=\frac{a_1}{c_1\beta_1},& \bar x_2&=0,\\ \bar p_1&=c_1(1+\beta_1),\\ \bar n_1&=\frac{s\beta_1}{a_1(1+\beta_1)},\\ \bar q_1&=\bar p_1\bar n_1^{-\beta_1} =c_1(1+\beta_1)^{1+\beta_1} \left(\frac{a_1}{s\beta_1}\right)^{\beta_1},\\ \bar u_1&=s^s(1-s)^{1-s}\bar q_1^{-s}. \end{aligned} } \tag{1.55a}$$
+**式（1.55a）**
+
+$$\boxed{ \begin{aligned} \bar x_1&=\frac{a_1}{c_1\beta_1},& \bar x_2&=0,\\ \bar p_1&=c_1(1+\beta_1),\\ \bar n_1&=\frac{s\beta_1}{a_1(1+\beta_1)},\\ \bar q_1&=\bar p_1\bar n_1^{-\beta_1} =c_1(1+\beta_1)^{1+\beta_1} \left(\frac{a_1}{s\beta_1}\right)^{\beta_1},\\ \bar u_1&=s^s(1-s)^{1-s}\bar q_1^{-s}. \end{aligned} }$$
 
 带横杠的变量表示**仅对应组生产时的候选均衡值**，不是两组同时生产的总量。
 
@@ -124,7 +144,9 @@ $$\boxed{ \begin{aligned} \bar x_1&=\frac{a_1}{c_1\beta_1},& \bar x_2&=0,\\ \bar
 
 令 $`k=2`$，完全对称地得到：
 
-$$\boxed{ \begin{aligned} \bar x_2&=\frac{a_2}{c_2\beta_2},& \bar x_1&=0,\\ \bar p_2&=c_2(1+\beta_2),\\ \bar n_2&=\frac{s\beta_2}{a_2(1+\beta_2)},\\ \bar q_2&=\bar p_2\bar n_2^{-\beta_2} =c_2(1+\beta_2)^{1+\beta_2} \left(\frac{a_2}{s\beta_2}\right)^{\beta_2},\\ \bar u_2&=s^s(1-s)^{1-s}\bar q_2^{-s}. \end{aligned} } \tag{1.55b}$$
+**式（1.55b）**
+
+$$\boxed{ \begin{aligned} \bar x_2&=\frac{a_2}{c_2\beta_2},& \bar x_1&=0,\\ \bar p_2&=c_2(1+\beta_2),\\ \bar n_2&=\frac{s\beta_2}{a_2(1+\beta_2)},\\ \bar q_2&=\bar p_2\bar n_2^{-\beta_2} =c_2(1+\beta_2)^{1+\beta_2} \left(\frac{a_2}{s\beta_2}\right)^{\beta_2},\\ \bar u_2&=s^s(1-s)^{1-s}\bar q_2^{-s}. \end{aligned} }$$
 
 两组方程只需交换下标 $`1\leftrightarrow2`$；没有额外的隐含不对称条件。
 
