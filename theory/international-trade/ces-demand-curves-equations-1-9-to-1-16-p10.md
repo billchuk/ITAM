@@ -88,14 +88,194 @@ y
 \end{aligned}
 $$
 
-所以 $`A=yq^{\sigma_{\mathrm{in}}}`$，品种条件需求为
+所以 # 《国际贸易应用模型》P10：公式（1.9）—（1.16）逐式推导
+
+> **原书位置**：第 10 页（P10），“第三节 模型设定与推导——一、固定弹性的情形——（一）需求函数”。  
+> **重点**：CES 条件需求、价格指数的单品种价格弹性、张伯伦 dd / DD 需求曲线、对称均衡、相对需求与替代弹性。  
+> **教材信息**：刘文革、裴莹编著，《国际贸易应用模型》，清华大学出版社，2026 年 6 月第 1 版；ISBN 978-7-302-71633-4。  
+> **依据**：原书第 10 页（P10）照片及公式（1.9）—（1.16）。  
+> **前一篇**：[P9 公式（1.4）—（1.8）推导](two-stage-budgeting-equations-1-4-to-1-8-p9.md)。
+
+## 0. 准备：沿用 P9 的记号
+
+模型中有 $`n`$ 个差异化商品，数量 $`x_i`$、价格 $`p_i`$，同质商品 $`x_0`$ 的价格规范化为 1，名义收入为 $`I`$：
+
+$$
+u=U\left[x_0,\left(\sum_{i=1}^n x_i^\rho\right)^{1/\rho}\right],
+\qquad 0<\rho<1,\qquad
+x_0+\sum_{i=1}^n p_ix_i=I.
+$$
+
+差异化商品的综合数量（P9 记为 $`Y`$，本页记为 $`y`$）和 CES 价格指数是
+
+$$
+y=\left(\sum_{i=1}^n x_i^\rho\right)^{1/\rho},
+\qquad
+q=\left(\sum_{i=1}^n p_i^{-1/\beta}\right)^{-\beta},
+\qquad
+\beta=\frac{1-\rho}{\rho}>0.
+\tag{1.6}
+$$
+
+两个关键恒等式：
+
+$$
+\sigma_{\mathrm{in}}
+=\frac{1}{1-\rho}=1+\frac1\beta,
+\qquad
+1-\sigma_{\mathrm{in}}=-\frac1\beta.
+$$
+
+如果差异化商品部门的名义支出份额为 $`s(q)`$，则
+
+$$
+y=\frac{I s(q)}q,
+\qquad
+x_0=I[1-s(q)],
+\qquad
+\theta(q)=\frac{q s'(q)}{s(q)}.
+\tag{1.7–1.8}
+$$
+
+这里按前一篇笔记，**默认外层偏好满足使 $`s`$ 只依赖相对综合价格 $`q`$ 的条件**（例如外层位似偏好），且考虑内点解。若外层非位似，份额一般应写为 $`s(q,I)`$，下面的固定收入价格偏导仍可相应推广。
+
+注意：$`q`$ 是复合价格指数；$`\rho,\beta`$ 控制**组内**品种替代弹性，不能与上层部门间替代弹性 $`\sigma_{\mathrm{out}}(q)`$ 混淆。
+
+## 1. （1.9）品种需求函数：组内成本最小化
+
+给定要获得的综合数量 $`y`$，最小化支出
+
+$$
+\min_{\{x_i\}}\sum_{i=1}^n p_ix_i
+\quad\text{s.t.}\quad
+\sum_{i=1}^n x_i^\rho=y^\rho.
+$$
+
+拉格朗日函数
+
+$$
+\mathcal L=\sum_i p_ix_i+
+\lambda\left[y^\rho-\sum_i x_i^\rho\right].
+$$
+
+一阶条件
+
+$$
+p_i=\lambda\rho x_i^{\rho-1}
+\quad\Longrightarrow\quad
+x_i=(\lambda\rho)^{1/(1-\rho)}p_i^{-1/(1-\rho)}.
+$$
+
+令 $`A=(\lambda\rho)^{\sigma_{\mathrm{in}}}`$，得到 $`x_i=Ap_i^{-\sigma_{\mathrm{in}}}`$。代入 CES 数量聚合式，
+
+$$
+\begin{aligned}
+y
+&=A\left(\sum_i p_i^{-\sigma_{\mathrm{in}}\rho}\right)^{1/\rho}\\
+&=A\left(\sum_i p_i^{-1/\beta}\right)^{1/\rho}\\
+&=A\left(q^{-1/\beta}\right)^{1/\rho}
+=Aq^{-\sigma_{\mathrm{in}}}.
+\end{aligned}
+$$
+
+A=yq^{\sigma_{\mathrm{in}}}`$，品种条件需求为（补全原书中遗漏的综合数量系数 # 《国际贸易应用模型》P10：公式（1.9）—（1.16）逐式推导
+
+> **原书位置**：第 10 页（P10），“第三节 模型设定与推导——一、固定弹性的情形——（一）需求函数”。  
+> **重点**：CES 条件需求、价格指数的单品种价格弹性、张伯伦 dd / DD 需求曲线、对称均衡、相对需求与替代弹性。  
+> **教材信息**：刘文革、裴莹编著，《国际贸易应用模型》，清华大学出版社，2026 年 6 月第 1 版；ISBN 978-7-302-71633-4。  
+> **依据**：原书第 10 页（P10）照片及公式（1.9）—（1.16）。  
+> **前一篇**：[P9 公式（1.4）—（1.8）推导](two-stage-budgeting-equations-1-4-to-1-8-p9.md)。
+
+## 0. 准备：沿用 P9 的记号
+
+模型中有 $`n`$ 个差异化商品，数量 $`x_i`$、价格 $`p_i`$，同质商品 $`x_0`$ 的价格规范化为 1，名义收入为 $`I`$：
+
+$$
+u=U\left[x_0,\left(\sum_{i=1}^n x_i^\rho\right)^{1/\rho}\right],
+\qquad 0<\rho<1,\qquad
+x_0+\sum_{i=1}^n p_ix_i=I.
+$$
+
+差异化商品的综合数量（P9 记为 $`Y`$，本页记为 $`y`$）和 CES 价格指数是
+
+$$
+y=\left(\sum_{i=1}^n x_i^\rho\right)^{1/\rho},
+\qquad
+q=\left(\sum_{i=1}^n p_i^{-1/\beta}\right)^{-\beta},
+\qquad
+\beta=\frac{1-\rho}{\rho}>0.
+\tag{1.6}
+$$
+
+两个关键恒等式：
+
+$$
+\sigma_{\mathrm{in}}
+=\frac{1}{1-\rho}=1+\frac1\beta,
+\qquad
+1-\sigma_{\mathrm{in}}=-\frac1\beta.
+$$
+
+如果差异化商品部门的名义支出份额为 $`s(q)`$，则
+
+$$
+y=\frac{I s(q)}q,
+\qquad
+x_0=I[1-s(q)],
+\qquad
+\theta(q)=\frac{q s'(q)}{s(q)}.
+\tag{1.7–1.8}
+$$
+
+这里按前一篇笔记，**默认外层偏好满足使 $`s`$ 只依赖相对综合价格 $`q`$ 的条件**（例如外层位似偏好），且考虑内点解。若外层非位似，份额一般应写为 $`s(q,I)`$，下面的固定收入价格偏导仍可相应推广。
+
+注意：$`q`$ 是复合价格指数；$`\rho,\beta`$ 控制**组内**品种替代弹性，不能与上层部门间替代弹性 $`\sigma_{\mathrm{out}}(q)`$ 混淆。
+
+## 1. （1.9）品种需求函数：组内成本最小化
+
+给定要获得的综合数量 $`y`$，最小化支出
+
+$$
+\min_{\{x_i\}}\sum_{i=1}^n p_ix_i
+\quad\text{s.t.}\quad
+\sum_{i=1}^n x_i^\rho=y^\rho.
+$$
+
+拉格朗日函数
+
+$$
+\mathcal L=\sum_i p_ix_i+
+\lambda\left[y^\rho-\sum_i x_i^\rho\right].
+$$
+
+一阶条件
+
+$$
+p_i=\lambda\rho x_i^{\rho-1}
+\quad\Longrightarrow\quad
+x_i=(\lambda\rho)^{1/(1-\rho)}p_i^{-1/(1-\rho)}.
+$$
+
+令 $`A=(\lambda\rho)^{\sigma_{\mathrm{in}}}`$，得到 $`x_i=Ap_i^{-\sigma_{\mathrm{in}}}`$。代入 CES 数量聚合式，
+
+$$
+\begin{aligned}
+y
+&=A\left(\sum_i p_i^{-\sigma_{\mathrm{in}}\rho}\right)^{1/\rho}\\
+&=A\left(\sum_i p_i^{-1/\beta}\right)^{1/\rho}\\
+&=A\left(q^{-1/\beta}\right)^{1/\rho}
+=Aq^{-\sigma_{\mathrm{in}}}.
+\end{aligned}
+$$
+
+y`$）：
 
 $$
 \boxed{
 x_i=y\left(\frac q{p_i}\right)^{1/(1-\rho)}
 =y\left(\frac q{p_i}\right)^{1+1/\beta}.
 }
-\tag{1.9，规范写法}
+\tag{1.9}
 $$
 
 **原书核对**：P10 图片的（1.9）右边印为 $`(q/p_i)^{1/(1-\rho)}`$，缺少 $`y`$。在一般数量单位下，右侧是 **$`x_i/y`$** 而不是 $`x_i`$；若未显式设 $`y=1`$，应补上 $`y`$。将这个遗漏当作排印/记号问题，不将其视为新的经济假设。
