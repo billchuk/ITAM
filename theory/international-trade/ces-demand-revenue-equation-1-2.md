@@ -9,7 +9,9 @@
 
 书中公式（1.2）为：
 
-$$\boxed{q(\omega)=Q\left[\frac{p(\omega)}{P}\right]^{-\sigma}}, \qquad \boxed{r(\omega)=R\left[\frac{p(\omega)}{P}\right]^{1-\sigma}}. \tag{1.2}$$
+**式（1.2）**
+
+$$\boxed{q(\omega)=Q\left[\frac{p(\omega)}{P}\right]^{-\sigma}}, \qquad \boxed{r(\omega)=R\left[\frac{p(\omega)}{P}\right]^{1-\sigma}}.$$
 
 | 符号 | 含义 |
 | :--- | :--- |
@@ -28,7 +30,9 @@ $$U=\left[\int_\Omega q(\omega)^\rho\,\mathrm d\omega\right]^{1/\rho}, \qquad 0<
 
 公式（1.1）已经推导出：
 
-$$\boxed{P=\left[\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega\right]^{1/(1-\sigma)}}. \tag{1.1}$$
+**式（1.1）**
+
+$$\boxed{P=\left[\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega\right]^{1/(1-\sigma)}}.$$
 
 假设价格为正、积分有限且消费者处于最优配置。这里没有给品种加权，也没有对品种数做归一化，严格遵照原书截图中的 CES 设定。
 
@@ -56,7 +60,9 @@ $$\frac{1}{\rho-1}=-\sigma.$$
 
 令 $`A=(\lambda\rho)^\sigma>0`$，则有
 
-$$\boxed{q(\omega)=A\,p(\omega)^{-\sigma}}. \tag{A}$$
+**式（A）**
+
+$$\boxed{q(\omega)=A\,p(\omega)^{-\sigma}}.$$
 
 $`A`$ 对所有品种相同；下一步用 CES 总量和价格指数确定它。
 
@@ -88,7 +94,9 @@ $$\begin{aligned} q(\omega) &=UP^\sigma p(\omega)^{-\sigma}\\ &=U\left[\frac{p(\
 
 原书规定 $`Q=U`$，所以
 
-$$\boxed{\displaystyle q(\omega)=Q\left[\frac{p(\omega)}{P}\right]^{-\sigma}}. \tag{1.2a}$$
+**式（1.2a）**
+
+$$\boxed{\displaystyle q(\omega)=Q\left[\frac{p(\omega)}{P}\right]^{-\sigma}}.$$
 
 > **经济含义**：单个品种价格相对 CES 综合价格 $`P`$ 越高，最优消费数量越低。$`\sigma`$ 越大，消费者对相对价格变化越敏感。
 
@@ -108,7 +116,9 @@ $$\begin{aligned} r(\omega) &=PQ\left[\frac{p(\omega)}{P}\right]\left[\frac{p(\o
 
 由原书定义 $`R=PQ`$，得到
 
-$$\boxed{\displaystyle r(\omega)=R\left[\frac{p(\omega)}{P}\right]^{1-\sigma}}. \tag{1.2b}$$
+**式（1.2b）**
+
+$$\boxed{\displaystyle r(\omega)=R\left[\frac{p(\omega)}{P}\right]^{1-\sigma}}.$$
 
 所以 $`-\sigma`$ 变成 $`1-\sigma`$ 的唯一代数原因，就是收入函数比数量需求函数**多乘了一个价格**：
 
