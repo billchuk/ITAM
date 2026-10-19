@@ -9,11 +9,15 @@
 
 （1）有约束社会最优：企业必须靠销售收入自行覆盖总成本 $`a+cx_c`$。由 P14 的（1.40）及其受约束版本：
 
-$$\boxed{ n_c=\frac{\omega(x_c)}{a+cx_c}. } \tag{A}$$
+**式（A）**
+
+$$\boxed{ n_c=\frac{\omega(x_c)}{a+cx_c}. }$$
 
 （2）无约束社会最优：社会规划者可以通过一次性转移支付覆盖企业固定成本。由 P15 的（1.51）：
 
-$$\boxed{ n_u=\frac{\gamma}{a+cx_u}. } \tag{B}$$
+**式（B）**
+
+$$\boxed{ n_u=\frac{\gamma}{a+cx_u}. }$$
 
 其中 $`a>0`$ 为每企业固定成本，$`c>0`$ 为边际成本，$`x_c`$ 和 $`x_u`$ 分别为两种最优制度下的单企业产量。
 
@@ -31,7 +35,9 @@ $$\begin{aligned} \gamma-\omega(x) &=\gamma-\frac{\gamma\rho(x)} {\gamma\rho(x)+
 
 所以**无论 $`\rho'(x)`$ 的符号如何**，只要 $`0<\rho(x)<1`$：
 
-$$\boxed{0<\omega(x)<\gamma.} \tag{C}$$
+**式（C）**
+
+$$\boxed{0<\omega(x)<\gamma.}$$
 
 注意：这是$`\omega`$ 与 $`\gamma`$ 的**水平比较**，不需要另外讨论 $`\rho'`$ 的正负；而 P15 比较 $`x_u`$ 与 $`x_c`$ 则需要 $`\rho'`$ 和相关最优解的单交叉条件。
 
@@ -43,7 +49,9 @@ $$\begin{aligned} n_c =\frac{\omega(x_c)}{a+cx_c} &<\frac{\gamma}{a+cx_c}. \end{
 
 这就是书中公式：
 
-$$\boxed{ n_c=\frac{\omega(x_c)}{a+cx_c} <\frac{\gamma}{a+cx_c}. } \tag{1.53}$$
+**式（1.53）**
+
+$$\boxed{ n_c=\frac{\omega(x_c)}{a+cx_c} <\frac{\gamma}{a+cx_c}. }$$
 
 **含义**：在相同的单企业成本规模 $`a+cx_c`$ 下，有约束最优分配给差异化商品部门的资源份额 $`\omega(x_c)`$ 小于无约束最优的部门资源份额 $`\gamma`$，故可支持的企业数低于 $`\gamma/(a+cx_c)`$。
 
@@ -61,7 +69,9 @@ $$a+cx_u<a+cx_c \quad\Longrightarrow\quad \frac{\gamma}{a+cx_u}> \frac{\gamma}{a
 
 与（1.53）连接：
 
-$$\boxed{ n_u=\frac{\gamma}{a+cx_u} > \frac{\gamma}{a+cx_c} >n_c. } \tag{D}$$
+**式（D）**
+
+$$\boxed{ n_u=\frac{\gamma}{a+cx_u} > \frac{\gamma}{a+cx_c} >n_c. }$$
 
 因此：
 
@@ -81,7 +91,9 @@ $$n_c<\frac{\gamma}{a+cx_c}, \qquad n_u<\frac{\gamma}{a+cx_c}.$$
 
 一个直接可检验的**充要条件**是：
 
-$$\begin{aligned} n_u>n_c &\iff\frac{\gamma}{a+cx_u}> \frac{\omega(x_c)}{a+cx_c}\\ &\iff \boxed{ \frac{a+cx_u}{a+cx_c}< \frac{\gamma}{\omega(x_c)}. } \end{aligned} \tag{E}$$
+**式（E）**
+
+$$\begin{aligned} n_u>n_c &\iff\frac{\gamma}{a+cx_u}> \frac{\omega(x_c)}{a+cx_c}\\ &\iff \boxed{ \frac{a+cx_u}{a+cx_c}< \frac{\gamma}{\omega(x_c)}. } \end{aligned}$$
 
 其中：
 
