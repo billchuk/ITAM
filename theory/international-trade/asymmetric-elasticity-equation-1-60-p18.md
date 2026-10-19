@@ -8,7 +8,9 @@
 
 书中给出：
 
-$$\boxed{ \frac{\partial\ln\bar q_i}{\partial\beta_i} =-\ln\bar n_i. } \tag{1.60}$$
+**式（1.60）**
+
+$$\boxed{ \frac{\partial\ln\bar q_i}{\partial\beta_i} =-\ln\bar n_i. }$$
 
 其中 $`i\in\{1,2\}`$ 表示两种候选商品组的任意一组，带横杠表示**只有该组生产时的候选对称均衡值**。
 
@@ -29,11 +31,17 @@ $$\boxed{ \frac{\partial\ln\bar q_i}{\partial\beta_i} =-\ln\bar n_i. } \tag{1.60
 
 P16 对任一组 $`i`$，都已经推导出：
 
-$$\boxed{\bar p_i=c_i(1+\beta_i),} \tag{A}$$
+**式（A）**
 
-$$\boxed{\bar n_i=\frac{s\beta_i}{a_i(1+\beta_i)},} \tag{B}$$
+$$\boxed{\bar p_i=c_i(1+\beta_i),}$$
 
-$$\boxed{ \bar q_i=\bar p_i\bar n_i^{-\beta_i} =c_i(1+\beta_i)^{1+\beta_i} \left(\frac{a_i}{s\beta_i}\right)^{\beta_i}. } \tag{C}$$
+**式（B）**
+
+$$\boxed{\bar n_i=\frac{s\beta_i}{a_i(1+\beta_i)},}$$
+
+**式（C）**
+
+$$\boxed{ \bar q_i=\bar p_i\bar n_i^{-\beta_i} =c_i(1+\beta_i)^{1+\beta_i} \left(\frac{a_i}{s\beta_i}\right)^{\beta_i}. }$$
 
 下面两种方法都可以独立推出（1.60）。
 
@@ -67,7 +75,9 @@ $$\begin{aligned} \frac{\partial\ln\bar q_i}{\partial\beta_i} &=\ln(1+\beta_i) +
 
 由（B）中 $`\bar n_i=s\beta_i/[a_i(1+\beta_i)]`$：
 
-$$\boxed{ \frac{\partial\ln\bar q_i}{\partial\beta_i} =-\ln\bar n_i. } \tag{1.60}$$
+**式（1.60）**
+
+$$\boxed{ \frac{\partial\ln\bar q_i}{\partial\beta_i} =-\ln\bar n_i. }$$
 
 ## 4. 方法二：从 $`\bar q_i=\bar p_i\bar n_i^{-\beta_i}`$ 出发
 
@@ -77,7 +87,9 @@ $$\ln\bar q_i=\ln\bar p_i-\beta_i\ln\bar n_i.$$
 
 对 $`\beta_i`$ 求导时，**价格与企业数都不是常数**，因此：
 
-$$\boxed{ \frac{\partial\ln\bar q_i}{\partial\beta_i} = \frac{\partial\ln\bar p_i}{\partial\beta_i} -\ln\bar n_i -\beta_i\frac{\partial\ln\bar n_i}{\partial\beta_i}. } \tag{D}$$
+**式（D）**
+
+$$\boxed{ \frac{\partial\ln\bar q_i}{\partial\beta_i} = \frac{\partial\ln\bar p_i}{\partial\beta_i} -\ln\bar n_i -\beta_i\frac{\partial\ln\bar n_i}{\partial\beta_i}. }$$
 
 首先由（A）：
 
@@ -131,7 +143,9 @@ $$\frac{\mathrm d\beta_i}{\mathrm d\sigma_i}=-\beta_i^2,$$
 
 故：
 
-$$\boxed{ \frac{\partial\ln\bar q_i}{\partial\sigma_i} =\beta_i^2\ln\bar n_i>0 \quad\text{当 }\bar n_i>1. } \tag{E}$$
+**式（E）**
+
+$$\boxed{ \frac{\partial\ln\bar q_i}{\partial\sigma_i} =\beta_i^2\ln\bar n_i>0 \quad\text{当 }\bar n_i>1. }$$
 
 这意味着在这些条件下，品种间替代弹性**越高**，均衡综合价格指数**越高**；与书页文字关于“$`\beta`$ 高而自有价格弹性低”的解释一致。
 
