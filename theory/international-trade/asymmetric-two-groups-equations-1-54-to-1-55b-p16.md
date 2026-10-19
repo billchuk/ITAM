@@ -9,13 +9,7 @@
 
 两类差异化商品分别属于组 $`k=1,2`$，组内由 $`n_k`$ 个品种组成。第 $`k`$ 组内各企业具有相同固定成本 $`a_k>0`$、边际成本 $`c_k>0`$，CES 参数为 $`0<\rho_k<1`$。定义：
 
-```math
-\boxed{
-\beta_k=\frac{1-\rho_k}{\rho_k}>0,
-\qquad
-\sigma_k=\frac1{1-\rho_k}=1+\frac1{\beta_k}>1.
-}
-```
+$$\boxed{ \beta_k=\frac{1-\rho_k}{\rho_k}>0, \qquad \sigma_k=\frac1{1-\rho_k}=1+\frac1{\beta_k}>1. }$$
 
 其中 $`x_{ki}`$ 表示第 $`k`$ 组的第 $`i`$ 个品种的消费量，$`p_{ki}`$ 是价格。同质商品 $`x_0`$ 的单价标准化为 1，预算为 $`I=1`$；外层 Cobb–Douglas 支出份额参数为 $`0<s<1`$。
 
@@ -27,47 +21,23 @@
 
 定义两个组的 CES 复合数量：
 
-```math
-Y_1=\left(\sum_{i_1=1}^{n_1}x_{i_1}^{\rho_1}\right)^{1/\rho_1},
-\qquad
-Y_2=\left(\sum_{i_2=1}^{n_2}x_{i_2}^{\rho_2}\right)^{1/\rho_2}.
-```
+$$Y_1=\left(\sum_{i_1=1}^{n_1}x_{i_1}^{\rho_1}\right)^{1/\rho_1}, \qquad Y_2=\left(\sum_{i_2=1}^{n_2}x_{i_2}^{\rho_2}\right)^{1/\rho_2}.$$
 
 原书的效用函数：
 
-```math
-\boxed{
-u=x_0^{1-s}\left\{
-\left[\sum_{i_1=1}^{n_1}x_{i_1}^{\rho_1}\right]^{1/\rho_1}
-+
-\left[\sum_{i_2=1}^{n_2}x_{i_2}^{\rho_2}\right]^{1/\rho_2}
-\right\}^{s}.
-}
-\tag{1.54}
-```
+$$\boxed{ u=x_0^{1-s}\left\{ \left[\sum_{i_1=1}^{n_1}x_{i_1}^{\rho_1}\right]^{1/\rho_1} + \left[\sum_{i_2=1}^{n_2}x_{i_2}^{\rho_2}\right]^{1/\rho_2} \right\}^{s}. } \tag{1.54}$$
 
 记 $`Y=Y_1+Y_2`$，则简写为：
 
-```math
-u=x_0^{1-s}Y^s.
-```
+$$u=x_0^{1-s}Y^s.$$
 
 组内 CES 单位综合数量的最小支出（价格指数）分别为：
 
-```math
-\boxed{
-q_k=\left(\sum_{i=1}^{n_k}p_{ki}^{-1/\beta_k}\right)^{-\beta_k},
-\quad k=1,2.
-}
-\tag{A}
-```
+$$\boxed{ q_k=\left(\sum_{i=1}^{n_k}p_{ki}^{-1/\beta_k}\right)^{-\beta_k}, \quad k=1,2. } \tag{A}$$
 
 因为组间 $`Y=Y_1+Y_2`$ 线性相加，对给定 $`Y`$ 的支出最小化问题是：
 
-```math
-\min_{Y_1,Y_2\ge0}\ q_1Y_1+q_2Y_2
-\quad\text{s.t.}\quad Y_1+Y_2=Y.
-```
+$$\min_{Y_1,Y_2\ge0}\ q_1Y_1+q_2Y_2 \quad\text{s.t.}\quad Y_1+Y_2=Y.$$
 
 所以：
 - 若 $`q_1<q_2`$，最便宜的方案为 $`Y_1=Y,Y_2=0`$；
@@ -84,113 +54,61 @@ q_k=\left(\sum_{i=1}^{n_k}p_{ki}^{-1/\beta_k}\right)^{-\beta_k},
 
 外层效用为 $`u=x_0^{1-s}Y_k^s`$，预算：
 
-```math
-x_0+q_kY_k=1.
-```
+$$x_0+q_kY_k=1.$$
 
 Cobb–Douglas 内点最优时：
 
-```math
-\boxed{x_0=1-s,\qquad q_kY_k=s.}
-\tag{B}
-```
+$$\boxed{x_0=1-s,\qquad q_kY_k=s.} \tag{B}$$
 
 对应对称企业：
 
-```math
-\boxed{n_kp_kx_k=s,\qquad q_k=p_kn_k^{-\beta_k}.}
-\tag{C}
-```
+$$\boxed{n_kp_kx_k=s,\qquad q_k=p_kn_k^{-\beta_k}.} \tag{C}$$
 
 ### 2.2 CES dd 需求与企业加成
 
 由前面固定弹性推导，单个企业在“单一品种对综合需求影响可忽略”的大品种数近似下面临
 
-```math
-\varepsilon_{ki}
-=-\frac{1+\beta_k}{\beta_k}.
-```
+$$\varepsilon_{ki} =-\frac{1+\beta_k}{\beta_k}.$$
 
 利润函数：
 
-```math
-\pi_{ki}=(p_{ki}-c_k)x_{ki}-a_k.
-```
+$$\pi_{ki}=(p_{ki}-c_k)x_{ki}-a_k.$$
 
 利润最大化的一阶条件：
 
-```math
-1+\frac{p_{ki}-c_k}{p_{ki}}\varepsilon_{ki}=0.
-```
+$$1+\frac{p_{ki}-c_k}{p_{ki}}\varepsilon_{ki}=0.$$
 
 解得：
 
-```math
-\frac{p_k-c_k}{p_k}=\frac{\beta_k}{1+\beta_k},
-\qquad
-\boxed{p_k=c_k(1+\beta_k)}.
-\tag{D}
-```
+$$\frac{p_k-c_k}{p_k}=\frac{\beta_k}{1+\beta_k}, \qquad \boxed{p_k=c_k(1+\beta_k)}. \tag{D}$$
 
 ### 2.3 自由进入零利润决定单企业规模
 
 在自由进入、连续品种数的长期均衡近似下：
 
-```math
-(p_k-c_k)x_k=a_k.
-```
+$$(p_k-c_k)x_k=a_k.$$
 
 由 $`p_k-c_k=c_k\beta_k`$：
 
-```math
-\boxed{x_k=\frac{a_k}{c_k\beta_k}}.
-\tag{E}
-```
+$$\boxed{x_k=\frac{a_k}{c_k\beta_k}}. \tag{E}$$
 
 ### 2.4 部门预算决定企业数
 
 由（C），$`\ n_kp_kx_k=s`$，故：
 
-```math
-\begin{aligned}
-n_k
-&=\frac{s}{p_kx_k}\\
-&=\frac{s}{c_k(1+\beta_k)\cdot a_k/(c_k\beta_k)}\\
-&=\boxed{\frac{s\beta_k}{a_k(1+\beta_k)}}.
-\end{aligned}
-\tag{F}
-```
+$$\begin{aligned} n_k &=\frac{s}{p_kx_k}\\ &=\frac{s}{c_k(1+\beta_k)\cdot a_k/(c_k\beta_k)}\\ &=\boxed{\frac{s\beta_k}{a_k(1+\beta_k)}}. \end{aligned} \tag{F}$$
 
 这里的 $`n_k`$ 是连续变量近似结果；当企业必须取整数，需另行使用整数进入的利润不等式。推导（D）亦使用大品种数的需求近似，若计算出非常小的 $`n_k`$，相关公式的自洽性需要特别检查。
 
 ### 2.5 综合价格指数
 
-```math
-\begin{aligned}
-q_k
-&=p_kn_k^{-\beta_k}\\
-&=c_k(1+\beta_k)
-\left[\frac{s\beta_k}{a_k(1+\beta_k)}\right]^{-\beta_k}\\
-&=\boxed{
-c_k(1+\beta_k)^{1+\beta_k}
-\left(\frac{a_k}{s\beta_k}\right)^{\beta_k}
-}.
-\end{aligned}
-\tag{G}
-```
+$$\begin{aligned} q_k &=p_kn_k^{-\beta_k}\\ &=c_k(1+\beta_k) \left[\frac{s\beta_k}{a_k(1+\beta_k)}\right]^{-\beta_k}\\ &=\boxed{ c_k(1+\beta_k)^{1+\beta_k} \left(\frac{a_k}{s\beta_k}\right)^{\beta_k} }. \end{aligned} \tag{G}$$
 
 ### 2.6 单一商品组的总效用
 
 由（B），$`x_0=1-s`$、$`Y_k=s/q_k`$：
 
-```math
-\begin{aligned}
-u_k
-&=(1-s)^{1-s}(s/q_k)^s\\
-&=\boxed{s^s(1-s)^{1-s}q_k^{-s}}.
-\end{aligned}
-\tag{H}
-```
+$$\begin{aligned} u_k &=(1-s)^{1-s}(s/q_k)^s\\ &=\boxed{s^s(1-s)^{1-s}q_k^{-s}}. \end{aligned} \tag{H}$$
 
 当外层参数 $`s`$ 固定、资源/收入单位相同，**哪个候选组的复合价格指数较低，哪个候选方案的间接效用就较高**。
 
@@ -198,21 +116,7 @@ u_k
 
 以上通用式（D）—（H）令 $`k=1`$，得到原书（1.55a）：
 
-```math
-\boxed{
-\begin{aligned}
-\bar x_1&=\frac{a_1}{c_1\beta_1},&
-\bar x_2&=0,\\
-\bar p_1&=c_1(1+\beta_1),\\
-\bar n_1&=\frac{s\beta_1}{a_1(1+\beta_1)},\\
-\bar q_1&=\bar p_1\bar n_1^{-\beta_1}
-=c_1(1+\beta_1)^{1+\beta_1}
-\left(\frac{a_1}{s\beta_1}\right)^{\beta_1},\\
-\bar u_1&=s^s(1-s)^{1-s}\bar q_1^{-s}.
-\end{aligned}
-}
-\tag{1.55a}
-```
+$$\boxed{ \begin{aligned} \bar x_1&=\frac{a_1}{c_1\beta_1},& \bar x_2&=0,\\ \bar p_1&=c_1(1+\beta_1),\\ \bar n_1&=\frac{s\beta_1}{a_1(1+\beta_1)},\\ \bar q_1&=\bar p_1\bar n_1^{-\beta_1} =c_1(1+\beta_1)^{1+\beta_1} \left(\frac{a_1}{s\beta_1}\right)^{\beta_1},\\ \bar u_1&=s^s(1-s)^{1-s}\bar q_1^{-s}. \end{aligned} } \tag{1.55a}$$
 
 带横杠的变量表示**仅对应组生产时的候选均衡值**，不是两组同时生产的总量。
 
@@ -220,31 +124,13 @@ u_k
 
 令 $`k=2`$，完全对称地得到：
 
-```math
-\boxed{
-\begin{aligned}
-\bar x_2&=\frac{a_2}{c_2\beta_2},&
-\bar x_1&=0,\\
-\bar p_2&=c_2(1+\beta_2),\\
-\bar n_2&=\frac{s\beta_2}{a_2(1+\beta_2)},\\
-\bar q_2&=\bar p_2\bar n_2^{-\beta_2}
-=c_2(1+\beta_2)^{1+\beta_2}
-\left(\frac{a_2}{s\beta_2}\right)^{\beta_2},\\
-\bar u_2&=s^s(1-s)^{1-s}\bar q_2^{-s}.
-\end{aligned}
-}
-\tag{1.55b}
-```
+$$\boxed{ \begin{aligned} \bar x_2&=\frac{a_2}{c_2\beta_2},& \bar x_1&=0,\\ \bar p_2&=c_2(1+\beta_2),\\ \bar n_2&=\frac{s\beta_2}{a_2(1+\beta_2)},\\ \bar q_2&=\bar p_2\bar n_2^{-\beta_2} =c_2(1+\beta_2)^{1+\beta_2} \left(\frac{a_2}{s\beta_2}\right)^{\beta_2},\\ \bar u_2&=s^s(1-s)^{1-s}\bar q_2^{-s}. \end{aligned} } \tag{1.55b}$$
 
 两组方程只需交换下标 $`1\leftrightarrow2`$；没有额外的隐含不对称条件。
 
 ## 5. 两种候选方案如何比较？
 
-```math
-\bar u_1>\bar u_2
-\quad\Longleftrightarrow\quad
-\bar q_1<\bar q_2,
-```
+$$\bar u_1>\bar u_2 \quad\Longleftrightarrow\quad \bar q_1<\bar q_2,$$
 
 因为 $`s>0`$，$`q^{-s}`$ 随 $`q`$ 严格递减。
 
