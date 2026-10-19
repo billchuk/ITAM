@@ -40,7 +40,9 @@ $$y=\frac{I s(q)}q, \qquad x_0=I[1-s(q)], \qquad \theta(q)=\frac{q s'(q)}{s(q)}.
 
 给定要获得的综合数量 $`y`$，最小化支出
 
-$$\min_{\{x_i\}}\sum_{i=1}^n p_ix_i \quad\text{s.t.}\quad \sum_{i=1}^n x_i^\rho=y^\rho.$$
+```math
+\min_{\{x_i\}}\sum_{i=1}^n p_ix_i \quad\text{s.t.}\quad \sum_{i=1}^n x_i^\rho=y^\rho.
+```
 
 拉格朗日函数
 
@@ -76,7 +78,9 @@ $$\boxed{ x_i=I\,s(q)\,q^{\sigma_{\mathrm{in}}-1}\,p_i^{-\sigma_{\mathrm{in}}}. 
 
 从（1.6）
 
-$$q=\left(\sum_{j=1}^n p_j^{-1/\beta}\right)^{-\beta}.$$
+```math
+q=\left(\sum_{j=1}^n p_j^{-1/\beta}\right)^{-\beta}.
+```
 
 取对数并对 $`\ln p_i`$ 求偏导（其他品种价格不变）：
 
@@ -124,7 +128,9 @@ $$\ln x_i =\ln I+\ln s(q) +(\sigma_{\mathrm{in}}-1)\ln q -\sigma_{\mathrm{in}}\l
 
 对 $`\ln p_i`$ 求偏导：
 
-$$\frac{\partial\ln x_i}{\partial\ln p_i} =-\sigma_{\mathrm{in}} +\left[ \underbrace{\frac{\mathrm d\ln s(q)}{\mathrm d\ln q}}_{\theta(q)} +\sigma_{\mathrm{in}}-1\right] \frac{\partial\ln q}{\partial\ln p_i}.$$
+```math
+\frac{\partial\ln x_i}{\partial\ln p_i} =-\sigma_{\mathrm{in}} +\left[ \underbrace{\frac{\mathrm d\ln s(q)}{\mathrm d\ln q}}_{\theta(q)} +\sigma_{\mathrm{in}}-1\right] \frac{\partial\ln q}{\partial\ln p_i}.
+```
 
 利用（1.10）及 $`\sigma_{\mathrm{in}}-1=1/\beta`$：
 
@@ -312,7 +318,9 @@ $$x_i=I s(q) q^{1/\beta}p_i^{-(1+1/\beta)}.$$
 
 对于任意 $`j`$，其价格对 $`x_i`$ 的对数偏导：
 
-$$\frac{\partial\ln x_i}{\partial\ln p_j} =\left(\frac1\beta+\theta(q)\right)w_j -\left(1+\frac1\beta\right)\mathbf{1}\{i=j\}.$$
+```math
+\frac{\partial\ln x_i}{\partial\ln p_j} =\left(\frac1\beta+\theta(q)\right)w_j -\left(1+\frac1\beta\right)\mathbf{1}\{i=j\}.
+```
 
 其中 $`w_j`$ 是第 $`j`$ 个品种的部门内支出份额，$`\sum_j w_j=1`$。
 
