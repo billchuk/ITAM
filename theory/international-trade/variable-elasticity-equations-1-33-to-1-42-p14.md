@@ -29,7 +29,9 @@
 
 **式（1.33）**
 
-$$\boxed{ u=x_0^{1-\gamma}\left[\sum_{i=1}^{n}v(x_i)\right]^\gamma, \qquad 0<\gamma<1. }$$
+```math
+\boxed{ u=x_0^{1-\gamma}\left[\sum_{i=1}^{n}v(x_i)\right]^\gamma, \qquad 0<\gamma<1. }
+```
 
 对比固定弹性 CES 形式：这里的内层不是 $`\bigl(\sum_i x_i^\rho\bigr)^{1/\rho}`$，而是一般加总 $`V=\sum_i v(x_i)`$。若 $`v`$ 不是齐次幂函数，组内偏好通常**不位似**，需求价格弹性也不再是固定常数。
 
@@ -53,7 +55,9 @@ $$\frac{\mathrm d\ln p_i}{\mathrm d\ln x_i} =\frac{x_i v''(x_i)}{v'(x_i)}.$$
 
 **式（1.34）**
 
-$$\boxed{ -\frac{\partial\ln x_i}{\partial\ln p_i} =-\frac{v'(x_i)}{x_i v''(x_i)}>0. }$$
+```math
+\boxed{ -\frac{\partial\ln x_i}{\partial\ln p_i} =-\frac{v'(x_i)}{x_i v''(x_i)}>0. }
+```
 
 **严谨性提醒**：式（1.34）是“忽略单企业对整体需求环境的反馈”的 dd 弹性；有限品种数下若允许 $`x_0`$、$`V`$ 同时内生变化，直接从（A）得到的精确个体需求弹性通常还包含额外反馈项。
 
@@ -119,7 +123,9 @@ $$\boxed{ \omega(x)=\frac{\gamma\rho(x)} {\gamma\rho(x)+1-\gamma}, \qquad \rho(x
 
 如果满足 $`0<\rho(x)<1`$，则 $`0<\omega(x)<\gamma<1`$。例如：
 
-$$\omega(x)<\gamma \iff \frac{\rho(x)}{\gamma\rho(x)+1-\gamma}<1 \iff(1-\gamma)\rho(x)<1-\gamma \iff\rho(x)<1.$$
+```math
+\omega(x)<\gamma \iff \frac{\rho(x)}{\gamma\rho(x)+1-\gamma}<1 \iff(1-\gamma)\rho(x)<1-\gamma \iff\rho(x)<1.
+```
 
 还可以对 $`\omega`$ 求导：
 
@@ -223,7 +229,9 @@ $$1-\omega(x)=\frac{1-\gamma}{D(x)}, \qquad \omega(x)=\frac{\gamma\rho(x)}{D(x)}
 
 代回式 (E)，可得：
 
-$$\begin{aligned} u(x) &=\left(\frac{1-\gamma}{D}\right)^{1-\gamma} \left[\frac{\gamma\rho(x)v(x)}{D(a+cx)}\right]^\gamma\\ &=\gamma^\gamma(1-\gamma)^{1-\gamma} \frac{\left[\rho(x)v(x)/(a+cx)\right]^\gamma} {\gamma\rho(x)+1-\gamma}. \end{aligned}$$
+```math
+\begin{aligned} u(x) &=\left(\frac{1-\gamma}{D}\right)^{1-\gamma} \left[\frac{\gamma\rho(x)v(x)}{D(a+cx)}\right]^\gamma\\ &=\gamma^\gamma(1-\gamma)^{1-\gamma} \frac{\left[\rho(x)v(x)/(a+cx)\right]^\gamma} {\gamma\rho(x)+1-\gamma}. \end{aligned}
+```
 
 即原书公式：
 
@@ -243,7 +251,9 @@ $$\ln u(x) =\gamma\left[\ln\rho(x)+\ln v(x)-\ln(a+cx)\right] -\ln D(x)+\text{常
 
 **式（F）**
 
-$$\begin{aligned} \frac{\mathrm d\ln u}{\mathrm d\ln x} &=\gamma\left[ \frac{x\rho'(x)}{\rho(x)} +\frac{xv'(x)}{v(x)} -\frac{cx}{a+cx} \right] -\frac{\gamma x\rho'(x)}{D(x)}\\ &=\gamma\left[ \rho(x)+\frac{x\rho'(x)}{\rho(x)} -\frac{cx}{a+cx} -\frac{x\rho'(x)}{D(x)} \right]. \end{aligned}$$
+```math
+\begin{aligned} \frac{\mathrm d\ln u}{\mathrm d\ln x} &=\gamma\left[ \frac{x\rho'(x)}{\rho(x)} +\frac{xv'(x)}{v(x)} -\frac{cx}{a+cx} \right] -\frac{\gamma x\rho'(x)}{D(x)}\\ &=\gamma\left[ \rho(x)+\frac{x\rho'(x)}{\rho(x)} -\frac{cx}{a+cx} -\frac{x\rho'(x)}{D(x)} \right]. \end{aligned}
+```
 
 另外直接对 $`\rho(x)=xv'(x)/v(x)`$ 求对数导数：
 
