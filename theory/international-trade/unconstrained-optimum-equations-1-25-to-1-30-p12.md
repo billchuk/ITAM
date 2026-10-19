@@ -13,7 +13,9 @@
 
 维持 P9–P11 的记号：
 
-$$y=\left(\sum_{i=1}^{n}x_i^\rho\right)^{1/\rho}, \quad \rho\in(0,1),\quad \beta=\frac{1-\rho}{\rho}>0.$$
+```math
+y=\left(\sum_{i=1}^{n}x_i^\rho\right)^{1/\rho}, \quad \rho\in(0,1),\quad \beta=\frac{1-\rho}{\rho}>0.
+```
 
 对称状态下，所有品种数量相同 $`x_i=x`$，故根据（1.12）：
 
@@ -29,7 +31,9 @@ $$\boxed{x_0+n(a+cx)=1}, \qquad x_0=1-n(a+cx)\ge0.$$
 
 设外层效用函数为 $`U(x_0,y)`$，两个边际效用记为：
 
-$$U_0\equiv\frac{\partial U}{\partial x_0}>0, \qquad U_y\equiv\frac{\partial U}{\partial y}>0.$$
+```math
+U_0\equiv\frac{\partial U}{\partial x_0}>0, \qquad U_y\equiv\frac{\partial U}{\partial y}>0.
+```
 
 以下默认连续 $`n>0`$、$`x>0`$ 的内点解、可微偏好和可行资源约束。现实企业数需取整数时，上述连续解是一种近似。
 
@@ -37,7 +41,9 @@ $$U_0\equiv\frac{\partial U}{\partial x_0}>0, \qquad U_y\equiv\frac{\partial U}{
 
 规划者选择 $`(n,x)`$ 最大化福利：
 
-$$\max_{n>0,\ x>0}\; u=U(x_0,y)$$
+```math
+\max_{n>0,\ x>0}\; u=U(x_0,y)
+```
 
 受制于资源约束 (B) 和 CES 对称聚合器 (A)。
 
@@ -61,7 +67,9 @@ $$\frac{\partial x_0}{\partial x}=-nc, \qquad \frac{\partial y}{\partial x}=n^{1
 
 利用复合函数链式法则：
 
-$$\begin{aligned} \frac{\partial u}{\partial x} &=U_0\frac{\partial x_0}{\partial x} +U_y\frac{\partial y}{\partial x}\\ &=-nc\,U_0+n^{1+\beta}U_y. \end{aligned}$$
+```math
+\begin{aligned} \frac{\partial u}{\partial x} &=U_0\frac{\partial x_0}{\partial x} +U_y\frac{\partial y}{\partial x}\\ &=-nc\,U_0+n^{1+\beta}U_y. \end{aligned}
+```
 
 内点最优要求 $`\partial u/\partial x=0`$：
 
@@ -91,7 +99,9 @@ $$\frac{\partial y}{\partial n} =\frac{\partial}{\partial n}\bigl[x n^{1+\beta}\
 
 应用链式法则：
 
-$$\begin{aligned} \frac{\partial u}{\partial n} &=U_0[-(a+cx)] +U_y[(1+\beta)x n^\beta]. \end{aligned}$$
+```math
+\begin{aligned} \frac{\partial u}{\partial n} &=U_0[-(a+cx)] +U_y[(1+\beta)x n^\beta]. \end{aligned}
+```
 
 内点最优条件：
 
@@ -141,7 +151,9 @@ $$(a+cx)U_0=(1+\beta)x n^\beta U_y.$$
 
 将（1.26）给出的 $`U_y/U_0=c n^{-\beta}`$ 代入：
 
-$$\begin{aligned} a+cx &=(1+\beta)x n^\beta \frac{U_y}{U_0}\\ &=(1+\beta)x n^\beta(c n^{-\beta})\\ &=(1+\beta)cx. \end{aligned}$$
+```math
+\begin{aligned} a+cx &=(1+\beta)x n^\beta \frac{U_y}{U_0}\\ &=(1+\beta)x n^\beta(c n^{-\beta})\\ &=(1+\beta)cx. \end{aligned}
+```
 
 整理：
 
@@ -271,7 +283,9 @@ $$q_u=p_u n_u^{-\beta} =\frac{2}{100}=0.02.$$
 
 验证对称需求：
 
-$$\begin{aligned} x &=\frac{I_{\mathrm{net}}\alpha}{p_u n_u}\\ &=\frac{(2/3)(1/2)}{2\times100} =\frac1{600}=x_u. \end{aligned}$$
+```math
+\begin{aligned} x &=\frac{I_{\mathrm{net}}\alpha}{p_u n_u}\\ &=\frac{(2/3)(1/2)}{2\times100} =\frac1{600}=x_u. \end{aligned}
+```
 
 验证资源约束：
 
