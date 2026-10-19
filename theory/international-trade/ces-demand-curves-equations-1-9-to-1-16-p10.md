@@ -11,7 +11,7 @@
 模型中有 $`n`$ 个差异化商品，数量 $`x_i`$、价格 $`p_i`$，同质商品 $`x_0`$ 的价格规范化为 1，名义收入为 $`I`$：
 
 ```math
-u=U\left[x_0,\left(\sum_{i=1}^n x_i^\rho\right)^{1/\rho}\right], \qquad 0<\rho<1,\qquad x_0+\sum_{i=1}^n p_ix_i=I.
+u=U\left[x_0,\left(\sum_{i=1}^n x_i^\rho\right)^{1/\rho}\right], \qquad 0\lt \rho\lt 1,\qquad x_0+\sum_{i=1}^n p_ix_i=I.
 ```
 
 差异化商品的综合数量（P9 记为 $`Y`$，本页记为 $`y`$）和 CES 价格指数是
@@ -19,18 +19,22 @@ u=U\left[x_0,\left(\sum_{i=1}^n x_i^\rho\right)^{1/\rho}\right], \qquad 0<\rho<1
 **式（1.6）**
 
 ```math
-y=\left(\sum_{i=1}^n x_i^\rho\right)^{1/\rho}, \qquad q=\left(\sum_{i=1}^n p_i^{-1/\beta}\right)^{-\beta}, \qquad \beta=\frac{1-\rho}{\rho}>0.
+y=\left(\sum_{i=1}^n x_i^\rho\right)^{1/\rho}, \qquad q=\left(\sum_{i=1}^n p_i^{-1/\beta}\right)^{-\beta}, \qquad \beta=\frac{1-\rho}{\rho}\gt 0.
 ```
 
 两个关键恒等式：
 
-$$\sigma_{\mathrm{in}} =\frac{1}{1-\rho}=1+\frac1\beta, \qquad 1-\sigma_{\mathrm{in}}=-\frac1\beta.$$
+```math
+\sigma_{\mathrm{in}} =\frac{1}{1-\rho}=1+\frac1\beta, \qquad 1-\sigma_{\mathrm{in}}=-\frac1\beta.
+```
 
 如果差异化商品部门的名义支出份额为 $`s(q)`$，则
 
 **式（1.7–1.8）**
 
-$$y=\frac{I s(q)}q, \qquad x_0=I[1-s(q)], \qquad \theta(q)=\frac{q s'(q)}{s(q)}.$$
+```math
+y=\frac{I s(q)}q, \qquad x_0=I[1-s(q)], \qquad \theta(q)=\frac{q s'(q)}{s(q)}.
+```
 
 这里按前一篇笔记，**默认外层偏好满足使 $`s`$ 只依赖相对综合价格 $`q`$ 的条件**（例如外层位似偏好），且考虑内点解。若外层非位似，份额一般应写为 $`s(q,I)`$，下面的固定收入价格偏导仍可相应推广。
 
@@ -46,11 +50,15 @@ $$y=\frac{I s(q)}q, \qquad x_0=I[1-s(q)], \qquad \theta(q)=\frac{q s'(q)}{s(q)}.
 
 拉格朗日函数
 
-$$\mathcal L=\sum_i p_ix_i+ \lambda\left[y^\rho-\sum_i x_i^\rho\right].$$
+```math
+\mathcal L=\sum_i p_ix_i+ \lambda\left[y^\rho-\sum_i x_i^\rho\right].
+```
 
 一阶条件
 
-$$p_i=\lambda\rho x_i^{\rho-1} \quad\Longrightarrow\quad x_i=(\lambda\rho)^{1/(1-\rho)}p_i^{-1/(1-\rho)}.$$
+```math
+p_i=\lambda\rho x_i^{\rho-1} \quad\Longrightarrow\quad x_i=(\lambda\rho)^{1/(1-\rho)}p_i^{-1/(1-\rho)}.
+```
 
 令 $`A=(\lambda\rho)^{\sigma_{\mathrm{in}}}`$，得到 $`x_i=Ap_i^{-\sigma_{\mathrm{in}}}`$。代入 CES 数量聚合式，
 
@@ -62,7 +70,9 @@ $$p_i=\lambda\rho x_i^{\rho-1} \quad\Longrightarrow\quad x_i=(\lambda\rho)^{1/(1
 
 **式（1.9）**
 
-$$\boxed{ x_i=y\left(\frac q{p_i}\right)^{1/(1-\rho)} =y\left(\frac q{p_i}\right)^{1+1/\beta}. }$$
+```math
+\boxed{ x_i=y\left(\frac q{p_i}\right)^{1/(1-\rho)} =y\left(\frac q{p_i}\right)^{1+1/\beta}. }
+```
 
 **原书核对**：P10 图片的（1.9）右边印为 $`(q/p_i)^{1/(1-\rho)}`$，缺少 $`y`$。在一般数量单位下，右侧是 **$`x_i/y`$** 而不是 $`x_i`$；若未显式设 $`y=1`$，应补上 $`y`$。将这个遗漏当作排印/记号问题，不将其视为新的经济假设。
 
@@ -70,7 +80,9 @@ $$\boxed{ x_i=y\left(\frac q{p_i}\right)^{1/(1-\rho)} =y\left(\frac q{p_i}\right
 
 **式（A）**
 
-$$\boxed{ x_i=I\,s(q)\,q^{\sigma_{\mathrm{in}}-1}\,p_i^{-\sigma_{\mathrm{in}}}. }$$
+```math
+\boxed{ x_i=I\,s(q)\,q^{\sigma_{\mathrm{in}}-1}\,p_i^{-\sigma_{\mathrm{in}}}. }
+```
 
 这一步对于后面区分大样本近似与精确弹性至关重要。
 
@@ -92,11 +104,15 @@ q=\left(\sum_{j=1}^n p_j^{-1/\beta}\right)^{-\beta}.
 
 **式（1.10）**
 
-$$\boxed{ \frac{\partial\ln q}{\partial\ln p_i} =\left(\frac q{p_i}\right)^{1/\beta} \equiv w_i. }$$
+```math
+\boxed{ \frac{\partial\ln q}{\partial\ln p_i} =\left(\frac q{p_i}\right)^{1/\beta} \equiv w_i. }
+```
 
 进一步验证 $`w_i`$ 是**组内支出份额**：
 
-$$\frac{p_i x_i}{qy} =\frac{p_i y(q/p_i)^{\sigma_{\mathrm{in}}}}{qy} =\left(\frac q{p_i}\right)^{\sigma_{\mathrm{in}}-1} =\left(\frac q{p_i}\right)^{1/\beta} =w_i.$$
+```math
+\frac{p_i x_i}{qy} =\frac{p_i y(q/p_i)^{\sigma_{\mathrm{in}}}}{qy} =\left(\frac q{p_i}\right)^{\sigma_{\mathrm{in}}-1} =\left(\frac q{p_i}\right)^{1/\beta} =w_i.
+```
 
 因而 $`\sum_i w_i=1`$。当各品种对称（$`p_i=p`$），则 $`w_i=1/n`$。
 
@@ -108,13 +124,17 @@ $$\frac{p_i x_i}{qy} =\frac{p_i y(q/p_i)^{\sigma_{\mathrm{in}}}}{qy} =\left(\fra
 
 对（1.9）取对数：
 
-$$\ln x_i=\ln y+\sigma_{\mathrm{in}}\ln q -\sigma_{\mathrm{in}}\ln p_i.$$
+```math
+\ln x_i=\ln y+\sigma_{\mathrm{in}}\ln q -\sigma_{\mathrm{in}}\ln p_i.
+```
 
 如果一家企业规模很小，变动自己的 $`p_i`$ 对 $`q`$ 和总体部门购买力的影响均可忽略，则
 
 **式（1.11）**
 
-$$\boxed{ \left.\frac{\partial\ln x_i}{\partial\ln p_i}\right|_{\mathrm{dd}} \simeq-\sigma_{\mathrm{in}} =-\frac1{1-\rho} =-\frac{1+\beta}{\beta}. }$$
+```math
+\boxed{ \left.\frac{\partial\ln x_i}{\partial\ln p_i}\right|_{\mathrm{dd}} \simeq-\sigma_{\mathrm{in}} =-\frac1{1-\rho} =-\frac{1+\beta}{\beta}. }
+```
 
 它是**其他企业价格不变**时，单一企业所面对的较陡峭（绝对弹性通常较大）的价格竞争关系，传统上称为张伯伦的 **dd 曲线**。
 
@@ -124,7 +144,9 @@ $$\boxed{ \left.\frac{\partial\ln x_i}{\partial\ln p_i}\right|_{\mathrm{dd}} \si
 
 不忽略 $`q`$ 和 $`s(q)`$ 对单品种涨价的反应，从（A）：
 
-$$\ln x_i =\ln I+\ln s(q) +(\sigma_{\mathrm{in}}-1)\ln q -\sigma_{\mathrm{in}}\ln p_i.$$
+```math
+\ln x_i =\ln I+\ln s(q) +(\sigma_{\mathrm{in}}-1)\ln q -\sigma_{\mathrm{in}}\ln p_i.
+```
 
 对 $`\ln p_i`$ 求偏导：
 
@@ -136,11 +158,15 @@ $$\ln x_i =\ln I+\ln s(q) +(\sigma_{\mathrm{in}}-1)\ln q -\sigma_{\mathrm{in}}\l
 
 **式（B）**
 
-$$\boxed{ \frac{\partial\ln x_i}{\partial\ln p_i} =-\left(1+\frac1\beta\right) +\left[\frac1\beta+\theta(q)\right]w_i. }$$
+```math
+\boxed{ \frac{\partial\ln x_i}{\partial\ln p_i} =-\left(1+\frac1\beta\right) +\left[\frac1\beta+\theta(q)\right]w_i. }
+```
 
 对称均衡时 $`w_i=1/n`$，即
 
-$$\frac{\partial\ln x_i}{\partial\ln p_i} =-\left(1+\frac1\beta\right) +\frac1n\left[\frac1\beta+\theta(q)\right].$$
+```math
+\frac{\partial\ln x_i}{\partial\ln p_i} =-\left(1+\frac1\beta\right) +\frac1n\left[\frac1\beta+\theta(q)\right].
+```
 
 所以（1.11）是 $`n`$ 大、$`w_i`$ 很小情形的近似，并非有限 $`n`$ 的精确自身价格弹性。
 
@@ -148,15 +174,19 @@ $$\frac{\partial\ln x_i}{\partial\ln p_i} =-\left(1+\frac1\beta\right) +\frac1n\
 
 **式（C）**
 
-$$\boxed{ \frac{\partial\ln x_i}{\partial\ln p_j} =\left[\frac1\beta+\theta(q)\right]w_j. }$$
+```math
+\boxed{ \frac{\partial\ln x_i}{\partial\ln p_j} =\left[\frac1\beta+\theta(q)\right]w_j. }
+```
 
-若 $`1/\beta+\theta(q)>0`$，另一品种提价会提高本品种需求，即**总需求意义上的交叉价格效应为正**。这也揭示了（1.15）的另一个经济学含义。
+若 $`1/\beta+\theta(q)\gt 0`$，另一品种提价会提高本品种需求，即**总需求意义上的交叉价格效应为正**。这也揭示了（1.15）的另一个经济学含义。
 
 ## 4. （1.12）对称市场中的复合数量和价格
 
 假设所有差异化品种数量相等、价格相等：
 
-$$x_1=\cdots=x_n=x,\qquad p_1=\cdots=p_n=p.$$
+```math
+x_1=\cdots=x_n=x,\qquad p_1=\cdots=p_n=p.
+```
 
 组内数量指数：
 
@@ -166,11 +196,15 @@ $$x_1=\cdots=x_n=x,\qquad p_1=\cdots=p_n=p.$$
 
 由于
 
-$$\frac1\rho=1+\beta,$$
+```math
+\frac1\rho=1+\beta,
+```
 
 因此
 
-$$\boxed{y=x\,n^{1/\rho}=x\,n^{1+\beta}}.$$
+```math
+\boxed{y=x\,n^{1/\rho}=x\,n^{1+\beta}}.
+```
 
 价格指数：
 
@@ -182,7 +216,9 @@ $$\boxed{y=x\,n^{1/\rho}=x\,n^{1+\beta}}.$$
 
 **式（1.12）**
 
-$$\boxed{ y=x\,n^{1/\rho}=x\,n^{1+\beta}, \qquad q=p\,n^{-(1-\rho)/\rho}=p\,n^{-\beta}. }$$
+```math
+\boxed{ y=x\,n^{1/\rho}=x\,n^{1+\beta}, \qquad q=p\,n^{-(1-\rho)/\rho}=p\,n^{-\beta}. }
+```
 
 $`y/x=n^{1/\rho}`$ 可体现种类多样性对 CES 综合数量的影响；$`q/p=n^{-\beta}`$ 是同一效用规范化下的多样性对应的复合价格指数效应，**并不是实际单件商品突然打折**。
 
@@ -190,7 +226,9 @@ $`y/x=n^{1/\rho}`$ 可体现种类多样性对 CES 综合数量的影响；$`q/p
 
 由 P9（1.7）
 
-$$y=\frac{I\,s(q)}q.$$
+```math
+y=\frac{I\,s(q)}q.
+```
 
 再由（1.12）$`x=yn^{-1/\rho}`$ 和 $`q=pn^{-\beta}`$：
 
@@ -202,11 +240,15 @@ $$y=\frac{I\,s(q)}q.$$
 
 **式（1.13）**
 
-$$\boxed{ x=\frac{I s(q)}{pn}, \qquad q=pn^{-\beta}. }$$
+```math
+\boxed{ x=\frac{I s(q)}{pn}, \qquad q=pn^{-\beta}. }
+```
 
 也可由对称预算分配直接验证：
 
-$$npx=Is(q)\quad\Longrightarrow\quad x=\frac{I s(q)}{np}.$$
+```math
+npx=Is(q)\quad\Longrightarrow\quad x=\frac{I s(q)}{np}.
+```
 
 这里的 $`x`$ 指 **所有企业同价同量的对称状态下每一家企业的需求量**。
 
@@ -216,11 +258,15 @@ DD 曲线将 $`n`$ 和名义收入 $`I`$ 固定，所有企业的价格 $`p`$ **
 
 从（1.13）：
 
-$$\ln x=\ln I+\ln s(q)-\ln p-\ln n.$$
+```math
+\ln x=\ln I+\ln s(q)-\ln p-\ln n.
+```
 
 对共同价格 $`\ln p`$ 求导，且
 
-$$q=pn^{-\beta} \quad\Longrightarrow\quad \frac{\mathrm d\ln q}{\mathrm d\ln p}=1.$$
+```math
+q=pn^{-\beta} \quad\Longrightarrow\quad \frac{\mathrm d\ln q}{\mathrm d\ln p}=1.
+```
 
 因此
 
@@ -232,13 +278,17 @@ $$q=pn^{-\beta} \quad\Longrightarrow\quad \frac{\mathrm d\ln q}{\mathrm d\ln p}=
 
 **式（1.14）**
 
-$$\boxed{ \left.\frac{\mathrm d\ln x}{\mathrm d\ln p}\right|_{\mathrm{DD}} =-[1-\theta(q)]. }$$
+```math
+\boxed{ \left.\frac{\mathrm d\ln x}{\mathrm d\ln p}\right|_{\mathrm{DD}} =-[1-\theta(q)]. }
+```
 
 **记号核对**：截图（1.14）的分母为 $`\partial\ln p_i`$，但这里的计算是**同时调整全部价格**，严格写法应对**共同价格** $`p`$ 作总导数 $`\mathrm d\ln p`$。单个企业价格的偏导应使用上一节的公式（B）。
 
 由 P9（1.8）：
 
-$$\theta(q)=[1-\sigma_{\mathrm{out}}(q)][1-s(q)].$$
+```math
+\theta(q)=[1-\sigma_{\mathrm{out}}(q)][1-s(q)].
+```
 
 因此：
 
@@ -246,20 +296,22 @@ $$\theta(q)=[1-\sigma_{\mathrm{out}}(q)][1-s(q)].$$
 \begin{aligned} 1-\theta(q) &=1-[1-\sigma_{\mathrm{out}}(q)][1-s(q)]\\ &=s(q)+\sigma_{\mathrm{out}}(q)[1-s(q)]. \end{aligned}
 ```
 
-在内点 $`0<s(q)<1`$ 且 $`\sigma_{\mathrm{out}}(q)>0`$ 时，$`1-\theta(q)>0`$，所以 DD 需求曲线向下倾斜。注意这里的 $`\sigma_{\mathrm{out}}`$ 是**外层部门之间**的替代弹性，与内层的 $`\sigma_{\mathrm{in}}`$ 是不同对象。
+在内点 $`0\lt s(q)\lt 1`$ 且 $`\sigma_{\mathrm{out}}(q)\gt 0`$ 时，$`1-\theta(q)\gt 0`$，所以 DD 需求曲线向下倾斜。注意这里的 $`\sigma_{\mathrm{out}}`$ 是**外层部门之间**的替代弹性，与内层的 $`\sigma_{\mathrm{in}}`$ 是不同对象。
 
 ## 7. （1.15）比较 dd 与 DD 的弹性
 
 由（1.11）的近似与（1.14）：
 
-$$\varepsilon_{\mathrm{dd}}\simeq-\left(1+\frac1\beta\right), \qquad \varepsilon_{\mathrm{DD}}=-[1-\theta(q)].$$
+```math
+\varepsilon_{\mathrm{dd}}\simeq-\left(1+\frac1\beta\right), \qquad \varepsilon_{\mathrm{DD}}=-[1-\theta(q)].
+```
 
 在两者均向下倾斜时，需求越有弹性，负的价格弹性的**绝对值**越大。
 
 如果 **dd 的需求弹性绝对值大于 DD**，则：
 
 ```math
-\begin{aligned} |\varepsilon_{\mathrm{dd}}|>|\varepsilon_{\mathrm{DD}}| &\iff 1+\frac1\beta>1-\theta(q)\\ &\iff\boxed{\frac1\beta+\theta(q)>0}. \end{aligned}
+\begin{aligned} |\varepsilon_{\mathrm{dd}}|\gt |\varepsilon_{\mathrm{DD}}| &\iff 1+\frac1\beta\gt 1-\theta(q)\\ &\iff\boxed{\frac1\beta+\theta(q)\gt 0}. \end{aligned}
 ```
 
 即原书公式：
@@ -267,26 +319,30 @@ $$\varepsilon_{\mathrm{dd}}\simeq-\left(1+\frac1\beta\right), \qquad \varepsilon
 **式（1.15）**
 
 ```math
-\boxed{\frac1\beta+\theta(q)>0.}
+\boxed{\frac1\beta+\theta(q)\gt 0.}
 ```
 
-**重要纠错**：图片的原文在（1.15）前称之为“**DD 曲线更具有弹性**”的条件，但是该不等式实际表示 **dd 比 DD 更有弹性**，方向恰好相反。若反过来要求 DD 更有弹性，应为 $`1/\beta+\theta(q)<0`$。这里保留原书（1.15）数式并明确这一文字与数式的冲突。
+**重要纠错**：图片的原文在（1.15）前称之为“**DD 曲线更具有弹性**”的条件，但是该不等式实际表示 **dd 比 DD 更有弹性**，方向恰好相反。若反过来要求 DD 更有弹性，应为 $`1/\beta+\theta(q)\lt 0`$。这里保留原书（1.15）数式并明确这一文字与数式的冲突。
 
-同一条件也能从有限 $`n`$ 的交叉价格弹性（C）得到：如果 $`1/\beta+\theta(q)>0`$，价格较高的竞争品种会将需求转移到本品种。
+同一条件也能从有限 $`n`$ 的交叉价格弹性（C）得到：如果 $`1/\beta+\theta(q)\gt 0`$，价格较高的竞争品种会将需求转移到本品种。
 
 ### 极简例子
 
 外层 Cobb–Douglas 时 $`s(q)=\alpha`$、$`\theta(q)=0`$，若 $`\beta=1`$：
 
-$$\varepsilon_{\mathrm{dd}}\simeq-2,\qquad \varepsilon_{\mathrm{DD}}=-1.$$
+```math
+\varepsilon_{\mathrm{dd}}\simeq-2,\qquad \varepsilon_{\mathrm{DD}}=-1.
+```
 
-于是（1.15）显然满足：$`1/\beta+\theta=1>0`$，但 **dd 是更有弹性的曲线**。
+于是（1.15）显然满足：$`1/\beta+\theta=1\gt 0`$，但 **dd 是更有弹性的曲线**。
 
 ## 8. （1.16）任意两种商品间的相对需求
 
 由条件需求（1.9），对于 $`i\ne j`$：
 
-$$x_i=y(q/p_i)^{\sigma_{\mathrm{in}}}, \qquad x_j=y(q/p_j)^{\sigma_{\mathrm{in}}}.$$
+```math
+x_i=y(q/p_i)^{\sigma_{\mathrm{in}}}, \qquad x_j=y(q/p_j)^{\sigma_{\mathrm{in}}}.
+```
 
 两式相除，公共的 $`y`$ 和 $`q`$ 完全抵消：
 
@@ -298,15 +354,21 @@ $$x_i=y(q/p_i)^{\sigma_{\mathrm{in}}}, \qquad x_j=y(q/p_j)^{\sigma_{\mathrm{in}}
 
 **式（1.16）**
 
-$$\boxed{ \frac{x_i}{x_j} =\left(\frac{p_j}{p_i}\right)^{1/(1-\rho)}. }$$
+```math
+\boxed{ \frac{x_i}{x_j} =\left(\frac{p_j}{p_i}\right)^{1/(1-\rho)}. }
+```
 
 两边取对数：
 
-$$\ln(x_i/x_j) =-\sigma_{\mathrm{in}}\ln(p_i/p_j).$$
+```math
+\ln(x_i/x_j) =-\sigma_{\mathrm{in}}\ln(p_i/p_j).
+```
 
 因此：
 
-$$\boxed{ -\frac{\mathrm d\ln(x_i/x_j)} {\mathrm d\ln(p_i/p_j)} =\sigma_{\mathrm{in}} =\frac1{1-\rho}. }$$
+```math
+\boxed{ -\frac{\mathrm d\ln(x_i/x_j)} {\mathrm d\ln(p_i/p_j)} =\sigma_{\mathrm{in}} =\frac1{1-\rho}. }
+```
 
 这里对相对价格作变动，并保持其它必要的相对价格或最优配置约束一致；指数给出 CES 聚合器**组内任意两个品种的恒定替代弹性**，并不依赖外层支出份额函数 $`s(q)`$。
 
@@ -314,7 +376,9 @@ $$\boxed{ -\frac{\mathrm d\ln(x_i/x_j)} {\mathrm d\ln(p_i/p_j)} =\sigma_{\mathrm
 
 完整非条件需求是
 
-$$x_i=I s(q) q^{1/\beta}p_i^{-(1+1/\beta)}.$$
+```math
+x_i=I s(q) q^{1/\beta}p_i^{-(1+1/\beta)}.
+```
 
 对于任意 $`j`$，其价格对 $`x_i`$ 的对数偏导：
 
@@ -338,27 +402,39 @@ $$x_i=I s(q) q^{1/\beta}p_i^{-(1+1/\beta)}.$$
 
 由（1.12）：
 
-$$q=2\times100^{-1}=0.02.$$
+```math
+q=2\times100^{-1}=0.02.
+```
 
 由（1.13）：
 
-$$x=\frac{100\times0.5}{2\times100}=0.25.$$
+```math
+x=\frac{100\times0.5}{2\times100}=0.25.
+```
 
 由（1.12）：
 
-$$y=x\,100^2=2500.$$
+```math
+y=x\,100^2=2500.
+```
 
 代回正确的（1.9）：
 
-$$y(q/p)^2=2500(0.02/2)^2=0.25=x.$$
+```math
+y(q/p)^2=2500(0.02/2)^2=0.25=x.
+```
 
 校验组内预算：
 
-$$np\,x=100\times2\times0.25=50=Is(q)=q y.$$
+```math
+np\,x=100\times2\times0.25=50=Is(q)=q y.
+```
 
 最后：
 
-$$\varepsilon_{\mathrm{dd}}\simeq-2,\quad \varepsilon_{\mathrm{dd,finite}}=-2+\frac1{100}=-1.99,\quad \varepsilon_{\mathrm{DD}}=-1.$$
+```math
+\varepsilon_{\mathrm{dd}}\simeq-2,\quad \varepsilon_{\mathrm{dd,finite}}=-2+\frac1{100}=-1.99,\quad \varepsilon_{\mathrm{DD}}=-1.
+```
 
 可以直观看出大 $`n`$ 近似、有限 $`n`$ 修正和共同价格变动之间的区别。
 
@@ -372,7 +448,7 @@ $$\varepsilon_{\mathrm{dd}}\simeq-2,\quad \varepsilon_{\mathrm{dd,finite}}=-2+\f
 | （1.12） | $`y=xn^{1+\beta},\quad q=pn^{-\beta}`$ | 对称状态：各品种价格和数量相同 |
 | （1.13） | $`x=Is(q)/(pn)`$ | 对称市场的部门支出除以品种数和价格 |
 | （1.14） | $`\varepsilon_{\mathrm{DD}}=-[1-\theta(q)]`$ | **所有**企业的价格共同变化，固定 $`n,I`$ |
-| （1.15） | $`1/\beta+\theta(q)>0`$ | 表示近似 dd 的弹性绝对值**大于** DD，而不是反过来 |
+| （1.15） | $`1/\beta+\theta(q)\gt 0`$ | 表示近似 dd 的弹性绝对值**大于** DD，而不是反过来 |
 | （1.16） | $`x_i/x_j=(p_j/p_i)^{1/(1-\rho)}`$ | 条件品种需求相除，读出组内替代弹性 |
 
 ### 进一步阅读
