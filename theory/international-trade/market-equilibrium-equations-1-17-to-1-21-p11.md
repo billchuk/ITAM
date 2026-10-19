@@ -9,7 +9,9 @@
 
 有 $`n`$ 家活跃企业，各生产一种差异化品种。企业生产 $`x_i`$ 单位的总成本为：
 
-$$C_i(x_i)=a+c x_i,\qquad a>0,\quad c>0.$$
+```math
+C_i(x_i)=a+c x_i,\qquad a>0,\quad c>0.
+```
 
 这里 $`a`$ 为固定成本，$`c`$ 为不变的边际成本。企业收入和利润分别为：
 
@@ -17,7 +19,9 @@ $$r_i=p_i x_i,\qquad \pi_i=(p_i-c)x_i-a.$$
 
 差异化品种的组内 CES 参数为：
 
-$$0<\rho<1,\qquad \beta=\frac{1-\rho}{\rho}>0,\qquad \sigma_{\mathrm{in}}=\frac{1}{1-\rho} =\frac{1+\beta}{\beta}>1.$$
+```math
+0<\rho<1,\qquad \beta=\frac{1-\rho}{\rho}>0,\qquad \sigma_{\mathrm{in}}=\frac{1}{1-\rho} =\frac{1+\beta}{\beta}>1.
+```
 
 注意 **$`\sigma_{\mathrm{in}}`$ 是品种间替代弹性**，与上一页（1.8）讨论的部门间替代弹性 $`\sigma_{\mathrm{out}}(q)`$ 不相同。
 
@@ -176,21 +180,29 @@ $$\frac{\mathrm d\ln q}{\mathrm d\ln n}=-\beta.$$
 
 对 $`\ln n`$ 求导，应用链式法则：
 
-$$\begin{aligned} \frac{\mathrm d\ln f(n)}{\mathrm d\ln n} &=\frac{\mathrm d\ln s(q)}{\mathrm d\ln q} \frac{\mathrm d\ln q}{\mathrm d\ln n} -\frac{\mathrm d\ln n}{\mathrm d\ln n}\\ &=\theta(q)(-\beta)-1\\ &=-[1+\beta\theta(q)]. \end{aligned}$$
+```math
+\begin{aligned} \frac{\mathrm d\ln f(n)}{\mathrm d\ln n} &=\frac{\mathrm d\ln s(q)}{\mathrm d\ln q} \frac{\mathrm d\ln q}{\mathrm d\ln n} -\frac{\mathrm d\ln n}{\mathrm d\ln n}\\ &=\theta(q)(-\beta)-1\\ &=-[1+\beta\theta(q)]. \end{aligned}
+```
 
 要求**企业数增加时每家企业获得的需求严格下降**，即
 
-$$\frac{\mathrm d\ln f(n)}{\mathrm d\ln n}<0,$$
+```math
+\frac{\mathrm d\ln f(n)}{\mathrm d\ln n}<0,
+```
 
 便得到：
 
 **式（1.19）**
 
-$$-[1+\beta\theta(q)]<0 \quad\Longleftrightarrow\quad \boxed{1+\beta\theta(q)>0}.$$
+```math
+-[1+\beta\theta(q)]<0 \quad\Longleftrightarrow\quad \boxed{1+\beta\theta(q)>0}.
+```
 
 由于 $`\beta>0`$，它与 P10 的（1.15）
 
-$$\frac1\beta+\theta(q)>0$$
+```math
+\frac1\beta+\theta(q)>0
+```
 
 完全等价（两边乘以 $`\beta`$）。
 
@@ -264,7 +276,9 @@ $$q_e=4\times50^{-1}=0.08, \qquad s_e=0.5.$$
 
 5. **唯一性条件（1.19）**：
 
-$$1+\beta\theta(q_e)=1+1\times0=1>0.$$
+```math
+1+\beta\theta(q_e)=1+1\times0=1>0.
+```
 
 最后检查总支出以及单个企业利润：
 
