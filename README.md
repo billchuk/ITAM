@@ -5,7 +5,7 @@
 ## 理论模型 / Theory
 
 - [《国际贸易应用模型》P5：公式（1.1）CES 价格指数推导](theory/international-trade/ces-price-index-equation-1-1.md)
-- [《国际贸易应用模型》公式（1.2）：CES 数量需求与销售收入函数推导](theory/international-trade/ces-demand-revenue-equation-1-2.md)
+- [《国际贸易应用模型》P6：公式（1.2）CES 数量需求与销售收入函数推导](theory/international-trade/ces-demand-revenue-equation-1-2.md)
 
 后续计划：Armington、Krugman、Melitz、结构引力模型。
 
