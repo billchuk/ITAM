@@ -10,17 +10,19 @@
 
 **式（1.60）**
 
-$$\boxed{ \frac{\partial\ln\bar q_i}{\partial\beta_i} =-\ln\bar n_i. }$$
+```math
+\boxed{ \frac{\partial\ln\bar q_i}{\partial\beta_i} =-\ln\bar n_i. }
+```
 
 其中 $`i\in\{1,2\}`$ 表示两种候选商品组的任意一组，带横杠表示**只有该组生产时的候选对称均衡值**。
 
 | 符号 | 含义 |
 | :--- | :--- |
-| $`\beta_i=(1-\rho_i)/\rho_i>0`$ | 组内 CES 参数 |
+| $`\beta_i=(1-\rho_i)/\rho_i\gt 0`$ | 组内 CES 参数 |
 | $`\sigma_i=(1+\beta_i)/\beta_i=1+1/\beta_i`$ | 组内任意两个品种的替代弹性 |
-| $`a_i>0`$ | 单家企业固定成本 |
-| $`c_i>0`$ | 单位产出边际成本 |
-| $`0<s<1`$ | 外层 Cobb–Douglas 对差异化商品部门的支出份额 |
+| $`a_i\gt 0`$ | 单家企业固定成本 |
+| $`c_i\gt 0`$ | 单位产出边际成本 |
+| $`0\lt s\lt 1`$ | 外层 Cobb–Douglas 对差异化商品部门的支出份额 |
 | $`\bar p_i`$ | 只有组 $`i`$ 存在时的候选均衡单品种价格 |
 | $`\bar n_i`$ | 对应候选均衡的企业数量（连续近似） |
 | $`\bar q_i=\bar p_i\bar n_i^{-\beta_i}`$ | 组内 CES 复合商品的候选均衡价格指数 |
@@ -33,15 +35,21 @@ P16 对任一组 $`i`$，都已经推导出：
 
 **式（A）**
 
-$$\boxed{\bar p_i=c_i(1+\beta_i),}$$
+```math
+\boxed{\bar p_i=c_i(1+\beta_i),}
+```
 
 **式（B）**
 
-$$\boxed{\bar n_i=\frac{s\beta_i}{a_i(1+\beta_i)},}$$
+```math
+\boxed{\bar n_i=\frac{s\beta_i}{a_i(1+\beta_i)},}
+```
 
 **式（C）**
 
-$$\boxed{ \bar q_i=\bar p_i\bar n_i^{-\beta_i} =c_i(1+\beta_i)^{1+\beta_i} \left(\frac{a_i}{s\beta_i}\right)^{\beta_i}. }$$
+```math
+\boxed{ \bar q_i=\bar p_i\bar n_i^{-\beta_i} =c_i(1+\beta_i)^{1+\beta_i} \left(\frac{a_i}{s\beta_i}\right)^{\beta_i}. }
+```
 
 下面两种方法都可以独立推出（1.60）。
 
@@ -49,21 +57,29 @@ $$\boxed{ \bar q_i=\bar p_i\bar n_i^{-\beta_i} =c_i(1+\beta_i)^{1+\beta_i} \left
 
 由（C）：
 
-$$\bar q_i=c_i(1+\beta_i)^{1+\beta_i} \left(\frac{a_i}{s\beta_i}\right)^{\beta_i}.$$
+```math
+\bar q_i=c_i(1+\beta_i)^{1+\beta_i} \left(\frac{a_i}{s\beta_i}\right)^{\beta_i}.
+```
 
 取自然对数：
 
-$$\ln\bar q_i =\ln c_i +(1+\beta_i)\ln(1+\beta_i) +\beta_i\ln\left(\frac{a_i}{s\beta_i}\right).$$
+```math
+\ln\bar q_i =\ln c_i +(1+\beta_i)\ln(1+\beta_i) +\beta_i\ln\left(\frac{a_i}{s\beta_i}\right).
+```
 
 逐项对 $`\beta_i`$ 求导：
 
 第一项因 $`c_i`$ 固定而为零：
 
-$$\frac{\partial\ln c_i}{\partial\beta_i}=0.$$
+```math
+\frac{\partial\ln c_i}{\partial\beta_i}=0.
+```
 
 第二项利用乘积求导：
 
-$$\frac{\mathrm d}{\mathrm d\beta_i} \left[(1+\beta_i)\ln(1+\beta_i)\right] =\ln(1+\beta_i)+1.$$
+```math
+\frac{\mathrm d}{\mathrm d\beta_i} \left[(1+\beta_i)\ln(1+\beta_i)\right] =\ln(1+\beta_i)+1.
+```
 
 第三项利用乘积与链式法则：
 
@@ -81,31 +97,43 @@ $$\frac{\mathrm d}{\mathrm d\beta_i} \left[(1+\beta_i)\ln(1+\beta_i)\right] =\ln
 
 **式（1.60）**
 
-$$\boxed{ \frac{\partial\ln\bar q_i}{\partial\beta_i} =-\ln\bar n_i. }$$
+```math
+\boxed{ \frac{\partial\ln\bar q_i}{\partial\beta_i} =-\ln\bar n_i. }
+```
 
 ## 4. 方法二：从 $`\bar q_i=\bar p_i\bar n_i^{-\beta_i}`$ 出发
 
 取对数：
 
-$$\ln\bar q_i=\ln\bar p_i-\beta_i\ln\bar n_i.$$
+```math
+\ln\bar q_i=\ln\bar p_i-\beta_i\ln\bar n_i.
+```
 
 对 $`\beta_i`$ 求导时，**价格与企业数都不是常数**，因此：
 
 **式（D）**
 
-$$\boxed{ \frac{\partial\ln\bar q_i}{\partial\beta_i} = \frac{\partial\ln\bar p_i}{\partial\beta_i} -\ln\bar n_i -\beta_i\frac{\partial\ln\bar n_i}{\partial\beta_i}. }$$
+```math
+\boxed{ \frac{\partial\ln\bar q_i}{\partial\beta_i} = \frac{\partial\ln\bar p_i}{\partial\beta_i} -\ln\bar n_i -\beta_i\frac{\partial\ln\bar n_i}{\partial\beta_i}. }
+```
 
 首先由（A）：
 
-$$\bar p_i=c_i(1+\beta_i) \quad\Longrightarrow\quad \boxed{\frac{\partial\ln\bar p_i}{\partial\beta_i} =\frac1{1+\beta_i}.}$$
+```math
+\bar p_i=c_i(1+\beta_i) \quad\Longrightarrow\quad \boxed{\frac{\partial\ln\bar p_i}{\partial\beta_i} =\frac1{1+\beta_i}.}
+```
 
 然后由（B）：
 
-$$\ln\bar n_i =\ln s+\ln\beta_i-\ln a_i-\ln(1+\beta_i),$$
+```math
+\ln\bar n_i =\ln s+\ln\beta_i-\ln a_i-\ln(1+\beta_i),
+```
 
 所以：
 
-$$\boxed{ \frac{\partial\ln\bar n_i}{\partial\beta_i} =\frac1{\beta_i}-\frac1{1+\beta_i} =\frac1{\beta_i(1+\beta_i)}. }$$
+```math
+\boxed{ \frac{\partial\ln\bar n_i}{\partial\beta_i} =\frac1{\beta_i}-\frac1{1+\beta_i} =\frac1{\beta_i(1+\beta_i)}. }
+```
 
 代回（D）：
 
@@ -119,44 +147,50 @@ $$\boxed{ \frac{\partial\ln\bar n_i}{\partial\beta_i} =\frac1{\beta_i}-\frac1{1+
 
 注意：
 
-$$\bar n_i=\frac{s\beta_i}{a_i(1+\beta_i)}.$$
+```math
+\bar n_i=\frac{s\beta_i}{a_i(1+\beta_i)}.
+```
 
-如果 **$`\bar n_i>1`$**：
+如果 **$`\bar n_i\gt 1`$**：
 
 ```math
-\ln\bar n_i>0 \quad\Longrightarrow\quad \frac{\partial\ln\bar q_i}{\partial\beta_i}<0.
+\ln\bar n_i\gt 0 \quad\Longrightarrow\quad \frac{\partial\ln\bar q_i}{\partial\beta_i}\lt 0.
 ```
 
 即 $`\beta_i`$ 增大，均衡综合价格指数降低。
 
-若 $`\bar n_i=1`$，该导数为 0；若连续近似给出 $`0<\bar n_i<1`$，导数反而为正。但“少于一家企业”的候选数量在离散企业数模型中没有直接字面意义，因此应谨慎解释这一数学区域。
+若 $`\bar n_i=1`$，该导数为 0；若连续近似给出 $`0\lt \bar n_i\lt 1`$，导数反而为正。但“少于一家企业”的候选数量在离散企业数模型中没有直接字面意义，因此应谨慎解释这一数学区域。
 
 ### 替代弹性 $`\sigma_i`$ 与 $`\beta_i`$ 方向相反
 
 由：
 
-$$\boxed{\sigma_i=1+\frac1{\beta_i},}$$
+```math
+\boxed{\sigma_i=1+\frac1{\beta_i},}
+```
 
 有：
 
 ```math
-\frac{\mathrm d\sigma_i}{\mathrm d\beta_i} =-\frac1{\beta_i^2}<0.
+\frac{\mathrm d\sigma_i}{\mathrm d\beta_i} =-\frac1{\beta_i^2}\lt 0.
 ```
 
 所以 **$`\beta_i`$ 越大，组内品种间替代弹性 $`\sigma_i`$ 反而越小**。
 
-在 $`\bar n_i>1`$ 的区域中，$`\beta_i`$ 上升意味着品种间变得更不容易替代（差异化更强），品种多样性效应更大，并伴随更低的复合价格指数。
+在 $`\bar n_i\gt 1`$ 的区域中，$`\beta_i`$ 上升意味着品种间变得更不容易替代（差异化更强），品种多样性效应更大，并伴随更低的复合价格指数。
 
 若直接对真正的替代弹性求导：
 
-$$\frac{\mathrm d\beta_i}{\mathrm d\sigma_i}=-\beta_i^2,$$
+```math
+\frac{\mathrm d\beta_i}{\mathrm d\sigma_i}=-\beta_i^2,
+```
 
 故：
 
 **式（E）**
 
 ```math
-\boxed{ \frac{\partial\ln\bar q_i}{\partial\sigma_i} =\beta_i^2\ln\bar n_i>0 \quad\text{当 }\bar n_i>1. }
+\boxed{ \frac{\partial\ln\bar q_i}{\partial\sigma_i} =\beta_i^2\ln\bar n_i\gt 0 \quad\text{当 }\bar n_i\gt 1. }
 ```
 
 这意味着在这些条件下，品种间替代弹性**越高**，均衡综合价格指数**越高**；与书页文字关于“$`\beta`$ 高而自有价格弹性低”的解释一致。
@@ -165,25 +199,37 @@ $$\frac{\mathrm d\beta_i}{\mathrm d\sigma_i}=-\beta_i^2,$$
 
 取：
 
-$$s=\frac12,\quad a_i=0.02,\quad c_i=2,\quad \beta_i=1.$$
+```math
+s=\frac12,\quad a_i=0.02,\quad c_i=2,\quad \beta_i=1.
+```
 
 根据候选均衡表达式：
 
-$$\bar p_i=2(1+1)=4,$$
+```math
+\bar p_i=2(1+1)=4,
+```
 
-$$\bar n_i=\frac{0.5\times1}{0.02(1+1)}=12.5,$$
+```math
+\bar n_i=\frac{0.5\times1}{0.02(1+1)}=12.5,
+```
 
-$$\bar q_i=\bar p_i\bar n_i^{-1}=\frac4{12.5}=0.32.$$
+```math
+\bar q_i=\bar p_i\bar n_i^{-1}=\frac4{12.5}=0.32.
+```
 
 由（1.60）：
 
-$$\left.\frac{\partial\ln\bar q_i}{\partial\beta_i}\right|_{\beta_i=1} =-\ln12.5\approx-2.52573.$$
+```math
+\left.\frac{\partial\ln\bar q_i}{\partial\beta_i}\right|_{\beta_i=1} =-\ln12.5\approx-2.52573.
+```
 
 在经济模型中把企业数连续化只是为求解析结果，数值示例得到非整数 $`12.5`$ 不意味着真实存在半家企业。
 
 进一步的解析校验：$`\bar n_i=s\beta_i/[a_i(1+\beta_i)]`$，故
 
-$$\frac{\partial\ln\bar n_i}{\partial\beta_i} =\frac1{\beta_i(1+\beta_i)},$$
+```math
+\frac{\partial\ln\bar n_i}{\partial\beta_i} =\frac1{\beta_i(1+\beta_i)},
+```
 
 与方法二里的价格、数量调整完全一致。
 
