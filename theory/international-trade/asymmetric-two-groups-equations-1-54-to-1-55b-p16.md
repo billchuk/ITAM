@@ -23,13 +23,17 @@
 
 定义两个组的 CES 复合数量：
 
-$$Y_1=\left(\sum_{i_1=1}^{n_1}x_{i_1}^{\rho_1}\right)^{1/\rho_1}, \qquad Y_2=\left(\sum_{i_2=1}^{n_2}x_{i_2}^{\rho_2}\right)^{1/\rho_2}.$$
+```math
+Y_1=\left(\sum_{i_1=1}^{n_1}x_{i_1}^{\rho_1}\right)^{1/\rho_1}, \qquad Y_2=\left(\sum_{i_2=1}^{n_2}x_{i_2}^{\rho_2}\right)^{1/\rho_2}.
+```
 
 原书的效用函数：
 
 **式（1.54）**
 
-$$\boxed{ u=x_0^{1-s}\left\{ \left[\sum_{i_1=1}^{n_1}x_{i_1}^{\rho_1}\right]^{1/\rho_1} + \left[\sum_{i_2=1}^{n_2}x_{i_2}^{\rho_2}\right]^{1/\rho_2} \right\}^{s}. }$$
+```math
+\boxed{ u=x_0^{1-s}\left\{ \left[\sum_{i_1=1}^{n_1}x_{i_1}^{\rho_1}\right]^{1/\rho_1} + \left[\sum_{i_2=1}^{n_2}x_{i_2}^{\rho_2}\right]^{1/\rho_2} \right\}^{s}. }
+```
 
 记 $`Y=Y_1+Y_2`$，则简写为：
 
@@ -39,11 +43,15 @@ $$u=x_0^{1-s}Y^s.$$
 
 **式（A）**
 
-$$\boxed{ q_k=\left(\sum_{i=1}^{n_k}p_{ki}^{-1/\beta_k}\right)^{-\beta_k}, \quad k=1,2. }$$
+```math
+\boxed{ q_k=\left(\sum_{i=1}^{n_k}p_{ki}^{-1/\beta_k}\right)^{-\beta_k}, \quad k=1,2. }
+```
 
 因为组间 $`Y=Y_1+Y_2`$ 线性相加，对给定 $`Y`$ 的支出最小化问题是：
 
-$$\min_{Y_1,Y_2\ge0}\ q_1Y_1+q_2Y_2 \quad\text{s.t.}\quad Y_1+Y_2=Y.$$
+```math
+\min_{Y_1,Y_2\ge0}\ q_1Y_1+q_2Y_2 \quad\text{s.t.}\quad Y_1+Y_2=Y.
+```
 
 所以：
 - 若 $`q_1<q_2`$，最便宜的方案为 $`Y_1=Y,Y_2=0`$；
