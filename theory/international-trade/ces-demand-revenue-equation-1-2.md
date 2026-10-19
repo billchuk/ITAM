@@ -42,7 +42,9 @@ $$\boxed{P=\left[\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega\right]^{1/(1-
 
 考虑给定目标效用 $`\bar U`$ 的支出最小化问题：
 
-$$\min_{\{q(\omega)\ge0\}}\int_\Omega p(\omega)q(\omega)\,\mathrm d\omega \quad\text{s.t.}\quad \int_\Omega q(\omega)^\rho\,\mathrm d\omega=\bar U^\rho.$$
+```math
+\min_{\{q(\omega)\ge0\}}\int_\Omega p(\omega)q(\omega)\,\mathrm d\omega \quad\text{s.t.}\quad \int_\Omega q(\omega)^\rho\,\mathrm d\omega=\bar U^\rho.
+```
 
 拉格朗日函数：
 
