@@ -69,7 +69,9 @@ $$\frac{1}{\rho-1}=-\frac{1}{1-\rho}=-\sigma,$$
 
 得到
 
-$$\boxed{q(\omega)=A\,p(\omega)^{-\sigma}}, \qquad A\equiv(\lambda\rho)^\sigma>0. \tag{A}$$
+**式（A）**
+
+$$\boxed{q(\omega)=A\,p(\omega)^{-\sigma}}, \qquad A\equiv(\lambda\rho)^\sigma>0.$$
 
 **解释**：不同商品最优消费量的相对比例由其相对价格决定，且 $`\sigma`$ 越大，消费者在品种之间替代得越容易。
 
@@ -85,7 +87,9 @@ $$-\sigma\rho =-\sigma\cdot\frac{\sigma-1}{\sigma} =1-\sigma.$$
 
 于是
 
-$$\boxed{U=A\left[\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega\right]^{1/\rho}}. \tag{B}$$
+**式（B）**
+
+$$\boxed{U=A\left[\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega\right]^{1/\rho}}.$$
 
 ## 5. 计算最优总支出
 
@@ -95,7 +99,9 @@ $$\begin{aligned} E &=\int_\Omega p(\omega)q(\omega)\,\mathrm d\omega\\ &=\int_\
 
 因此
 
-$$\boxed{E=A\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega}. \tag{C}$$
+**式（C）**
+
+$$\boxed{E=A\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega}.$$
 
 ## 6. 两式相除，得到原书公式（1.1）
 
@@ -111,7 +117,9 @@ $$1-\frac{1}{\rho} =1-\frac{\sigma}{\sigma-1} =-\frac{1}{\sigma-1} =\frac{1}{1-\
 
 最终证明：
 
-$$\boxed{P=\left[\int_{\omega\in\Omega}p(\omega)^{1-\sigma}\,\mathrm d\omega\right]^{\!\frac{1}{1-\sigma}}}. \tag{1.1}$$
+**式（1.1）**
+
+$$\boxed{P=\left[\int_{\omega\in\Omega}p(\omega)^{1-\sigma}\,\mathrm d\omega\right]^{\!\frac{1}{1-\sigma}}}.$$
 
 **推导逻辑一句话概括**：效用函数 $`\to`$ 支出最小化 $`\to`$ 一阶条件 $`\to`$ 最优数量与价格关系 $`\to`$ 分别代入 $`U`$、$`E`$ $`\to`$ 求 $`E/U`$。
 
