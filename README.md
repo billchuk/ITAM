@@ -23,6 +23,9 @@
 | P11 | [(1.17)–(1.21)](theory/international-trade/market-equilibrium-equations-1-17-to-1-21-p11.md) | 第一章第三节第二部分市场均衡 垄断竞争市场均衡：加成定价、自由进入、均衡企业数和产出 |
 | P12 | [(1.22)–(1.24)](theory/international-trade/constrained-optimum-equations-1-22-to-1-24-p12.md) | 第一章第三节第三部分最优约束：零利润约束、切线条件与最优价格 |
 | P12 | [(1.25)–(1.30)](theory/international-trade/unconstrained-optimum-equations-1-25-to-1-30-p12.md) | 第一章第三节第四部分无约束最优化：社会规划者一阶条件、边际成本定价与最优企业数 |
+| P14 | [(1.33)–(1.42)](theory/international-trade/variable-elasticity-equations-1-33-to-1-42-p14.md) | 第一章·可变弹性的情形：一般效用、可变需求弹性与有约束福利最优 |
+| P15 | [(1.43)–(1.52)](theory/international-trade/variable-elasticity-welfare-equations-1-43-to-1-52-p15.md) | 第一章·可变弹性的情形：市场均衡、约束最优与无约束最优比较 |
+| P16 | [(1.53)](theory/international-trade/variable-elasticity-variety-equation-1-53-p16.md) | 第一章·可变弹性的情形：最优企业数量比较 |
 
 ## 整理规范
 
