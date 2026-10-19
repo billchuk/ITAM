@@ -11,10 +11,10 @@
 
 在前文两阶段预算模型、名义收入 $`I=1`$ 的规范化下，若外层偏好满足相应条件，则对于给定预算，降低差异化商品综合价格指数 $`q`$ 可以提高福利。因此原书把问题写成：
 
-$$
+```math
 \min_{n>0,\ p>c}\quad q(p,n)=p n^{-\beta},
 \qquad \beta=\frac{1-\rho}{\rho}>0.
-$$
+```
 
 这里
 
@@ -33,38 +33,38 @@ $$
 
 由 P10 对称需求式（1.13），以及 $`I=1`$：
 
-$$
+```math
 x=\frac{s(q)}{pn},
 \qquad
 q=pn^{-\beta}.
-$$
+```
 
 每家企业利润为：
 
-$$
+```math
 \pi=(p-c)x-a.
-$$
+```
 
 在利润恰好为零的约束边界上：
 
-$$
+```math
 (p-c)x=a.
-$$
+```
 
 代入需求 $`x=s(q)/(pn)`$：
 
-$$
+```math
 (p-c)\frac{s(q)}{pn}=a.
-$$
+```
 
 再代入 $`q=pn^{-\beta}`$：
 
-$$
+```math
 \boxed{
 (p-c)\frac{s(pn^{-\beta})}{pn}=a.
 }
 \tag{1.22}
-$$
+```
 
 这是最优约束问题的**绑定零利润约束**。也可理解为在社会规划者不能通过税收和一次性补贴弥补亏损时，每个企业至少要靠销售收入覆盖固定成本。
 
@@ -76,97 +76,97 @@ $$
 
 ### 2.1 目标价格指数保持不变的斜率
 
-$$
+```math
 \ln q=\ln p-\beta\ln n.
-$$
+```
 
 全微分：
 
-$$
+```math
 \mathrm d\ln q=\mathrm d\ln p-\beta\,\mathrm d\ln n.
-$$
+```
 
 在一条 $`q`$ 不变的等值曲线上，$`\mathrm d\ln q=0`$，故：
 
-$$
+```math
 \boxed{
 \left.\frac{\mathrm d\ln p}{\mathrm d\ln n}\right|_{q}
 =\beta.
 }
 \tag{A}
-$$
+```
 
 ### 2.2 零利润曲线上价格与企业数的替代斜率
 
 令：
 
-$$
+```math
 F(p,n)\equiv\frac{(p-c)s(q)}{pn}=a.
-$$
+```
 
 因 $`p>c`$，取对数：
 
-$$
+```math
 \ln F=\ln(p-c)+\ln s(q)-\ln p-\ln n.
-$$
+```
 
 对 $`p`$ 的对数微分（$`n`$ 固定时 $`\partial\ln q/\partial\ln p=1`$）：
 
-$$
+```math
 \begin{aligned}
 \frac{\partial\ln F}{\partial\ln p}
 &=\frac{p}{p-c}
 +\theta(q)-1\\
 &=\boxed{\frac{c}{p-c}+\theta(q)}.
 \end{aligned}
-$$
+```
 
 对 $`n`$ 的对数微分（$`p`$ 固定时 $`\partial\ln q/\partial\ln n=-\beta`$）：
 
-$$
+```math
 \begin{aligned}
 \frac{\partial\ln F}{\partial\ln n}
 &=\theta(q)(-\beta)-1\\
 &=\boxed{-[1+\beta\theta(q)]}.
 \end{aligned}
-$$
+```
 
 因为约束要求 $`F=a`$ 保持不变，因此：
 
-$$
+```math
 0=
 \left[\frac{c}{p-c}+\theta(q)\right]\mathrm d\ln p
 -[1+\beta\theta(q)]\mathrm d\ln n.
-$$
+```
 
 在相应分母非零的内点处，约束曲线的斜率为：
 
-$$
+```math
 \boxed{
 \left.\frac{\mathrm d\ln p}{\mathrm d\ln n}\right|_{F=a}
 =\frac{1+\beta\theta(q)}{c/(p-c)+\theta(q)}.
 }
 \tag{B}
-$$
+```
 
 ### 2.3 两条曲线相切，得到（1.23）
 
 对于内部受约束最优，两条曲线的斜率相等：
 
-$$
+```math
 \beta=\frac{1+\beta\theta(q)}{c/(p-c)+\theta(q)}.
-$$
+```
 
 等价地：
 
-$$
+```math
 \boxed{
 \frac{\dfrac{c}{p-c}+\theta(q)}
 {1+\beta\theta(q)}
 =\frac1\beta.
 }
 \tag{1.23}
-$$
+```
 
 **为什么会有 $`\theta(q)`$？** 因为改变 $`p`$ 或 $`n`$ 都会改变 CES 价格指数 $`q`$，进而改变差异化商品部门的总支出份额 $`s(q)`$。单凭固定 $`s`$ 的假设不能复现教材的完整式（1.23）。
 
@@ -176,61 +176,61 @@ $$
 
 将（1.23）交叉相乘：
 
-$$
+```math
 \beta\left[\frac{c}{p-c}+\theta(q)\right]
 =1+\beta\theta(q).
-$$
+```
 
 左右两边的 $`\beta\theta(q)`$ **完全抵消**：
 
-$$
+```math
 \beta\frac{c}{p-c}=1.
-$$
+```
 
 因此：
 
-$$
+```math
 p-c=\beta c
 \quad\Longrightarrow\quad
 \boxed{
 p_c=c(1+\beta).
 }
 \tag{1.24}
-$$
+```
 
 **关键经济学含义**：在该 CES/对称/绑定零利润模型中，虽然部门支出份额可能随着 $`q`$ 变化，但它对最优加成价格的影响在一阶条件中相互抵消。因此最优受约束价格形式与市场均衡加成定价一致。
 
 与前一篇（1.17）对比：
 
-$$
+```math
 p_e=c(1+\beta)
 =\boxed{p_c}.
-$$
+```
 
 同样的零利润约束（1.22）与市场均衡方程（1.18）也给出相同的企业数候选解：
 
-$$
+```math
 \frac{s(p_c n_c^{-\beta})}{p_c n_c}
 =\frac{a}{\beta c}.
-$$
+```
 
 若满足前述单调性、可行性与存在性条件，并且两边选择同一解：
 
-$$
+```math
 \boxed{n_c=n_e,\quad p_c=p_e,\quad x_c=x_e.}
-$$
+```
 
 ### 一阶条件是否真的是极小值？
 
 仅有切线方程不足以自动保证极小值。可以进一步沿着零利润约束计算：
 
-$$
+```math
 \left.\frac{\mathrm d\ln q}{\mathrm d\ln p}\right|_{F=a}
 =1-\beta
 \frac{c/(p-c)+\theta(q)}{1+\beta\theta(q)}
 =\boxed{\frac{1-\beta c/(p-c)}{1+\beta\theta(q)}}.
 \tag{C}
-$$
+```
 
 如果 $`1+\beta\theta(q)>0`$，且在同一可行连续分支上，分子在 $`c<p<c(1+\beta)`$ 为负，在 $`p>c(1+\beta)`$ 为正，所以 $`q`$ 先降后升，$`p_c`$ 是该分支的价格指数极小点。对**全局**最优仍需检查可行域边界与其他分支。
 
@@ -238,51 +238,51 @@ $$
 
 取 Cobb–Douglas 外层效用，使 $`s(q)=1/2`$、$`\theta(q)=0`$；再取：
 
-$$
+```math
 \beta=1,\quad c=2,\quad a=\frac1{300},\quad I=1.
-$$
+```
 
 根据（1.24）：
 
-$$
+```math
 p_c=2(1+1)=4.
-$$
+```
 
 由（1.22）：
 
-$$
+```math
 (4-2)\frac{1/2}{4n_c}=\frac1{300}
 \quad\Longrightarrow\quad
 \boxed{n_c=75}.
-$$
+```
 
 每家企业产出：
 
-$$
+```math
 x_c=\frac{s}{p_c n_c}
 =\frac{1/2}{4\times75}
 =\frac1{600}.
-$$
+```
 
 检验每家利润：
 
-$$
+```math
 (p_c-c)x_c-a
 =2\times\frac1{600}-\frac1{300}=0.
-$$
+```
 
 价格指数：
 
-$$
+```math
 q_c=p_c n_c^{-\beta}=\frac4{75}.
-$$
+```
 
 再核对（1.23）：
 
-$$
+```math
 \frac{c/(p_c-c)+\theta}{1+\beta\theta}
 =\frac{2/(4-2)+0}{1+0}=1=\frac1\beta.
-$$
+```
 
 完全一致。
 
