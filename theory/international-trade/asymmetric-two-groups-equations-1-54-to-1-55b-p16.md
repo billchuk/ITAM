@@ -9,7 +9,9 @@
 
 两类差异化商品分别属于组 $`k=1,2`$，组内由 $`n_k`$ 个品种组成。第 $`k`$ 组内各企业具有相同固定成本 $`a_k>0`$、边际成本 $`c_k>0`$，CES 参数为 $`0<\rho_k<1`$。定义：
 
-$$\boxed{ \beta_k=\frac{1-\rho_k}{\rho_k}>0, \qquad \sigma_k=\frac1{1-\rho_k}=1+\frac1{\beta_k}>1. }$$
+```math
+\boxed{ \beta_k=\frac{1-\rho_k}{\rho_k}>0, \qquad \sigma_k=\frac1{1-\rho_k}=1+\frac1{\beta_k}>1. }
+```
 
 其中 $`x_{ki}`$ 表示第 $`k`$ 组的第 $`i`$ 个品种的消费量，$`p_{ki}`$ 是价格。同质商品 $`x_0`$ 的单价标准化为 1，预算为 $`I=1`$；外层 Cobb–Douglas 支出份额参数为 $`0<s<1`$。
 
@@ -110,7 +112,9 @@ $$\boxed{x_k=\frac{a_k}{c_k\beta_k}}.$$
 
 **式（F）**
 
-$$\begin{aligned} n_k &=\frac{s}{p_kx_k}\\ &=\frac{s}{c_k(1+\beta_k)\cdot a_k/(c_k\beta_k)}\\ &=\boxed{\frac{s\beta_k}{a_k(1+\beta_k)}}. \end{aligned}$$
+```math
+\begin{aligned} n_k &=\frac{s}{p_kx_k}\\ &=\frac{s}{c_k(1+\beta_k)\cdot a_k/(c_k\beta_k)}\\ &=\boxed{\frac{s\beta_k}{a_k(1+\beta_k)}}. \end{aligned}
+```
 
 这里的 $`n_k`$ 是连续变量近似结果；当企业必须取整数，需另行使用整数进入的利润不等式。推导（D）亦使用大品种数的需求近似，若计算出非常小的 $`n_k`$，相关公式的自洽性需要特别检查。
 
@@ -118,7 +122,9 @@ $$\begin{aligned} n_k &=\frac{s}{p_kx_k}\\ &=\frac{s}{c_k(1+\beta_k)\cdot a_k/(c
 
 **式（G）**
 
-$$\begin{aligned} q_k &=p_kn_k^{-\beta_k}\\ &=c_k(1+\beta_k) \left[\frac{s\beta_k}{a_k(1+\beta_k)}\right]^{-\beta_k}\\ &=\boxed{ c_k(1+\beta_k)^{1+\beta_k} \left(\frac{a_k}{s\beta_k}\right)^{\beta_k} }. \end{aligned}$$
+```math
+\begin{aligned} q_k &=p_kn_k^{-\beta_k}\\ &=c_k(1+\beta_k) \left[\frac{s\beta_k}{a_k(1+\beta_k)}\right]^{-\beta_k}\\ &=\boxed{ c_k(1+\beta_k)^{1+\beta_k} \left(\frac{a_k}{s\beta_k}\right)^{\beta_k} }. \end{aligned}
+```
 
 ### 2.6 单一商品组的总效用
 
@@ -126,7 +132,9 @@ $$\begin{aligned} q_k &=p_kn_k^{-\beta_k}\\ &=c_k(1+\beta_k) \left[\frac{s\beta_
 
 **式（H）**
 
-$$\begin{aligned} u_k &=(1-s)^{1-s}(s/q_k)^s\\ &=\boxed{s^s(1-s)^{1-s}q_k^{-s}}. \end{aligned}$$
+```math
+\begin{aligned} u_k &=(1-s)^{1-s}(s/q_k)^s\\ &=\boxed{s^s(1-s)^{1-s}q_k^{-s}}. \end{aligned}
+```
 
 当外层参数 $`s`$ 固定、资源/收入单位相同，**哪个候选组的复合价格指数较低，哪个候选方案的间接效用就较高**。
 
@@ -136,7 +144,9 @@ $$\begin{aligned} u_k &=(1-s)^{1-s}(s/q_k)^s\\ &=\boxed{s^s(1-s)^{1-s}q_k^{-s}}.
 
 **式（1.55a）**
 
-$$\boxed{ \begin{aligned} \bar x_1&=\frac{a_1}{c_1\beta_1},& \bar x_2&=0,\\ \bar p_1&=c_1(1+\beta_1),\\ \bar n_1&=\frac{s\beta_1}{a_1(1+\beta_1)},\\ \bar q_1&=\bar p_1\bar n_1^{-\beta_1} =c_1(1+\beta_1)^{1+\beta_1} \left(\frac{a_1}{s\beta_1}\right)^{\beta_1},\\ \bar u_1&=s^s(1-s)^{1-s}\bar q_1^{-s}. \end{aligned} }$$
+```math
+\boxed{ \begin{aligned} \bar x_1&=\frac{a_1}{c_1\beta_1},& \bar x_2&=0,\\ \bar p_1&=c_1(1+\beta_1),\\ \bar n_1&=\frac{s\beta_1}{a_1(1+\beta_1)},\\ \bar q_1&=\bar p_1\bar n_1^{-\beta_1} =c_1(1+\beta_1)^{1+\beta_1} \left(\frac{a_1}{s\beta_1}\right)^{\beta_1},\\ \bar u_1&=s^s(1-s)^{1-s}\bar q_1^{-s}. \end{aligned} }
+```
 
 带横杠的变量表示**仅对应组生产时的候选均衡值**，不是两组同时生产的总量。
 
@@ -146,13 +156,17 @@ $$\boxed{ \begin{aligned} \bar x_1&=\frac{a_1}{c_1\beta_1},& \bar x_2&=0,\\ \bar
 
 **式（1.55b）**
 
-$$\boxed{ \begin{aligned} \bar x_2&=\frac{a_2}{c_2\beta_2},& \bar x_1&=0,\\ \bar p_2&=c_2(1+\beta_2),\\ \bar n_2&=\frac{s\beta_2}{a_2(1+\beta_2)},\\ \bar q_2&=\bar p_2\bar n_2^{-\beta_2} =c_2(1+\beta_2)^{1+\beta_2} \left(\frac{a_2}{s\beta_2}\right)^{\beta_2},\\ \bar u_2&=s^s(1-s)^{1-s}\bar q_2^{-s}. \end{aligned} }$$
+```math
+\boxed{ \begin{aligned} \bar x_2&=\frac{a_2}{c_2\beta_2},& \bar x_1&=0,\\ \bar p_2&=c_2(1+\beta_2),\\ \bar n_2&=\frac{s\beta_2}{a_2(1+\beta_2)},\\ \bar q_2&=\bar p_2\bar n_2^{-\beta_2} =c_2(1+\beta_2)^{1+\beta_2} \left(\frac{a_2}{s\beta_2}\right)^{\beta_2},\\ \bar u_2&=s^s(1-s)^{1-s}\bar q_2^{-s}. \end{aligned} }
+```
 
 两组方程只需交换下标 $`1\leftrightarrow2`$；没有额外的隐含不对称条件。
 
 ## 5. 两种候选方案如何比较？
 
-$$\bar u_1>\bar u_2 \quad\Longleftrightarrow\quad \bar q_1<\bar q_2,$$
+```math
+\bar u_1>\bar u_2 \quad\Longleftrightarrow\quad \bar q_1<\bar q_2,
+```
 
 因为 $`s>0`$，$`q^{-s}`$ 随 $`q`$ 严格递减。
 
