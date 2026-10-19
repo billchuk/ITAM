@@ -20,6 +20,7 @@
 | P6 | [(1.2)](theory/international-trade/ces-demand-revenue-equation-1-2.md) | CES 数量需求与销售收入函数 |
 | P9 | [(1.4)–(1.8)](theory/international-trade/two-stage-budgeting-equations-1-4-to-1-8-p9.md) | 嵌套 CES、两阶段预算分配与支出份额弹性 |
 | P10 | [(1.9)–(1.16)](theory/international-trade/ces-demand-curves-equations-1-9-to-1-16-p10.md) | dd / DD 需求曲线与替代弹性 |
+| P11 | [(1.17)–(1.21)](theory/international-trade/market-equilibrium-equations-1-17-to-1-21-p11.md) | 垄断竞争市场均衡：加成定价、自由进入、均衡企业数和产出 |
 
 ## 整理规范
 
