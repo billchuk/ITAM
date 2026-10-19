@@ -8,7 +8,9 @@
 
 P16 设定的效用：
 
-$$u=x_0^{1-s}(Y_1+Y_2)^s,\qquad Y_k=\left(\sum_{i=1}^{n_k}x_{ki}^{\rho_k}\right)^{1/\rho_k}, \qquad \beta_k=\frac{1-\rho_k}{\rho_k}>0.$$
+```math
+u=x_0^{1-s}(Y_1+Y_2)^s,\qquad Y_k=\left(\sum_{i=1}^{n_k}x_{ki}^{\rho_k}\right)^{1/\rho_k}, \qquad \beta_k=\frac{1-\rho_k}{\rho_k}>0.
+```
 
 两类商品组各自的**综合数量** $`Y_k`$ 在外层**完全替代**。只有第 $`k`$ 组生产时，其对称 CES 综合价格为
 
@@ -28,7 +30,9 @@ $$\bar u_k=s^s(1-s)^{1-s}\bar q_k^{-s}.$$
 
 **式（A）**
 
-$$\boxed{ x_2(p_2)= \begin{cases} 0,&p_2\ge\bar q_1,\\[3pt] s/p_2,&p_2<\bar q_1. \end{cases} }$$
+```math
+\boxed{ x_2(p_2)= \begin{cases} 0,&p_2\ge\bar q_1,\\[3pt] s/p_2,&p_2<\bar q_1. \end{cases} }
+```
 
 这里教材在两种价格相同的情形采用不购买新组的选择规则。严格地说，在 $`p_2=\bar q_1`$ 时消费者可能无差异，需求是一个**对应集**而不是必然等于零。因此对进入稳定性的证明最好采用严格价格差和有界极限。
 
@@ -38,7 +42,9 @@ $$G_2(p_2)\equiv(p_2-c_2)x_2 =(p_2-c_2)\frac{s}{p_2} =s\left(1-\frac{c_2}{p_2}\r
 
 该函数关于自己的售价单调上升：
 
-$$\frac{\mathrm dG_2(p_2)}{\mathrm dp_2} =\frac{s c_2}{p_2^2}>0.$$
+```math
+\frac{\mathrm dG_2(p_2)}{\mathrm dp_2} =\frac{s c_2}{p_2^2}>0.
+```
 
 所以当企业必须以严格低于 $`\bar q_1`$ 的价格吸引消费者时，其**最大可逼近**的营业盈余是：
 
@@ -52,17 +58,23 @@ $$G_{2,\mathrm{sup}}=s\left(1-\frac{c_2}{\bar q_1}\right)$$
 
 净利润还需扣除进入时的固定成本 $`a_2`$。在参数允许组 2 有正毛利的情形，严格无盈利进入的一个充分条件是：
 
-$$s\left(1-\frac{c_2}{\bar q_1}\right)<a_2.$$
+```math
+s\left(1-\frac{c_2}{\bar q_1}\right)<a_2.
+```
 
 移项：
 
-$$s-a_2<\frac{s c_2}{\bar q_1}.$$
+```math
+s-a_2<\frac{s c_2}{\bar q_1}.
+```
 
 **仅当 $`s>a_2`$**，才可以将其等价写成：
 
 **式（1.56）**
 
-$$\boxed{ \bar q_1<\frac{s c_2}{s-a_2}. }$$
+```math
+\boxed{ \bar q_1<\frac{s c_2}{s-a_2}. }
+```
 
 这就是教材公式（1.56）。
 
@@ -79,17 +91,23 @@ $$\boxed{ \bar q_1<\frac{s c_2}{s-a_2}. }$$
 
 它只有在 $`p_1<\bar q_2`$ 时获得需求 $`x_1=s/p_1`$，营业盈余的上确界为
 
-$$\sup_{0<p_1<\bar q_2}(p_1-c_1)x_1 =s\left(1-\frac{c_1}{\bar q_2}\right).$$
+```math
+\sup_{0<p_1<\bar q_2}(p_1-c_1)x_1 =s\left(1-\frac{c_1}{\bar q_2}\right).
+```
 
 为了严格防止正利润进入，要求：
 
-$$s\left(1-\frac{c_1}{\bar q_2}\right)<a_1.$$
+```math
+s\left(1-\frac{c_1}{\bar q_2}\right)<a_1.
+```
 
 在 $`s>a_1`$ 下：
 
 **式（1.57）**
 
-$$\boxed{ \bar q_2<\frac{s c_1}{s-a_1}. }$$
+```math
+\boxed{ \bar q_2<\frac{s c_1}{s-a_1}. }
+```
 
 当 $`s\le a_1`$ 时，正利润进入已经不可能，不能直接使用分母非正的上述比值式来判断。
 
@@ -103,7 +121,9 @@ $$Y_k=\left(\sum_{i=1}^{n_k}x_{ki}^{\rho_k}\right)^{1/\rho_k}.$$
 
 若组 $`k`$ 所有品种均对称，$`x_{ki}=x_k`$，那么：
 
-$$\begin{aligned} Y_k &=(n_kx_k^{\rho_k})^{1/\rho_k}\\ &=x_k n_k^{1/\rho_k}. \end{aligned}$$
+```math
+\begin{aligned} Y_k &=(n_kx_k^{\rho_k})^{1/\rho_k}\\ &=x_k n_k^{1/\rho_k}. \end{aligned}
+```
 
 而
 
@@ -141,7 +161,9 @@ $$\boxed{ x_0+n_1(a_1+c_1x_1)+n_2(a_2+c_2x_2)=1. }$$
 
 固定 $`x_1>0`$、$`x_2>0`$ 和 $`x_0\in(0,1)`$，可用于两组企业的资源总量是：
 
-$$K=1-x_0>0.$$
+```math
+K=1-x_0>0.
+```
 
 令每家企业占用的资源为 $`d_k=a_k+c_kx_k>0`$，则（1.59）为：
 
@@ -159,7 +181,9 @@ $$F(t) =x_1\left(\frac{tK}{d_1}\right)^{1+\beta_1} +x_2\left(\frac{(1-t)K}{d_2}\
 
 对 $`0<t<1`$ 求二阶导数：
 
-$$\begin{aligned} F''(t) ={}&x_1(1+\beta_1)\beta_1 \left(\frac{K}{d_1}\right)^{1+\beta_1} t^{\beta_1-1}\\ &+x_2(1+\beta_2)\beta_2 \left(\frac{K}{d_2}\right)^{1+\beta_2} (1-t)^{\beta_2-1}>0. \end{aligned}$$
+```math
+\begin{aligned} F''(t) ={}&x_1(1+\beta_1)\beta_1 \left(\frac{K}{d_1}\right)^{1+\beta_1} t^{\beta_1-1}\\ &+x_2(1+\beta_2)\beta_2 \left(\frac{K}{d_2}\right)^{1+\beta_2} (1-t)^{\beta_2-1}>0. \end{aligned}
+```
 
 因为 $`x_k>0`$、$`\beta_k>0`$，$`F`$ 在 $`t\in[0,1]`$ **严格凸**。严格凸函数在一个闭区间上的最大值只能在两端点出现（若有两个端点同值，两者都可达到最大）：
 
@@ -181,7 +205,9 @@ $$\boxed{n_1=0\quad\text{或}\quad n_2=0.}$$
 
 **式（E）**
 
-$$\boxed{ \bar u_1>\bar u_2\quad\Longleftrightarrow\quad \bar q_1<\bar q_2. }$$
+```math
+\boxed{ \bar u_1>\bar u_2\quad\Longleftrightarrow\quad \bar q_1<\bar q_2. }
+```
 
 即选择产生更低 $`\bar q`$ 的组。要声称这是**全体受约束方案中的最优**，还需检查最优方案遵守各组的企业非负利润、对称配置等约束；模型中的一次性转移支付如何处理，也会改变可行集合。
 
