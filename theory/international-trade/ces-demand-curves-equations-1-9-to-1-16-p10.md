@@ -14,7 +14,9 @@ $$u=U\left[x_0,\left(\sum_{i=1}^n x_i^\rho\right)^{1/\rho}\right], \qquad 0<\rho
 
 差异化商品的综合数量（P9 记为 $`Y`$，本页记为 $`y`$）和 CES 价格指数是
 
-$$y=\left(\sum_{i=1}^n x_i^\rho\right)^{1/\rho}, \qquad q=\left(\sum_{i=1}^n p_i^{-1/\beta}\right)^{-\beta}, \qquad \beta=\frac{1-\rho}{\rho}>0. \tag{1.6}$$
+**式（1.6）**
+
+$$y=\left(\sum_{i=1}^n x_i^\rho\right)^{1/\rho}, \qquad q=\left(\sum_{i=1}^n p_i^{-1/\beta}\right)^{-\beta}, \qquad \beta=\frac{1-\rho}{\rho}>0.$$
 
 两个关键恒等式：
 
@@ -22,7 +24,9 @@ $$\sigma_{\mathrm{in}} =\frac{1}{1-\rho}=1+\frac1\beta, \qquad 1-\sigma_{\mathrm
 
 如果差异化商品部门的名义支出份额为 $`s(q)`$，则
 
-$$y=\frac{I s(q)}q, \qquad x_0=I[1-s(q)], \qquad \theta(q)=\frac{q s'(q)}{s(q)}. \tag{1.7–1.8}$$
+**式（1.7–1.8）**
+
+$$y=\frac{I s(q)}q, \qquad x_0=I[1-s(q)], \qquad \theta(q)=\frac{q s'(q)}{s(q)}.$$
 
 这里按前一篇笔记，**默认外层偏好满足使 $`s`$ 只依赖相对综合价格 $`q`$ 的条件**（例如外层位似偏好），且考虑内点解。若外层非位似，份额一般应写为 $`s(q,I)`$，下面的固定收入价格偏导仍可相应推广。
 
@@ -48,13 +52,17 @@ $$\begin{aligned} y &=A\left(\sum_i p_i^{-\sigma_{\mathrm{in}}\rho}\right)^{1/\r
 
 所以 $`A=yq^{\sigma_{\mathrm{in}}}`$，品种条件需求为（补全原书中遗漏的综合数量系数 $`y`$）：
 
-$$\boxed{ x_i=y\left(\frac q{p_i}\right)^{1/(1-\rho)} =y\left(\frac q{p_i}\right)^{1+1/\beta}. } \tag{1.9}$$
+**式（1.9）**
+
+$$\boxed{ x_i=y\left(\frac q{p_i}\right)^{1/(1-\rho)} =y\left(\frac q{p_i}\right)^{1+1/\beta}. }$$
 
 **原书核对**：P10 图片的（1.9）右边印为 $`(q/p_i)^{1/(1-\rho)}`$，缺少 $`y`$。在一般数量单位下，右侧是 **$`x_i/y`$** 而不是 $`x_i`$；若未显式设 $`y=1`$，应补上 $`y`$。将这个遗漏当作排印/记号问题，不将其视为新的经济假设。
 
 代入 P9 的 $`y=Is(q)/q`$，可得到**完整的非条件需求**：
 
-$$\boxed{ x_i=I\,s(q)\,q^{\sigma_{\mathrm{in}}-1}\,p_i^{-\sigma_{\mathrm{in}}}. } \tag{A}$$
+**式（A）**
+
+$$\boxed{ x_i=I\,s(q)\,q^{\sigma_{\mathrm{in}}-1}\,p_i^{-\sigma_{\mathrm{in}}}. }$$
 
 这一步对于后面区分大样本近似与精确弹性至关重要。
 
@@ -70,7 +78,9 @@ $$\begin{aligned} \frac{\partial\ln q}{\partial\ln p_i} &=-\beta \frac{\partial}
 
 又有 $`\sum_jp_j^{-1/\beta}=q^{-1/\beta}`$，因此
 
-$$\boxed{ \frac{\partial\ln q}{\partial\ln p_i} =\left(\frac q{p_i}\right)^{1/\beta} \equiv w_i. } \tag{1.10}$$
+**式（1.10）**
+
+$$\boxed{ \frac{\partial\ln q}{\partial\ln p_i} =\left(\frac q{p_i}\right)^{1/\beta} \equiv w_i. }$$
 
 进一步验证 $`w_i`$ 是**组内支出份额**：
 
@@ -90,7 +100,9 @@ $$\ln x_i=\ln y+\sigma_{\mathrm{in}}\ln q -\sigma_{\mathrm{in}}\ln p_i.$$
 
 如果一家企业规模很小，变动自己的 $`p_i`$ 对 $`q`$ 和总体部门购买力的影响均可忽略，则
 
-$$\boxed{ \left.\frac{\partial\ln x_i}{\partial\ln p_i}\right|_{\mathrm{dd}} \simeq-\sigma_{\mathrm{in}} =-\frac1{1-\rho} =-\frac{1+\beta}{\beta}. } \tag{1.11}$$
+**式（1.11）**
+
+$$\boxed{ \left.\frac{\partial\ln x_i}{\partial\ln p_i}\right|_{\mathrm{dd}} \simeq-\sigma_{\mathrm{in}} =-\frac1{1-\rho} =-\frac{1+\beta}{\beta}. }$$
 
 它是**其他企业价格不变**时，单一企业所面对的较陡峭（绝对弹性通常较大）的价格竞争关系，传统上称为张伯伦的 **dd 曲线**。
 
@@ -108,7 +120,9 @@ $$\frac{\partial\ln x_i}{\partial\ln p_i} =-\sigma_{\mathrm{in}} +\left[ \underb
 
 利用（1.10）及 $`\sigma_{\mathrm{in}}-1=1/\beta`$：
 
-$$\boxed{ \frac{\partial\ln x_i}{\partial\ln p_i} =-\left(1+\frac1\beta\right) +\left[\frac1\beta+\theta(q)\right]w_i. } \tag{B}$$
+**式（B）**
+
+$$\boxed{ \frac{\partial\ln x_i}{\partial\ln p_i} =-\left(1+\frac1\beta\right) +\left[\frac1\beta+\theta(q)\right]w_i. }$$
 
 对称均衡时 $`w_i=1/n`$，即
 
@@ -118,7 +132,9 @@ $$\frac{\partial\ln x_i}{\partial\ln p_i} =-\left(1+\frac1\beta\right) +\frac1n\
 
 作为附带结果，对 $`j\ne i`$：
 
-$$\boxed{ \frac{\partial\ln x_i}{\partial\ln p_j} =\left[\frac1\beta+\theta(q)\right]w_j. } \tag{C}$$
+**式（C）**
+
+$$\boxed{ \frac{\partial\ln x_i}{\partial\ln p_j} =\left[\frac1\beta+\theta(q)\right]w_j. }$$
 
 若 $`1/\beta+\theta(q)>0`$，另一品种提价会提高本品种需求，即**总需求意义上的交叉价格效应为正**。这也揭示了（1.15）的另一个经济学含义。
 
@@ -146,7 +162,9 @@ $$\begin{aligned} q &=\left(\sum_{i=1}^{n}p^{-1/\beta}\right)^{-\beta}\\ &=(np^{
 
 所以教材（1.12）为
 
-$$\boxed{ y=x\,n^{1/\rho}=x\,n^{1+\beta}, \qquad q=p\,n^{-(1-\rho)/\rho}=p\,n^{-\beta}. } \tag{1.12}$$
+**式（1.12）**
+
+$$\boxed{ y=x\,n^{1/\rho}=x\,n^{1+\beta}, \qquad q=p\,n^{-(1-\rho)/\rho}=p\,n^{-\beta}. }$$
 
 $`y/x=n^{1/\rho}`$ 可体现种类多样性对 CES 综合数量的影响；$`q/p=n^{-\beta}`$ 是同一效用规范化下的多样性对应的复合价格指数效应，**并不是实际单件商品突然打折**。
 
@@ -162,7 +180,9 @@ $$\begin{aligned} x &=\frac{I s(q)}{pn^{-\beta}}\cdot n^{-1/\rho}\\ &=\frac{I s(
 
 由于 $`1/\rho=1+\beta`$，有 $`\beta-1/\rho=-1`$，从而
 
-$$\boxed{ x=\frac{I s(q)}{pn}, \qquad q=pn^{-\beta}. } \tag{1.13}$$
+**式（1.13）**
+
+$$\boxed{ x=\frac{I s(q)}{pn}, \qquad q=pn^{-\beta}. }$$
 
 也可由对称预算分配直接验证：
 
@@ -188,7 +208,9 @@ $$\begin{aligned} \frac{\mathrm d\ln x}{\mathrm d\ln p} &=\frac{\mathrm d\ln s(q
 
 得到：
 
-$$\boxed{ \left.\frac{\mathrm d\ln x}{\mathrm d\ln p}\right|_{\mathrm{DD}} =-[1-\theta(q)]. } \tag{1.14}$$
+**式（1.14）**
+
+$$\boxed{ \left.\frac{\mathrm d\ln x}{\mathrm d\ln p}\right|_{\mathrm{DD}} =-[1-\theta(q)]. }$$
 
 **记号核对**：截图（1.14）的分母为 $`\partial\ln p_i`$，但这里的计算是**同时调整全部价格**，严格写法应对**共同价格** $`p`$ 作总导数 $`\mathrm d\ln p`$。单个企业价格的偏导应使用上一节的公式（B）。
 
@@ -216,7 +238,9 @@ $$\begin{aligned} |\varepsilon_{\mathrm{dd}}|>|\varepsilon_{\mathrm{DD}}| &\iff 
 
 即原书公式：
 
-$$\boxed{\frac1\beta+\theta(q)>0.} \tag{1.15}$$
+**式（1.15）**
+
+$$\boxed{\frac1\beta+\theta(q)>0.}$$
 
 **重要纠错**：图片的原文在（1.15）前称之为“**DD 曲线更具有弹性**”的条件，但是该不等式实际表示 **dd 比 DD 更有弹性**，方向恰好相反。若反过来要求 DD 更有弹性，应为 $`1/\beta+\theta(q)<0`$。这里保留原书（1.15）数式并明确这一文字与数式的冲突。
 
@@ -242,7 +266,9 @@ $$\begin{aligned} \frac{x_i}{x_j} &=\frac{(q/p_i)^{\sigma_{\mathrm{in}}}}{(q/p_j
 
 得到书中：
 
-$$\boxed{ \frac{x_i}{x_j} =\left(\frac{p_j}{p_i}\right)^{1/(1-\rho)}. } \tag{1.16}$$
+**式（1.16）**
+
+$$\boxed{ \frac{x_i}{x_j} =\left(\frac{p_j}{p_i}\right)^{1/(1-\rho)}. }$$
 
 两边取对数：
 
