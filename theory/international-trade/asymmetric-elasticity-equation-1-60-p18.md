@@ -67,11 +67,15 @@ $$\frac{\mathrm d}{\mathrm d\beta_i} \left[(1+\beta_i)\ln(1+\beta_i)\right] =\ln
 
 第三项利用乘积与链式法则：
 
-$$\begin{aligned} \frac{\mathrm d}{\mathrm d\beta_i} \left[\beta_i\ln\left(\frac{a_i}{s\beta_i}\right)\right] &=\ln\left(\frac{a_i}{s\beta_i}\right) +\beta_i\left(-\frac1{\beta_i}\right)\\ &=\ln\left(\frac{a_i}{s\beta_i}\right)-1. \end{aligned}$$
+```math
+\begin{aligned} \frac{\mathrm d}{\mathrm d\beta_i} \left[\beta_i\ln\left(\frac{a_i}{s\beta_i}\right)\right] &=\ln\left(\frac{a_i}{s\beta_i}\right) +\beta_i\left(-\frac1{\beta_i}\right)\\ &=\ln\left(\frac{a_i}{s\beta_i}\right)-1. \end{aligned}
+```
 
 相加，其中常数 $`+1`$ 和 $`-1`$ **完全抵消**：
 
-$$\begin{aligned} \frac{\partial\ln\bar q_i}{\partial\beta_i} &=\ln(1+\beta_i) +\ln\left(\frac{a_i}{s\beta_i}\right)\\ &=\ln\left(\frac{a_i(1+\beta_i)}{s\beta_i}\right)\\ &=-\ln\left(\frac{s\beta_i}{a_i(1+\beta_i)}\right). \end{aligned}$$
+```math
+\begin{aligned} \frac{\partial\ln\bar q_i}{\partial\beta_i} &=\ln(1+\beta_i) +\ln\left(\frac{a_i}{s\beta_i}\right)\\ &=\ln\left(\frac{a_i(1+\beta_i)}{s\beta_i}\right)\\ &=-\ln\left(\frac{s\beta_i}{a_i(1+\beta_i)}\right). \end{aligned}
+```
 
 由（B）中 $`\bar n_i=s\beta_i/[a_i(1+\beta_i)]`$：
 
@@ -105,7 +109,9 @@ $$\boxed{ \frac{\partial\ln\bar n_i}{\partial\beta_i} =\frac1{\beta_i}-\frac1{1+
 
 代回（D）：
 
-$$\begin{aligned} \frac{\partial\ln\bar q_i}{\partial\beta_i} &=\frac1{1+\beta_i} -\ln\bar n_i -\beta_i\frac1{\beta_i(1+\beta_i)}\\ &=\frac1{1+\beta_i} -\ln\bar n_i -\frac1{1+\beta_i}\\ &=\boxed{-\ln\bar n_i}. \end{aligned}$$
+```math
+\begin{aligned} \frac{\partial\ln\bar q_i}{\partial\beta_i} &=\frac1{1+\beta_i} -\ln\bar n_i -\beta_i\frac1{\beta_i(1+\beta_i)}\\ &=\frac1{1+\beta_i} -\ln\bar n_i -\frac1{1+\beta_i}\\ &=\boxed{-\ln\bar n_i}. \end{aligned}
+```
 
 **核心观察**：$`\beta_i`$ 上升会使单品种的加成售价上升，同时也使候选均衡企业数量上升；两者对 $`\ln\bar q_i`$ 的相应影响在求导后恰好抵消，最后剩下**CES 品种数幂指数自身改变**的影响。
 
@@ -117,7 +123,9 @@ $$\bar n_i=\frac{s\beta_i}{a_i(1+\beta_i)}.$$
 
 如果 **$`\bar n_i>1`$**：
 
-$$\ln\bar n_i>0 \quad\Longrightarrow\quad \frac{\partial\ln\bar q_i}{\partial\beta_i}<0.$$
+```math
+\ln\bar n_i>0 \quad\Longrightarrow\quad \frac{\partial\ln\bar q_i}{\partial\beta_i}<0.
+```
 
 即 $`\beta_i`$ 增大，均衡综合价格指数降低。
 
@@ -131,7 +139,9 @@ $$\boxed{\sigma_i=1+\frac1{\beta_i},}$$
 
 有：
 
-$$\frac{\mathrm d\sigma_i}{\mathrm d\beta_i} =-\frac1{\beta_i^2}<0.$$
+```math
+\frac{\mathrm d\sigma_i}{\mathrm d\beta_i} =-\frac1{\beta_i^2}<0.
+```
 
 所以 **$`\beta_i`$ 越大，组内品种间替代弹性 $`\sigma_i`$ 反而越小**。
 
@@ -145,7 +155,9 @@ $$\frac{\mathrm d\beta_i}{\mathrm d\sigma_i}=-\beta_i^2,$$
 
 **式（E）**
 
-$$\boxed{ \frac{\partial\ln\bar q_i}{\partial\sigma_i} =\beta_i^2\ln\bar n_i>0 \quad\text{当 }\bar n_i>1. }$$
+```math
+\boxed{ \frac{\partial\ln\bar q_i}{\partial\sigma_i} =\beta_i^2\ln\bar n_i>0 \quad\text{当 }\bar n_i>1. }
+```
 
 这意味着在这些条件下，品种间替代弹性**越高**，均衡综合价格指数**越高**；与书页文字关于“$`\beta`$ 高而自有价格弹性低”的解释一致。
 
