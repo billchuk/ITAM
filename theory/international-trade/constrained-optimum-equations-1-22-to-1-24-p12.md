@@ -46,7 +46,9 @@ $$(p-c)\frac{s(q)}{pn}=a.$$
 
 再代入 $`q=pn^{-\beta}`$：
 
-$$\boxed{ (p-c)\frac{s(pn^{-\beta})}{pn}=a. } \tag{1.22}$$
+**式（1.22）**
+
+$$\boxed{ (p-c)\frac{s(pn^{-\beta})}{pn}=a. }$$
 
 这是最优约束问题的**绑定零利润约束**。也可理解为在社会规划者不能通过税收和一次性补贴弥补亏损时，每个企业至少要靠销售收入覆盖固定成本。
 
@@ -66,7 +68,9 @@ $$\mathrm d\ln q=\mathrm d\ln p-\beta\,\mathrm d\ln n.$$
 
 在一条 $`q`$ 不变的等值曲线上，$`\mathrm d\ln q=0`$，故：
 
-$$\boxed{ \left.\frac{\mathrm d\ln p}{\mathrm d\ln n}\right|_{q} =\beta. } \tag{A}$$
+**式（A）**
+
+$$\boxed{ \left.\frac{\mathrm d\ln p}{\mathrm d\ln n}\right|_{q} =\beta. }$$
 
 ### 2.2 零利润曲线上价格与企业数的替代斜率
 
@@ -92,7 +96,9 @@ $$0= \left[\frac{c}{p-c}+\theta(q)\right]\mathrm d\ln p -[1+\beta\theta(q)]\math
 
 在相应分母非零的内点处，约束曲线的斜率为：
 
-$$\boxed{ \left.\frac{\mathrm d\ln p}{\mathrm d\ln n}\right|_{F=a} =\frac{1+\beta\theta(q)}{c/(p-c)+\theta(q)}. } \tag{B}$$
+**式（B）**
+
+$$\boxed{ \left.\frac{\mathrm d\ln p}{\mathrm d\ln n}\right|_{F=a} =\frac{1+\beta\theta(q)}{c/(p-c)+\theta(q)}. }$$
 
 ### 2.3 两条曲线相切，得到（1.23）
 
@@ -102,7 +108,9 @@ $$\beta=\frac{1+\beta\theta(q)}{c/(p-c)+\theta(q)}.$$
 
 等价地：
 
-$$\boxed{ \frac{\dfrac{c}{p-c}+\theta(q)} {1+\beta\theta(q)} =\frac1\beta. } \tag{1.23}$$
+**式（1.23）**
+
+$$\boxed{ \frac{\dfrac{c}{p-c}+\theta(q)} {1+\beta\theta(q)} =\frac1\beta. }$$
 
 **为什么会有 $`\theta(q)`$？** 因为改变 $`p`$ 或 $`n`$ 都会改变 CES 价格指数 $`q`$，进而改变差异化商品部门的总支出份额 $`s(q)`$。单凭固定 $`s`$ 的假设不能复现教材的完整式（1.23）。
 
@@ -120,7 +128,9 @@ $$\beta\frac{c}{p-c}=1.$$
 
 因此：
 
-$$p-c=\beta c \quad\Longrightarrow\quad \boxed{ p_c=c(1+\beta). } \tag{1.24}$$
+**式（1.24）**
+
+$$p-c=\beta c \quad\Longrightarrow\quad \boxed{ p_c=c(1+\beta). }$$
 
 **关键经济学含义**：在该 CES/对称/绑定零利润模型中，虽然部门支出份额可能随着 $`q`$ 变化，但它对最优加成价格的影响在一阶条件中相互抵消。因此最优受约束价格形式与市场均衡加成定价一致。
 
@@ -140,7 +150,9 @@ $$\boxed{n_c=n_e,\quad p_c=p_e,\quad x_c=x_e.}$$
 
 仅有切线方程不足以自动保证极小值。可以进一步沿着零利润约束计算：
 
-$$\left.\frac{\mathrm d\ln q}{\mathrm d\ln p}\right|_{F=a} =1-\beta \frac{c/(p-c)+\theta(q)}{1+\beta\theta(q)} =\boxed{\frac{1-\beta c/(p-c)}{1+\beta\theta(q)}}. \tag{C}$$
+**式（C）**
+
+$$\left.\frac{\mathrm d\ln q}{\mathrm d\ln p}\right|_{F=a} =1-\beta \frac{c/(p-c)+\theta(q)}{1+\beta\theta(q)} =\boxed{\frac{1-\beta c/(p-c)}{1+\beta\theta(q)}}.$$
 
 如果 $`1+\beta\theta(q)>0`$，且在同一可行连续分支上，分子在 $`c<p<c(1+\beta)`$ 为负，在 $`p>c(1+\beta)`$ 为正，所以 $`q`$ 先降后升，$`p_c`$ 是该分支的价格指数极小点。对**全局**最优仍需检查可行域边界与其他分支。
 
