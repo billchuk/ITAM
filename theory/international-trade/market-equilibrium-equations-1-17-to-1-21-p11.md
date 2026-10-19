@@ -75,7 +75,9 @@ $$\frac{\partial\ln x_i}{\partial\ln p_i} =\frac{p_i}{x_i}\frac{\partial x_i}{\p
 
 因此
 
-$$1+\frac{p_i-c}{p_i} \underbrace{\frac{\partial\ln x_i}{\partial\ln p_i}}_{\varepsilon_{\mathrm{dd}}}=0.$$
+```math
+1+\frac{p_i-c}{p_i} \underbrace{\frac{\partial\ln x_i}{\partial\ln p_i}}_{\varepsilon_{\mathrm{dd}}}=0.
+```
 
 代入大品种数情况下的 CES 弹性：
 
