@@ -26,7 +26,9 @@ $$\boxed{q(\omega)=Q\left[\frac{p(\omega)}{P}\right]^{-\sigma}}, \qquad \boxed{r
 
 原书使用的 CES 效用函数为：
 
-$$U=\left[\int_\Omega q(\omega)^\rho\,\mathrm d\omega\right]^{1/\rho}, \qquad 0<\rho<1,\quad \sigma=\frac{1}{1-\rho}.$$
+```math
+U=\left[\int_\Omega q(\omega)^\rho\,\mathrm d\omega\right]^{1/\rho}, \qquad 0<\rho<1,\quad \sigma=\frac{1}{1-\rho}.
+```
 
 公式（1.1）已经推导出：
 
@@ -70,7 +72,9 @@ $`A`$ 对所有品种相同；下一步用 CES 总量和价格指数确定它。
 
 将式 (A) 代入 CES 效用函数：
 
-$$\begin{aligned} U &=\left[\int_\Omega\bigl(Ap(\omega)^{-\sigma}\bigr)^\rho\,\mathrm d\omega\right]^{1/\rho}\\ &=A\left[\int_\Omega p(\omega)^{-\sigma\rho}\,\mathrm d\omega\right]^{1/\rho}. \end{aligned}$$
+```math
+\begin{aligned} U &=\left[\int_\Omega\bigl(Ap(\omega)^{-\sigma}\bigr)^\rho\,\mathrm d\omega\right]^{1/\rho}\\ &=A\left[\int_\Omega p(\omega)^{-\sigma\rho}\,\mathrm d\omega\right]^{1/\rho}. \end{aligned}
+```
 
 关键的参数关系：
 
@@ -82,7 +86,9 @@ $$\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega=P^{1-\sigma},$$
 
 因此
 
-$$\begin{aligned} U &=A\left[P^{1-\sigma}\right]^{1/\rho}\\ &=AP^{(1-\sigma)/\rho} =AP^{-\sigma}. \end{aligned}$$
+```math
+\begin{aligned} U &=A\left[P^{1-\sigma}\right]^{1/\rho}\\ &=AP^{(1-\sigma)/\rho} =AP^{-\sigma}. \end{aligned}
+```
 
 最后一步用到了
 
@@ -90,7 +96,9 @@ $$\frac{1-\sigma}{\rho} =\frac{1-\sigma}{(\sigma-1)/\sigma}=-\sigma.$$
 
 移项可得 $`A=UP^\sigma`$，代回式 (A)：
 
-$$\begin{aligned} q(\omega) &=UP^\sigma p(\omega)^{-\sigma}\\ &=U\left[\frac{p(\omega)}{P}\right]^{-\sigma}. \end{aligned}$$
+```math
+\begin{aligned} q(\omega) &=UP^\sigma p(\omega)^{-\sigma}\\ &=U\left[\frac{p(\omega)}{P}\right]^{-\sigma}. \end{aligned}
+```
 
 原书规定 $`Q=U`$，所以
 
@@ -112,7 +120,9 @@ $$r(\omega)=p(\omega)Q\left[\frac{p(\omega)}{P}\right]^{-\sigma}.$$
 
 把单个价格改写成 $`p(\omega)=P[p(\omega)/P]`$：
 
-$$\begin{aligned} r(\omega) &=PQ\left[\frac{p(\omega)}{P}\right]\left[\frac{p(\omega)}{P}\right]^{-\sigma}\\ &=PQ\left[\frac{p(\omega)}{P}\right]^{1-\sigma}. \end{aligned}$$
+```math
+\begin{aligned} r(\omega) &=PQ\left[\frac{p(\omega)}{P}\right]\left[\frac{p(\omega)}{P}\right]^{-\sigma}\\ &=PQ\left[\frac{p(\omega)}{P}\right]^{1-\sigma}. \end{aligned}
+```
 
 由原书定义 $`R=PQ`$，得到
 
@@ -128,7 +138,9 @@ $$p(\omega)\times p(\omega)^{-\sigma} =p(\omega)^{1-\sigma}.$$
 
 这一点可以直接验证：
 
-$$\begin{aligned} \int_\Omega r(\omega)\,\mathrm d\omega &=\int_\Omega R\left[\frac{p(\omega)}{P}\right]^{1-\sigma}\,\mathrm d\omega\\ &=R\,P^{\sigma-1}\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega\\ &=R\,P^{\sigma-1}P^{1-\sigma}\\ &=R. \end{aligned}$$
+```math
+\begin{aligned} \int_\Omega r(\omega)\,\mathrm d\omega &=\int_\Omega R\left[\frac{p(\omega)}{P}\right]^{1-\sigma}\,\mathrm d\omega\\ &=R\,P^{\sigma-1}\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega\\ &=R\,P^{\sigma-1}P^{1-\sigma}\\ &=R. \end{aligned}
+```
 
 这里利用了公式（1.1），因此所有品种的销售收入确实加总为总支出 $`R`$。更根本地说，CES 聚合器对数量**一次齐次**，最优支出函数满足 $`R=PU=PQ`$。
 
@@ -142,7 +154,9 @@ $$\boxed{q^h(\omega;p,Q) =Q\left[\frac{p(\omega)}P\right]^{-\sigma}}.$$
 
 当给定总预算／名义支出 $`R`$ 时，由 $`Q=R/P`$：
 
-$$\begin{aligned} q^m(\omega;p,R) &=\frac{R}{P}\left[\frac{p(\omega)}P\right]^{-\sigma}\\ &=R\,P^{\sigma-1}p(\omega)^{-\sigma}. \end{aligned}$$
+```math
+\begin{aligned} q^m(\omega;p,R) &=\frac{R}{P}\left[\frac{p(\omega)}P\right]^{-\sigma}\\ &=R\,P^{\sigma-1}p(\omega)^{-\sigma}. \end{aligned}
+```
 
 这是效用最大化对应的 **Marshallian（非补偿）需求**。两种写法在给定同一最优分配且 $`R=PQ`$ 时相容，但应明确哪一个总量被固定。
 
