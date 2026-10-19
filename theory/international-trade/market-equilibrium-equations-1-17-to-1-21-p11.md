@@ -25,21 +25,29 @@ $$0<\rho<1,\qquad \beta=\frac{1-\rho}{\rho}>0,\qquad \sigma_{\mathrm{in}}=\frac{
 
 **① 综合价格指数（对称情况）**：
 
-$$\boxed{q=p\,n^{-\beta}.} \tag{1.12}$$
+**式（1.12）**
+
+$$\boxed{q=p\,n^{-\beta}.}$$
 
 **② 对称企业需求**：
 
-$$\boxed{x=\frac{I\,s(q)}{p n}.} \tag{1.13}$$
+**式（1.13）**
+
+$$\boxed{x=\frac{I\,s(q)}{p n}.}$$
 
 其中 $`I`$ 为消费者名义收入，$`s(q)`$ 为差异化商品部门在总支出中的份额。模型令上层偏好满足将其写成 $`s(q)`$ 的条件（例如位似偏好），并考虑内点解。此处 $`s(q)`$ 与部分印刷公式里的大写 $`S(q)`$ 均指同一支出份额函数。
 
 **③ 单一企业面临的 dd 需求弹性**（众多小企业、忽略单个价格对整体价格指数和支出份额的影响）：
 
-$$\boxed{ \varepsilon_{\mathrm{dd}} =\frac{\partial\ln x_i}{\partial\ln p_i} \simeq-\sigma_{\mathrm{in}} =-\frac{1+\beta}{\beta}. } \tag{1.11}$$
+**式（1.11）**
+
+$$\boxed{ \varepsilon_{\mathrm{dd}} =\frac{\partial\ln x_i}{\partial\ln p_i} \simeq-\sigma_{\mathrm{in}} =-\frac{1+\beta}{\beta}. }$$
 
 **④ 预算份额弹性**：
 
-$$\boxed{ \theta(q)\equiv\frac{\mathrm d\ln s(q)}{\mathrm d\ln q} =\frac{q\,s'(q)}{s(q)}. } \tag{A}$$
+**式（A）**
+
+$$\boxed{ \theta(q)\equiv\frac{\mathrm d\ln s(q)}{\mathrm d\ln q} =\frac{q\,s'(q)}{s(q)}. }$$
 
 本页在均衡计算中，将总名义收入规范化为 $`I=1`$。**收入的规范化并非总需求自然等于 1 的经济事实**，而是选择了计量单位。
 
@@ -81,7 +89,9 @@ $$\frac{p_i}{1+\beta}=c,$$
 
 即对称企业的均衡加成价格：
 
-$$\boxed{ p_e=c(1+\beta)=\frac{c}{\rho}. } \tag{1.17}$$
+**式（1.17）**
+
+$$\boxed{ p_e=c(1+\beta)=\frac{c}{\rho}. }$$
 
 这也可写成标准垄断竞争公式：
 
@@ -101,7 +111,9 @@ $$\frac{p_e-c}{p_e}=\frac{\beta}{1+\beta} =\frac1{\sigma_{\mathrm{in}}}, \qquad 
 
 如果企业可以自由进入，而进入需要承担固定成本 $`a`$，长期均衡使用**零利润条件**：
 
-$$\boxed{ \pi_e=(p_e-c)x_e-a=0. } \tag{B}$$
+**式（B）**
+
+$$\boxed{ \pi_e=(p_e-c)x_e-a=0. }$$
 
 由式（1.17）：
 
@@ -109,7 +121,9 @@ $$p_e-c =c(1+\beta)-c =\beta c.$$
 
 所以零利润条件化为：
 
-$$\boxed{ \beta c\,x_e=a \quad\Longrightarrow\quad x_e=\frac{a}{\beta c}. } \tag{C}$$
+**式（C）**
+
+$$\boxed{ \beta c\,x_e=a \quad\Longrightarrow\quad x_e=\frac{a}{\beta c}. }$$
 
 接下来利用对称需求（1.13）：
 
@@ -121,7 +135,9 @@ $$\frac{I\,s(p_e n_e^{-\beta})}{p_e n_e} =\frac{a}{\beta c}.$$
 
 最后根据原书此处的**名义收入规范化 $`I=1`$**：
 
-$$\boxed{ \frac{s(p_e n_e^{-\beta})}{p_e n_e} =\frac{a}{\beta c}. } \tag{1.18}$$
+**式（1.18）**
+
+$$\boxed{ \frac{s(p_e n_e^{-\beta})}{p_e n_e} =\frac{a}{\beta c}. }$$
 
 这是一条关于未知数 $`n_e`$ 的**隐式均衡方程**：价格 $`p_e`$ 已由（1.17）确定，但 $`n_e`$ 一般还要通过此方程求解。
 
@@ -132,7 +148,9 @@ $$\boxed{ \frac{s(p_e n_e^{-\beta})}{p_e n_e} =\frac{a}{\beta c}. } \tag{1.18}$$
 
 **一个便于计算的等价形式**：两边乘上 $`p_e n_e`$，再用 $`p_e=c(1+\beta)`$：
 
-$$\boxed{ s(q_e)=\frac{a(1+\beta)}{\beta}\,n_e \quad (I=1). } \tag{D}$$
+**式（D）**
+
+$$\boxed{ s(q_e)=\frac{a(1+\beta)}{\beta}\,n_e \quad (I=1). }$$
 
 若保留 $`I`$，则对应为：
 
@@ -166,7 +184,9 @@ $$\frac{\mathrm d\ln f(n)}{\mathrm d\ln n}<0,$$
 
 便得到：
 
-$$-[1+\beta\theta(q)]<0 \quad\Longleftrightarrow\quad \boxed{1+\beta\theta(q)>0}. \tag{1.19}$$
+**式（1.19）**
+
+$$-[1+\beta\theta(q)]<0 \quad\Longleftrightarrow\quad \boxed{1+\beta\theta(q)>0}.$$
 
 由于 $`\beta>0`$，它与 P10 的（1.15）
 
@@ -186,7 +206,9 @@ $$f(n_e)=\frac{a}{\beta c}.$$
 
 由零利润条件（1.18）推导过程中的式 (C)，直接得到
 
-$$\boxed{x_e=\frac{a}{\beta c}.} \tag{1.20}$$
+**式（1.20）**
+
+$$\boxed{x_e=\frac{a}{\beta c}.}$$
 
 无需重复求解 $`n_e`$。
 
@@ -202,7 +224,9 @@ $$(p_e-c)x_e =\beta c\frac{a}{\beta c} =a.$$
 
 式（1.21）把之前定义的价格指数与支出份额函数写在**均衡点**：
 
-$$\boxed{ s_e=s(q_e), \qquad q_e=p_e n_e^{-\beta}. } \tag{1.21}$$
+**式（1.21）**
+
+$$\boxed{ s_e=s(q_e), \qquad q_e=p_e n_e^{-\beta}. }$$
 
 这里 $`p_e`$ 由（1.17）决定，$`n_e`$ 由（1.18）决定，故 $`q_e`$ 和 $`s_e`$ 随之确定。
 
