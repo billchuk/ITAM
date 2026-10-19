@@ -11,30 +11,34 @@
 
 **式（1.2）**
 
-$$\boxed{q(\omega)=Q\left[\frac{p(\omega)}{P}\right]^{-\sigma}}, \qquad \boxed{r(\omega)=R\left[\frac{p(\omega)}{P}\right]^{1-\sigma}}.$$
+```math
+\boxed{q(\omega)=Q\left[\frac{p(\omega)}{P}\right]^{-\sigma}}, \qquad \boxed{r(\omega)=R\left[\frac{p(\omega)}{P}\right]^{1-\sigma}}.
+```
 
 | 符号 | 含义 |
 | :--- | :--- |
 | $`\Omega`$、$`\omega`$ | 连续商品（品种）集合与单一品种 |
 | $`q(\omega)`$ | 品种 $`\omega`$ 的最优需求量 |
-| $`p(\omega)>0`$ | 品种 $`\omega`$ 的价格 |
+| $`p(\omega)\gt 0`$ | 品种 $`\omega`$ 的价格 |
 | $`r(\omega)=p(\omega)q(\omega)`$ | 品种 $`\omega`$ 的支出／销售收入 |
 | $`Q=U`$ | CES 综合消费数量指数，等于原书定义的效用水平 |
 | $`P`$ | CES 综合价格指数（上文公式 1.1） |
 | $`R=PQ=\int_\Omega r(\omega)\,\mathrm d\omega`$ | 总支出／总销售收入 |
-| $`\sigma=1/(1-\rho)>1`$ | 品种之间的替代弹性 |
+| $`\sigma=1/(1-\rho)\gt 1`$ | 品种之间的替代弹性 |
 
 原书使用的 CES 效用函数为：
 
 ```math
-U=\left[\int_\Omega q(\omega)^\rho\,\mathrm d\omega\right]^{1/\rho}, \qquad 0<\rho<1,\quad \sigma=\frac{1}{1-\rho}.
+U=\left[\int_\Omega q(\omega)^\rho\,\mathrm d\omega\right]^{1/\rho}, \qquad 0\lt \rho\lt 1,\quad \sigma=\frac{1}{1-\rho}.
 ```
 
 公式（1.1）已经推导出：
 
 **式（1.1）**
 
-$$\boxed{P=\left[\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega\right]^{1/(1-\sigma)}}.$$
+```math
+\boxed{P=\left[\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega\right]^{1/(1-\sigma)}}.
+```
 
 假设价格为正、积分有限且消费者处于最优配置。这里没有给品种加权，也没有对品种数做归一化，严格遵照原书截图中的 CES 设定。
 
@@ -48,25 +52,35 @@ $$\boxed{P=\left[\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega\right]^{1/(1-
 
 拉格朗日函数：
 
-$$\mathcal L= \int_\Omega p(\omega)q(\omega)\,\mathrm d\omega +\lambda\left[\bar U^\rho- \int_\Omega q(\omega)^\rho\,\mathrm d\omega\right].$$
+```math
+\mathcal L= \int_\Omega p(\omega)q(\omega)\,\mathrm d\omega +\lambda\left[\bar U^\rho- \int_\Omega q(\omega)^\rho\,\mathrm d\omega\right].
+```
 
 对每个品种的消费量求一阶条件：
 
-$$p(\omega)=\lambda\rho\,q(\omega)^{\rho-1},$$
+```math
+p(\omega)=\lambda\rho\,q(\omega)^{\rho-1},
+```
 
 从而
 
-$$q(\omega)= \left[\frac{p(\omega)}{\lambda\rho}\right]^{1/(\rho-1)}.$$
+```math
+q(\omega)= \left[\frac{p(\omega)}{\lambda\rho}\right]^{1/(\rho-1)}.
+```
 
 由 $`\rho=(\sigma-1)/\sigma`$ 可知
 
-$$\frac{1}{\rho-1}=-\sigma.$$
+```math
+\frac{1}{\rho-1}=-\sigma.
+```
 
-令 $`A=(\lambda\rho)^\sigma>0`$，则有
+令 $`A=(\lambda\rho)^\sigma\gt 0`$，则有
 
 **式（A）**
 
-$$\boxed{q(\omega)=A\,p(\omega)^{-\sigma}}.$$
+```math
+\boxed{q(\omega)=A\,p(\omega)^{-\sigma}}.
+```
 
 $`A`$ 对所有品种相同；下一步用 CES 总量和价格指数确定它。
 
@@ -80,11 +94,15 @@ $`A`$ 对所有品种相同；下一步用 CES 总量和价格指数确定它。
 
 关键的参数关系：
 
-$$-\sigma\rho =-\sigma\frac{\sigma-1}{\sigma} =1-\sigma.$$
+```math
+-\sigma\rho =-\sigma\frac{\sigma-1}{\sigma} =1-\sigma.
+```
 
 利用价格指数定义
 
-$$\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega=P^{1-\sigma},$$
+```math
+\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega=P^{1-\sigma},
+```
 
 因此
 
@@ -94,7 +112,9 @@ $$\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega=P^{1-\sigma},$$
 
 最后一步用到了
 
-$$\frac{1-\sigma}{\rho} =\frac{1-\sigma}{(\sigma-1)/\sigma}=-\sigma.$$
+```math
+\frac{1-\sigma}{\rho} =\frac{1-\sigma}{(\sigma-1)/\sigma}=-\sigma.
+```
 
 移项可得 $`A=UP^\sigma`$，代回式 (A)：
 
@@ -106,7 +126,9 @@ $$\frac{1-\sigma}{\rho} =\frac{1-\sigma}{(\sigma-1)/\sigma}=-\sigma.$$
 
 **式（1.2a）**
 
-$$\boxed{\displaystyle q(\omega)=Q\left[\frac{p(\omega)}{P}\right]^{-\sigma}}.$$
+```math
+\boxed{\displaystyle q(\omega)=Q\left[\frac{p(\omega)}{P}\right]^{-\sigma}}.
+```
 
 > **经济含义**：单个品种价格相对 CES 综合价格 $`P`$ 越高，最优消费数量越低。$`\sigma`$ 越大，消费者对相对价格变化越敏感。
 
@@ -114,11 +136,15 @@ $$\boxed{\displaystyle q(\omega)=Q\left[\frac{p(\omega)}{P}\right]^{-\sigma}}.$$
 
 按定义，品种收入等于价格乘销量：
 
-$$r(\omega)=p(\omega)q(\omega).$$
+```math
+r(\omega)=p(\omega)q(\omega).
+```
 
 代入 (1.2a)：
 
-$$r(\omega)=p(\omega)Q\left[\frac{p(\omega)}{P}\right]^{-\sigma}.$$
+```math
+r(\omega)=p(\omega)Q\left[\frac{p(\omega)}{P}\right]^{-\sigma}.
+```
 
 把单个价格改写成 $`p(\omega)=P[p(\omega)/P]`$：
 
@@ -130,11 +156,15 @@ $$r(\omega)=p(\omega)Q\left[\frac{p(\omega)}{P}\right]^{-\sigma}.$$
 
 **式（1.2b）**
 
-$$\boxed{\displaystyle r(\omega)=R\left[\frac{p(\omega)}{P}\right]^{1-\sigma}}.$$
+```math
+\boxed{\displaystyle r(\omega)=R\left[\frac{p(\omega)}{P}\right]^{1-\sigma}}.
+```
 
 所以 $`-\sigma`$ 变成 $`1-\sigma`$ 的唯一代数原因，就是收入函数比数量需求函数**多乘了一个价格**：
 
-$$p(\omega)\times p(\omega)^{-\sigma} =p(\omega)^{1-\sigma}.$$
+```math
+p(\omega)\times p(\omega)^{-\sigma} =p(\omega)^{1-\sigma}.
+```
 
 ## 5. 为什么总支出恰好是 $`R=PQ`$？
 
@@ -150,7 +180,9 @@ $$p(\omega)\times p(\omega)^{-\sigma} =p(\omega)^{1-\sigma}.$$
 
 当给定目标效用（综合数量）$`Q`$ 时：
 
-$$\boxed{q^h(\omega;p,Q) =Q\left[\frac{p(\omega)}P\right]^{-\sigma}}.$$
+```math
+\boxed{q^h(\omega;p,Q) =Q\left[\frac{p(\omega)}P\right]^{-\sigma}}.
+```
 
 这是支出最小化对应的 **Hicksian（补偿）需求**。
 
@@ -168,19 +200,27 @@ $$\boxed{q^h(\omega;p,Q) =Q\left[\frac{p(\omega)}P\right]^{-\sigma}}.$$
 
 根据 (1.1)：
 
-$$P=(10^{-1}+10^{-1})^{-1}=5,\qquad R=PQ=5.$$
+```math
+P=(10^{-1}+10^{-1})^{-1}=5,\qquad R=PQ=5.
+```
 
 根据 (1.2a)：
 
-$$q_1=q_2=1\times(10/5)^{-2}=\frac14.$$
+```math
+q_1=q_2=1\times(10/5)^{-2}=\frac14.
+```
 
 根据 (1.2b)：
 
-$$r_1=r_2=5\times(10/5)^{-1}=2.5.$$
+```math
+r_1=r_2=5\times(10/5)^{-1}=2.5.
+```
 
 因此：
 
-$$r_1+r_2=2.5+2.5=5=R.$$
+```math
+r_1+r_2=2.5+2.5=5=R.
+```
 
 两条需求表达式与预算约束一致。
 
