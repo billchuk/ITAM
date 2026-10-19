@@ -34,7 +34,9 @@
 
 定义差异化商品的 CES 复合数量：
 
-$$\boxed{ Y\equiv \left(\sum_{i=1}^{n}x_i^\rho\right)^{1/\rho}. }$$
+```math
+\boxed{ Y\equiv \left(\sum_{i=1}^{n}x_i^\rho\right)^{1/\rho}. }
+```
 
 效用函数于是可以写成：
 
@@ -68,7 +70,9 @@ $$u=U(x_0,Y).$$
 
 **式（1.5）**
 
-$$\boxed{x_0+\sum_{i=1}^{n}p_ix_i=I.}$$
+```math
+\boxed{x_0+\sum_{i=1}^{n}p_ix_i=I.}
+```
 
 记差异化商品实际支出 $`E_D=\sum_i p_ix_i`$，故：
 
@@ -92,7 +96,9 @@ $$\boxed{x_0+qY=I.}$$
 
 构造拉格朗日函数：
 
-$$\mathcal L =\sum_{i=1}^n p_ix_i+ \lambda\left(\bar Y^\rho-\sum_{i=1}^n x_i^\rho\right).$$
+```math
+\mathcal L =\sum_{i=1}^n p_ix_i+ \lambda\left(\bar Y^\rho-\sum_{i=1}^n x_i^\rho\right).
+```
 
 对任意内点 $`x_i>0`$，一阶条件为：
 
@@ -178,13 +184,17 @@ $$1-\frac1\rho=-\frac{1-\rho}{\rho}=-\beta,$$
 
 于是：
 
-$$\boxed{ q=\left(\sum_{i=1}^{n}p_i^{-1/\beta}\right)^{-\beta}. }$$
+```math
+\boxed{ q=\left(\sum_{i=1}^{n}p_i^{-1/\beta}\right)^{-\beta}. }
+```
 
 连同 $`Y`$ 的定义，正好是原书式（1.6）：
 
 **式（1.6）**
 
-$$\boxed{ Y=\left(\sum_{i=1}^{n}x_i^\rho\right)^{1/\rho}, \qquad q=\left(\sum_{i=1}^{n}p_i^{-1/\beta}\right)^{-\beta}. }$$
+```math
+\boxed{ Y=\left(\sum_{i=1}^{n}x_i^\rho\right)^{1/\rho}, \qquad q=\left(\sum_{i=1}^{n}p_i^{-1/\beta}\right)^{-\beta}. }
+```
 
 因此在组内最优配置下**严格有**：
 
@@ -206,7 +216,9 @@ $$x_0+qY=I.$$
 
 消费者现在选择 $`x_0`$ 与 $`Y`$：
 
-$$\max_{x_0,Y\ge0} U(x_0,Y) \quad\text{s.t.}\quad x_0+qY=I.$$
+```math
+\max_{x_0,Y\ge0} U(x_0,Y) \quad\text{s.t.}\quad x_0+qY=I.
+```
 
 对应拉格朗日函数：
 
@@ -354,7 +366,9 @@ $$\varepsilon_t^{M}(q,I) \equiv-\frac{\partial\ln[Y(q,I)/x_0(q,I)]}{\partial\ln 
 
 式（1.8）将支出份额对综合价格的反应分成两个部分：
 
-$$\underbrace{\theta(q)}_{\substack{\text{份额}\\\text{价格弹性}}} = \underbrace{[1-\sigma_{\mathrm{out}}(q)]}_{\text{部门替代程度}} \underbrace{[1-s(q)]}_{\text{其他部门支出份额}}.$$
+```math
+\underbrace{\theta(q)}_{\substack{\text{份额}\\\text{价格弹性}}} = \underbrace{[1-\sigma_{\mathrm{out}}(q)]}_{\text{部门替代程度}} \underbrace{[1-s(q)]}_{\text{其他部门支出份额}}.
+```
 
 在内点且 $`\sigma_{\mathrm{out}}>0`$ 时：
 
@@ -446,7 +460,9 @@ $$Y=(\sqrt{12.5}+\sqrt{12.5})^2=50.$$
 
 **最值得记住的主线：**
 
-$$\boxed{ \text{嵌套效用} \ \longrightarrow\ \text{组内 CES 成本最小化} \ \longrightarrow\ q \ \longrightarrow\ x_0+qY=I \ \longrightarrow\ s(q) \ \longrightarrow\ \theta(q). }$$
+```math
+\boxed{ \text{嵌套效用} \ \longrightarrow\ \text{组内 CES 成本最小化} \ \longrightarrow\ q \ \longrightarrow\ x_0+qY=I \ \longrightarrow\ s(q) \ \longrightarrow\ \theta(q). }
+```
 
 ---
 
