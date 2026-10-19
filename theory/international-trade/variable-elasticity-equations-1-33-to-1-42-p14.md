@@ -245,7 +245,9 @@ $$\boxed{ u(x)=\gamma^\gamma(1-\gamma)^{1-\gamma} \frac{\left[\dfrac{\rho(x)v(x)
 
 对（1.41）取对数（忽略常数项）：
 
-$$\ln u(x) =\gamma\left[\ln\rho(x)+\ln v(x)-\ln(a+cx)\right] -\ln D(x)+\text{常数}.$$
+```math
+\ln u(x) =\gamma\left[\ln\rho(x)+\ln v(x)-\ln(a+cx)\right] -\ln D(x)+\text{常数}.
+```
 
 对 $`\ln x`$ 求导：
 
