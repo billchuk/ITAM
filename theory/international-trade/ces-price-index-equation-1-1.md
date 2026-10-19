@@ -10,11 +10,15 @@
 
 原书给出连续品种形式的 CES 效用函数：
 
-$$U=\left[\int_{\omega\in\Omega}q(\omega)^\rho\,\mathrm d\omega\right]^{1/\rho}, \qquad 0<\rho<1.$$
+```math
+U=\left[\int_{\omega\in\Omega}q(\omega)^\rho\,\mathrm d\omega\right]^{1/\rho}, \qquad 0<\rho<1.
+```
 
 令替代弹性（elasticity of substitution）为
 
-$$\sigma=\frac{1}{1-\rho}>1, \qquad \rho=\frac{\sigma-1}{\sigma}.$$
+```math
+\sigma=\frac{1}{1-\rho}>1, \qquad \rho=\frac{\sigma-1}{\sigma}.
+```
 
 要推导第 5 页的**公式（1.1）**：
 
@@ -41,7 +45,9 @@ $$\boxed{P=\left[\int_{\omega\in\Omega}p(\omega)^{1-\sigma}\,\mathrm d\omega\rig
 
 在效用至少达到 $`\bar U>0`$ 的条件下，使消费总支出最小：
 
-$$\begin{aligned} \min_{\{q(\omega)\ge 0\}}\quad &E=\int_\Omega p(\omega)q(\omega)\,\mathrm d\omega,\\ \text{s.t.}\quad &\left[\int_\Omega q(\omega)^\rho\,\mathrm d\omega\right]^{1/\rho}\ge\bar U. \end{aligned}$$
+```math
+\begin{aligned} \min_{\{q(\omega)\ge 0\}}\quad &E=\int_\Omega p(\omega)q(\omega)\,\mathrm d\omega,\\ \text{s.t.}\quad &\left[\int_\Omega q(\omega)^\rho\,\mathrm d\omega\right]^{1/\rho}\ge\bar U. \end{aligned}
+```
 
 因价格均为正，最优解满足效用约束等号成立。利用 $`\rho>0`$，等价约束是
 
@@ -71,7 +77,9 @@ $$\frac{1}{\rho-1}=-\frac{1}{1-\rho}=-\sigma,$$
 
 **式（A）**
 
-$$\boxed{q(\omega)=A\,p(\omega)^{-\sigma}}, \qquad A\equiv(\lambda\rho)^\sigma>0.$$
+```math
+\boxed{q(\omega)=A\,p(\omega)^{-\sigma}}, \qquad A\equiv(\lambda\rho)^\sigma>0.
+```
 
 **解释**：不同商品最优消费量的相对比例由其相对价格决定，且 $`\sigma`$ 越大，消费者在品种之间替代得越容易。
 
@@ -79,7 +87,9 @@ $$\boxed{q(\omega)=A\,p(\omega)^{-\sigma}}, \qquad A\equiv(\lambda\rho)^\sigma>0
 
 从式 (A) 出发：
 
-$$\begin{aligned} U &=\left[\int_\Omega\bigl(Ap(\omega)^{-\sigma}\bigr)^\rho\,\mathrm d\omega\right]^{1/\rho}\\ &=A\left[\int_\Omega p(\omega)^{-\sigma\rho}\,\mathrm d\omega\right]^{1/\rho}. \end{aligned}$$
+```math
+\begin{aligned} U &=\left[\int_\Omega\bigl(Ap(\omega)^{-\sigma}\bigr)^\rho\,\mathrm d\omega\right]^{1/\rho}\\ &=A\left[\int_\Omega p(\omega)^{-\sigma\rho}\,\mathrm d\omega\right]^{1/\rho}. \end{aligned}
+```
 
 注意关键的参数恒等式：
 
@@ -95,7 +105,9 @@ $$\boxed{U=A\left[\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega\right]^{1/\r
 
 将式 (A) 代入总支出定义：
 
-$$\begin{aligned} E &=\int_\Omega p(\omega)q(\omega)\,\mathrm d\omega\\ &=\int_\Omega p(\omega)\bigl[Ap(\omega)^{-\sigma}\bigr]\,\mathrm d\omega\\ &=A\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega. \end{aligned}$$
+```math
+\begin{aligned} E &=\int_\Omega p(\omega)q(\omega)\,\mathrm d\omega\\ &=\int_\Omega p(\omega)\bigl[Ap(\omega)^{-\sigma}\bigr]\,\mathrm d\omega\\ &=A\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega. \end{aligned}
+```
 
 因此
 
@@ -109,7 +121,9 @@ CES 效用函数对消费数量是**一次齐次**的。最优支出与目标效
 
 将 (C) 除以 (B)，得到
 
-$$\begin{aligned} P=\frac{E}{U} &=\frac{A\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega} {A\left[\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega\right]^{1/\rho}}\\[6pt] &=\left[\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega\right]^{1-1/\rho}. \end{aligned}$$
+```math
+\begin{aligned} P=\frac{E}{U} &=\frac{A\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega} {A\left[\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega\right]^{1/\rho}}\\[6pt] &=\left[\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega\right]^{1-1/\rho}. \end{aligned}
+```
 
 剩下的关键只是变换幂指数：
 
