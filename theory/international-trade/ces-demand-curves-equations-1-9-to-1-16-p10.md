@@ -10,13 +10,17 @@
 
 模型中有 $`n`$ 个差异化商品，数量 $`x_i`$、价格 $`p_i`$，同质商品 $`x_0`$ 的价格规范化为 1，名义收入为 $`I`$：
 
-$$u=U\left[x_0,\left(\sum_{i=1}^n x_i^\rho\right)^{1/\rho}\right], \qquad 0<\rho<1,\qquad x_0+\sum_{i=1}^n p_ix_i=I.$$
+```math
+u=U\left[x_0,\left(\sum_{i=1}^n x_i^\rho\right)^{1/\rho}\right], \qquad 0<\rho<1,\qquad x_0+\sum_{i=1}^n p_ix_i=I.
+```
 
 差异化商品的综合数量（P9 记为 $`Y`$，本页记为 $`y`$）和 CES 价格指数是
 
 **式（1.6）**
 
-$$y=\left(\sum_{i=1}^n x_i^\rho\right)^{1/\rho}, \qquad q=\left(\sum_{i=1}^n p_i^{-1/\beta}\right)^{-\beta}, \qquad \beta=\frac{1-\rho}{\rho}>0.$$
+```math
+y=\left(\sum_{i=1}^n x_i^\rho\right)^{1/\rho}, \qquad q=\left(\sum_{i=1}^n p_i^{-1/\beta}\right)^{-\beta}, \qquad \beta=\frac{1-\rho}{\rho}>0.
+```
 
 两个关键恒等式：
 
@@ -48,7 +52,9 @@ $$p_i=\lambda\rho x_i^{\rho-1} \quad\Longrightarrow\quad x_i=(\lambda\rho)^{1/(1
 
 令 $`A=(\lambda\rho)^{\sigma_{\mathrm{in}}}`$，得到 $`x_i=Ap_i^{-\sigma_{\mathrm{in}}}`$。代入 CES 数量聚合式，
 
-$$\begin{aligned} y &=A\left(\sum_i p_i^{-\sigma_{\mathrm{in}}\rho}\right)^{1/\rho}\\ &=A\left(\sum_i p_i^{-1/\beta}\right)^{1/\rho}\\ &=A\left(q^{-1/\beta}\right)^{1/\rho} =Aq^{-\sigma_{\mathrm{in}}}. \end{aligned}$$
+```math
+\begin{aligned} y &=A\left(\sum_i p_i^{-\sigma_{\mathrm{in}}\rho}\right)^{1/\rho}\\ &=A\left(\sum_i p_i^{-1/\beta}\right)^{1/\rho}\\ &=A\left(q^{-1/\beta}\right)^{1/\rho} =Aq^{-\sigma_{\mathrm{in}}}. \end{aligned}
+```
 
 所以 $`A=yq^{\sigma_{\mathrm{in}}}`$，品种条件需求为（补全原书中遗漏的综合数量系数 $`y`$）：
 
@@ -74,7 +80,9 @@ $$q=\left(\sum_{j=1}^n p_j^{-1/\beta}\right)^{-\beta}.$$
 
 取对数并对 $`\ln p_i`$ 求偏导（其他品种价格不变）：
 
-$$\begin{aligned} \frac{\partial\ln q}{\partial\ln p_i} &=-\beta \frac{\partial}{\partial\ln p_i} \ln\left(\sum_j p_j^{-1/\beta}\right)\\ &=-\beta\, \frac{(-1/\beta)p_i^{-1/\beta}}{\sum_jp_j^{-1/\beta}}\\ &=\frac{p_i^{-1/\beta}}{\sum_jp_j^{-1/\beta}}. \end{aligned}$$
+```math
+\begin{aligned} \frac{\partial\ln q}{\partial\ln p_i} &=-\beta \frac{\partial}{\partial\ln p_i} \ln\left(\sum_j p_j^{-1/\beta}\right)\\ &=-\beta\, \frac{(-1/\beta)p_i^{-1/\beta}}{\sum_jp_j^{-1/\beta}}\\ &=\frac{p_i^{-1/\beta}}{\sum_jp_j^{-1/\beta}}. \end{aligned}
+```
 
 又有 $`\sum_jp_j^{-1/\beta}=q^{-1/\beta}`$，因此
 
@@ -146,7 +154,9 @@ $$x_1=\cdots=x_n=x,\qquad p_1=\cdots=p_n=p.$$
 
 组内数量指数：
 
-$$\begin{aligned} y &=\left(\sum_{i=1}^n x^\rho\right)^{1/\rho}\\ &=(nx^\rho)^{1/\rho} =xn^{1/\rho}. \end{aligned}$$
+```math
+\begin{aligned} y &=\left(\sum_{i=1}^n x^\rho\right)^{1/\rho}\\ &=(nx^\rho)^{1/\rho} =xn^{1/\rho}. \end{aligned}
+```
 
 由于
 
@@ -158,7 +168,9 @@ $$\boxed{y=x\,n^{1/\rho}=x\,n^{1+\beta}}.$$
 
 价格指数：
 
-$$\begin{aligned} q &=\left(\sum_{i=1}^{n}p^{-1/\beta}\right)^{-\beta}\\ &=(np^{-1/\beta})^{-\beta} =p\,n^{-\beta}. \end{aligned}$$
+```math
+\begin{aligned} q &=\left(\sum_{i=1}^{n}p^{-1/\beta}\right)^{-\beta}\\ &=(np^{-1/\beta})^{-\beta} =p\,n^{-\beta}. \end{aligned}
+```
 
 所以教材（1.12）为
 
@@ -176,7 +188,9 @@ $$y=\frac{I\,s(q)}q.$$
 
 再由（1.12）$`x=yn^{-1/\rho}`$ 和 $`q=pn^{-\beta}`$：
 
-$$\begin{aligned} x &=\frac{I s(q)}{pn^{-\beta}}\cdot n^{-1/\rho}\\ &=\frac{I s(q)}p\,n^{\beta-1/\rho}. \end{aligned}$$
+```math
+\begin{aligned} x &=\frac{I s(q)}{pn^{-\beta}}\cdot n^{-1/\rho}\\ &=\frac{I s(q)}p\,n^{\beta-1/\rho}. \end{aligned}
+```
 
 由于 $`1/\rho=1+\beta`$，有 $`\beta-1/\rho=-1`$，从而
 
@@ -204,7 +218,9 @@ $$q=pn^{-\beta} \quad\Longrightarrow\quad \frac{\mathrm d\ln q}{\mathrm d\ln p}=
 
 因此
 
-$$\begin{aligned} \frac{\mathrm d\ln x}{\mathrm d\ln p} &=\frac{\mathrm d\ln s(q)}{\mathrm d\ln q} \frac{\mathrm d\ln q}{\mathrm d\ln p}-1\\ &=\theta(q)-1. \end{aligned}$$
+```math
+\begin{aligned} \frac{\mathrm d\ln x}{\mathrm d\ln p} &=\frac{\mathrm d\ln s(q)}{\mathrm d\ln q} \frac{\mathrm d\ln q}{\mathrm d\ln p}-1\\ &=\theta(q)-1. \end{aligned}
+```
 
 得到：
 
@@ -220,7 +236,9 @@ $$\theta(q)=[1-\sigma_{\mathrm{out}}(q)][1-s(q)].$$
 
 因此：
 
-$$\begin{aligned} 1-\theta(q) &=1-[1-\sigma_{\mathrm{out}}(q)][1-s(q)]\\ &=s(q)+\sigma_{\mathrm{out}}(q)[1-s(q)]. \end{aligned}$$
+```math
+\begin{aligned} 1-\theta(q) &=1-[1-\sigma_{\mathrm{out}}(q)][1-s(q)]\\ &=s(q)+\sigma_{\mathrm{out}}(q)[1-s(q)]. \end{aligned}
+```
 
 在内点 $`0<s(q)<1`$ 且 $`\sigma_{\mathrm{out}}(q)>0`$ 时，$`1-\theta(q)>0`$，所以 DD 需求曲线向下倾斜。注意这里的 $`\sigma_{\mathrm{out}}`$ 是**外层部门之间**的替代弹性，与内层的 $`\sigma_{\mathrm{in}}`$ 是不同对象。
 
@@ -234,13 +252,17 @@ $$\varepsilon_{\mathrm{dd}}\simeq-\left(1+\frac1\beta\right), \qquad \varepsilon
 
 如果 **dd 的需求弹性绝对值大于 DD**，则：
 
-$$\begin{aligned} |\varepsilon_{\mathrm{dd}}|>|\varepsilon_{\mathrm{DD}}| &\iff 1+\frac1\beta>1-\theta(q)\\ &\iff\boxed{\frac1\beta+\theta(q)>0}. \end{aligned}$$
+```math
+\begin{aligned} |\varepsilon_{\mathrm{dd}}|>|\varepsilon_{\mathrm{DD}}| &\iff 1+\frac1\beta>1-\theta(q)\\ &\iff\boxed{\frac1\beta+\theta(q)>0}. \end{aligned}
+```
 
 即原书公式：
 
 **式（1.15）**
 
-$$\boxed{\frac1\beta+\theta(q)>0.}$$
+```math
+\boxed{\frac1\beta+\theta(q)>0.}
+```
 
 **重要纠错**：图片的原文在（1.15）前称之为“**DD 曲线更具有弹性**”的条件，但是该不等式实际表示 **dd 比 DD 更有弹性**，方向恰好相反。若反过来要求 DD 更有弹性，应为 $`1/\beta+\theta(q)<0`$。这里保留原书（1.15）数式并明确这一文字与数式的冲突。
 
@@ -262,7 +284,9 @@ $$x_i=y(q/p_i)^{\sigma_{\mathrm{in}}}, \qquad x_j=y(q/p_j)^{\sigma_{\mathrm{in}}
 
 两式相除，公共的 $`y`$ 和 $`q`$ 完全抵消：
 
-$$\begin{aligned} \frac{x_i}{x_j} &=\frac{(q/p_i)^{\sigma_{\mathrm{in}}}}{(q/p_j)^{\sigma_{\mathrm{in}}}}\\ &=\left(\frac{p_j}{p_i}\right)^{\sigma_{\mathrm{in}}}. \end{aligned}$$
+```math
+\begin{aligned} \frac{x_i}{x_j} &=\frac{(q/p_i)^{\sigma_{\mathrm{in}}}}{(q/p_j)^{\sigma_{\mathrm{in}}}}\\ &=\left(\frac{p_j}{p_i}\right)^{\sigma_{\mathrm{in}}}. \end{aligned}
+```
 
 得到书中：
 
@@ -294,7 +318,9 @@ $$\frac{\partial\ln x_i}{\partial\ln p_j} =\left(\frac1\beta+\theta(q)\right)w_j
 
 若把**全部** $`p_j`$ 同时提高同一微小比例，则对数弹性之和是
 
-$$\begin{aligned} \sum_{j=1}^{n}\frac{\partial\ln x_i}{\partial\ln p_j} &=\left(\frac1\beta+\theta(q)\right)\sum_j w_j -\left(1+\frac1\beta\right)\\ &=\theta(q)-1. \end{aligned}$$
+```math
+\begin{aligned} \sum_{j=1}^{n}\frac{\partial\ln x_i}{\partial\ln p_j} &=\left(\frac1\beta+\theta(q)\right)\sum_j w_j -\left(1+\frac1\beta\right)\\ &=\theta(q)-1. \end{aligned}
+```
 
 这正是（1.14）：**DD 弹性等于所有价格方向上偏导数的总和，不等于其中任意一个单独偏导数**。这是理解 dd / DD 两曲线最有用的数学关系。
 
