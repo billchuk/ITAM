@@ -65,7 +65,11 @@ $$\boxed{ \begin{cases} x_c<x_e,&\rho'(x)>0,\\ x_c>x_e,&\rho'(x)<0. \end{cases} 
 
 **式（C）**
 
-$$(p-c)x=a\quad\Longrightarrow\quad \boxed{p=c+\frac ax.}$$
+$$(p-c)x=a$$
+
+移项并除以 $`x`$：
+
+$$p=c+\frac{a}{x}$$
 
 求导：
 
@@ -198,7 +202,11 @@ $$\boxed{ \frac{\gamma}{n} =\frac{(1-\gamma)(a+cx)}{x_0}. }$$
 
 **式（I）**
 
-$$\gamma[1-n(a+cx)] =(1-\gamma)n(a+cx) \quad\Longrightarrow\quad \boxed{n_u(a+cx_u)=\gamma}.$$
+$$\gamma[1-n(a+cx)]=(1-\gamma)n(a+cx)$$
+
+整理后，得到无约束最优企业数的条件：
+
+$$n_u(a+cx_u)=\gamma$$
 
 故 $`x_{0u}=1-\gamma`$。
 
@@ -206,7 +214,7 @@ $$\gamma[1-n(a+cx)] =(1-\gamma)n(a+cx) \quad\Longrightarrow\quad \boxed{n_u(a+cx
 
 **式（J）**
 
-$$p=\frac{\gamma}{1-\gamma}\, \frac{x_0 v'(x)}{n v(x)}.$$
+$$p=\frac{\gamma x_0v'(x)}{(1-\gamma)nv(x)}$$
 
 代入 $`x_{0u}=1-\gamma`$ 与 $`n_u=\gamma/(a+cx_u)`$：
 
