@@ -9,21 +9,11 @@
 
 （1）有约束社会最优：企业必须靠销售收入自行覆盖总成本 $`a+cx_c`$。由 P14 的（1.40）及其受约束版本：
 
-```math
-\boxed{
-n_c=\frac{\omega(x_c)}{a+cx_c}.
-}
-\tag{A}
-```
+$$\boxed{ n_c=\frac{\omega(x_c)}{a+cx_c}. } \tag{A}$$
 
 （2）无约束社会最优：社会规划者可以通过一次性转移支付覆盖企业固定成本。由 P15 的（1.51）：
 
-```math
-\boxed{
-n_u=\frac{\gamma}{a+cx_u}.
-}
-\tag{B}
-```
+$$\boxed{ n_u=\frac{\gamma}{a+cx_u}. } \tag{B}$$
 
 其中 $`a>0`$ 为每企业固定成本，$`c>0`$ 为边际成本，$`x_c`$ 和 $`x_u`$ 分别为两种最优制度下的单企业产量。
 
@@ -31,39 +21,17 @@ n_u=\frac{\gamma}{a+cx_u}.
 
 P14 的定义（1.37）：
 
-```math
-\boxed{
-\omega(x)=
-\frac{\gamma\rho(x)}{\gamma\rho(x)+1-\gamma},
-\quad
-\rho(x)=\frac{xv'(x)}{v(x)}.
-}
-```
+$$\boxed{ \omega(x)= \frac{\gamma\rho(x)}{\gamma\rho(x)+1-\gamma}, \quad \rho(x)=\frac{xv'(x)}{v(x)}. }$$
 
 沿用 $`0<\gamma<1`$ 和 $`0<\rho(x)<1`$。
 
 直接计算二者之差：
 
-```math
-\begin{aligned}
-\gamma-\omega(x)
-&=\gamma-\frac{\gamma\rho(x)}
-{\gamma\rho(x)+1-\gamma}\\
-&=\gamma\frac{\gamma\rho(x)+1-\gamma-\rho(x)}
-{\gamma\rho(x)+1-\gamma}\\
-&=\boxed{
-\frac{\gamma(1-\gamma)[1-\rho(x)]}
-{\gamma\rho(x)+1-\gamma}>0.
-}
-\end{aligned}
-```
+$$\begin{aligned} \gamma-\omega(x) &=\gamma-\frac{\gamma\rho(x)} {\gamma\rho(x)+1-\gamma}\\ &=\gamma\frac{\gamma\rho(x)+1-\gamma-\rho(x)} {\gamma\rho(x)+1-\gamma}\\ &=\boxed{ \frac{\gamma(1-\gamma)[1-\rho(x)]} {\gamma\rho(x)+1-\gamma}>0. } \end{aligned}$$
 
 所以**无论 $`\rho'(x)`$ 的符号如何**，只要 $`0<\rho(x)<1`$：
 
-```math
-\boxed{0<\omega(x)<\gamma.}
-\tag{C}
-```
+$$\boxed{0<\omega(x)<\gamma.} \tag{C}$$
 
 注意：这是$`\omega`$ 与 $`\gamma`$ 的**水平比较**，不需要另外讨论 $`\rho'`$ 的正负；而 P15 比较 $`x_u`$ 与 $`x_c`$ 则需要 $`\rho'`$ 和相关最优解的单交叉条件。
 
@@ -71,23 +39,11 @@ P14 的定义（1.37）：
 
 将不等式（C）代入有约束企业数（A），分母为正：
 
-```math
-\begin{aligned}
-n_c
-=\frac{\omega(x_c)}{a+cx_c}
-&<\frac{\gamma}{a+cx_c}.
-\end{aligned}
-```
+$$\begin{aligned} n_c =\frac{\omega(x_c)}{a+cx_c} &<\frac{\gamma}{a+cx_c}. \end{aligned}$$
 
 这就是书中公式：
 
-```math
-\boxed{
-n_c=\frac{\omega(x_c)}{a+cx_c}
-<\frac{\gamma}{a+cx_c}.
-}
-\tag{1.53}
-```
+$$\boxed{ n_c=\frac{\omega(x_c)}{a+cx_c} <\frac{\gamma}{a+cx_c}. } \tag{1.53}$$
 
 **含义**：在相同的单企业成本规模 $`a+cx_c`$ 下，有约束最优分配给差异化商品部门的资源份额 $`\omega(x_c)`$ 小于无约束最优的部门资源份额 $`\gamma`$，故可支持的企业数低于 $`\gamma/(a+cx_c)`$。
 
@@ -97,81 +53,39 @@ n_c=\frac{\omega(x_c)}{a+cx_c}
 
 如果根据 P15 的比较静态与正则性条件，有：
 
-```math
-x_u<x_c,
-```
+$$x_u<x_c,$$
 
 由于 $`a,c>0`$：
 
-```math
-a+cx_u<a+cx_c
-\quad\Longrightarrow\quad
-\frac{\gamma}{a+cx_u}>
-\frac{\gamma}{a+cx_c}.
-```
+$$a+cx_u<a+cx_c \quad\Longrightarrow\quad \frac{\gamma}{a+cx_u}> \frac{\gamma}{a+cx_c}.$$
 
 与（1.53）连接：
 
-```math
-\boxed{
-n_u=\frac{\gamma}{a+cx_u}
->
-\frac{\gamma}{a+cx_c}
->n_c.
-}
-\tag{D}
-```
+$$\boxed{ n_u=\frac{\gamma}{a+cx_u} > \frac{\gamma}{a+cx_c} >n_c. } \tag{D}$$
 
 因此：
 
-```math
-\boxed{
-x_u<x_c\ \Longrightarrow\ n_u>n_c.
-}
-```
+$$\boxed{ x_u<x_c\ \Longrightarrow\ n_u>n_c. }$$
 
 在 P15 的充分条件下，若 $`\rho'(x)>0`$ 导致 $`x_u<x_c`$，就得到**无约束最优需要更多品种、更小的单企业生产规模**。
 
 反过来，如果 $`x_u>x_c`$，那么：
 
-```math
-\frac{\gamma}{a+cx_u}
-<
-\frac{\gamma}{a+cx_c}.
-```
+$$\frac{\gamma}{a+cx_u} < \frac{\gamma}{a+cx_c}.$$
 
 但是 $`n_c`$ 本来就小于右端，因此**两者都小于同一个上界，不能直接排序**：
 
-```math
-n_c<\frac{\gamma}{a+cx_c},
-\qquad
-n_u<\frac{\gamma}{a+cx_c}.
-```
+$$n_c<\frac{\gamma}{a+cx_c}, \qquad n_u<\frac{\gamma}{a+cx_c}.$$
 
 是否仍有 $`n_u>n_c`$，取决于“无约束资源份额更高”能否抵消“无约束每企业成本更高”的效应。
 
 一个直接可检验的**充要条件**是：
 
-```math
-\begin{aligned}
-n_u>n_c
-&\iff\frac{\gamma}{a+cx_u}>
-\frac{\omega(x_c)}{a+cx_c}\\
-&\iff
-\boxed{
-\frac{a+cx_u}{a+cx_c}<
-\frac{\gamma}{\omega(x_c)}.
-}
-\end{aligned}
-\tag{E}
-```
+$$\begin{aligned} n_u>n_c &\iff\frac{\gamma}{a+cx_u}> \frac{\omega(x_c)}{a+cx_c}\\ &\iff \boxed{ \frac{a+cx_u}{a+cx_c}< \frac{\gamma}{\omega(x_c)}. } \end{aligned} \tag{E}$$
 
 其中：
 
-```math
-\frac{\gamma}{\omega(x_c)}
-=\frac{\gamma\rho(x_c)+1-\gamma}{\rho(x_c)}>1.
-```
+$$\frac{\gamma}{\omega(x_c)} =\frac{\gamma\rho(x_c)+1-\gamma}{\rho(x_c)}>1.$$
 
 式（E）将两种力量清楚拆分为**企业规模/成本差异**与**部门资源份额差异**。它比孤立看（1.53）更有解释力。
 
@@ -179,40 +93,23 @@ n_u>n_c
 
 令 $`v(x)=x^r`$，$`0<r<1`$。那么 $`\rho(x)=r`$ 为常数、$`\rho'(x)=0`$。前文已经得到：
 
-```math
-x_e=x_c=x_u=\frac{ar}{c(1-r)}.
-```
+$$x_e=x_c=x_u=\frac{ar}{c(1-r)}.$$
 
 于是两种制度的每企业成本一样，记为 $`D=a+cx`$，但是：
 
-```math
-\omega=\frac{\gamma r}{\gamma r+1-\gamma}<\gamma.
-```
+$$\omega=\frac{\gamma r}{\gamma r+1-\gamma}<\gamma.$$
 
 所以：
 
-```math
-\boxed{
-n_c=\frac{\omega}{D}
-<
-\frac{\gamma}{D}=n_u.
-}
-```
+$$\boxed{ n_c=\frac{\omega}{D} < \frac{\gamma}{D}=n_u. }$$
 
 例如 $`\gamma=1/2`$、$`r=1/2`$、$`a=0.01`$、$`c=1`$：
 
-```math
-x_c=x_u=0.01,\qquad
-\omega=\frac13,\qquad D=0.02.
-```
+$$x_c=x_u=0.01,\qquad \omega=\frac13,\qquad D=0.02.$$
 
 因而：
 
-```math
-n_c=\frac{1/3}{0.02}\approx16.67,
-\qquad
-n_u=\frac{1/2}{0.02}=25.
-```
+$$n_c=\frac{1/3}{0.02}\approx16.67, \qquad n_u=\frac{1/2}{0.02}=25.$$
 
 企业数作为连续变量是模型的近似；若必须为整数，进入条件和福利解还要做相应离散调整。
 
