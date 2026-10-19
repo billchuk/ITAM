@@ -179,9 +179,9 @@ $$
 &=\frac1{1+\beta_i}
 -\ln\bar n_i
 -\beta_i\frac1{\beta_i(1+\beta_i)}\\
-&=\cancel{\frac1{1+\beta_i}}
+&=\frac1{1+\beta_i}
 -\ln\bar n_i
--\cancel{\frac1{1+\beta_i}}\\
+-\frac1{1+\beta_i}\\
 &=\boxed{-\ln\bar n_i}.
 \end{aligned}
 $$
