@@ -26,7 +26,9 @@
 
 原书设定：
 
-$$\boxed{ u=U\left[x_0,\left(\sum_{i=1}^{n}x_i^\rho\right)^{1/\rho}\right], \qquad 0<\rho<1. } \tag{1.4}$$
+**式（1.4）**
+
+$$\boxed{ u=U\left[x_0,\left(\sum_{i=1}^{n}x_i^\rho\right)^{1/\rho}\right], \qquad 0<\rho<1. }$$
 
 定义差异化商品的 CES 复合数量：
 
@@ -60,7 +62,9 @@ $$\boxed{\sigma_{\mathrm{in}}=\frac{1}{1-\rho}>1.}$$
 
 因 $`x_0`$ 的单价为 1，而第 $`i`$ 种差异化商品价格为 $`p_i`$，总预算为：
 
-$$\boxed{x_0+\sum_{i=1}^{n}p_ix_i=I.} \tag{1.5}$$
+**式（1.5）**
+
+$$\boxed{x_0+\sum_{i=1}^{n}p_ix_i=I.}$$
 
 记差异化商品实际支出 $`E_D=\sum_i p_ix_i`$，故：
 
@@ -68,7 +72,9 @@ $$x_0+E_D=I.$$
 
 下文将证明在组内达到最优组合时 $`E_D=qY`$，从而把多品种预算约束化为只有两个对象的预算约束：
 
-$$\boxed{x_0+qY=I.} \tag{B}$$
+**式（B）**
+
+$$\boxed{x_0+qY=I.}$$
 
 ## 3. 组内成本最小化：推导式（1.6）的价格指数
 
@@ -100,7 +106,9 @@ $$\frac{1}{\rho-1}=-\sigma_{\mathrm{in}}.$$
 
 令 $`A=(\lambda\rho)^{\sigma_{\mathrm{in}}}`$，从而：
 
-$$\boxed{x_i=A\,p_i^{-\sigma_{\mathrm{in}}}.} \tag{C}$$
+**式（C）**
+
+$$\boxed{x_i=A\,p_i^{-\sigma_{\mathrm{in}}}.}$$
 
 定义正参数：
 
@@ -130,7 +138,9 @@ $$-\sigma_{\mathrm{in}}\rho =-\frac{\rho}{1-\rho} =-\frac1\beta,$$
 
 得到：
 
-$$\boxed{ Y=A\left(\sum_i p_i^{-1/\beta}\right)^{1/\rho}. } \tag{D}$$
+**式（D）**
+
+$$\boxed{ Y=A\left(\sum_i p_i^{-1/\beta}\right)^{1/\rho}. }$$
 
 总支出则为：
 
@@ -138,7 +148,9 @@ $$\begin{aligned} E_D &=\sum_i p_i x_i\\ &=A\sum_i p_i^{1-\sigma_{\mathrm{in}}}\
 
 因此：
 
-$$\boxed{E_D=A\sum_i p_i^{-1/\beta}.} \tag{E}$$
+**式（E）**
+
+$$\boxed{E_D=A\sum_i p_i^{-1/\beta}.}$$
 
 ### 3.4 计算单位综合数量的最低成本
 
@@ -156,7 +168,9 @@ $$\boxed{ q=\left(\sum_{i=1}^{n}p_i^{-1/\beta}\right)^{-\beta}. }$$
 
 连同 $`Y`$ 的定义，正好是原书式（1.6）：
 
-$$\boxed{ Y=\left(\sum_{i=1}^{n}x_i^\rho\right)^{1/\rho}, \qquad q=\left(\sum_{i=1}^{n}p_i^{-1/\beta}\right)^{-\beta}. } \tag{1.6}$$
+**式（1.6）**
+
+$$\boxed{ Y=\left(\sum_{i=1}^{n}x_i^\rho\right)^{1/\rho}, \qquad q=\left(\sum_{i=1}^{n}p_i^{-1/\beta}\right)^{-\beta}. }$$
 
 因此在组内最优配置下**严格有**：
 
@@ -164,7 +178,9 @@ $$E_D=qY.$$
 
 对应的各品种条件需求可以进一步写成：
 
-$$\boxed{ x_i=Y\left(\frac{p_i}{q}\right)^{-\sigma_{\mathrm{in}}}. } \tag{F}$$
+**式（F）**
+
+$$\boxed{ x_i=Y\left(\frac{p_i}{q}\right)^{-\sigma_{\mathrm{in}}}. }$$
 
 **核对前文**：本页的 $`q`$ 相当于公式（1.1）中的综合价格指数 $`P`$，而本页的 $`Y`$ 相当于此前的综合数量 $`Q`$；只是此处改为有限个品种的求和形式。
 
@@ -188,13 +204,17 @@ $$U_{x_0}=\mu,\qquad U_Y=\mu q.$$
 
 故：
 
-$$\boxed{\frac{U_Y}{U_{x_0}}=q.} \tag{G}$$
+**式（G）**
+
+$$\boxed{\frac{U_Y}{U_{x_0}}=q.}$$
 
 这表示在最优配置时，差异化复合商品与同质商品的**边际替代率**等于相对价格 $`q`$。
 
 定义差异化商品部门的支出份额：
 
-$$\boxed{s(q,I)\equiv\frac{qY(q,I)}{I}.} \tag{H}$$
+**式（H）**
+
+$$\boxed{s(q,I)\equiv\frac{qY(q,I)}{I}.}$$
 
 那么仅从预算约束与份额定义就能得到：
 
@@ -206,7 +226,9 @@ $$Y(q,I)=\frac{I\,s(q,I)}{q}, \qquad x_0(q,I)=I[1-s(q,I)].$$
 
 在这一条件下，$`s(q,I)=s(q)`$，得到：
 
-$$\boxed{ Y=I\frac{s(q)}{q}, \qquad x_0=I[1-s(q)]. } \tag{1.7}$$
+**式（1.7）**
+
+$$\boxed{ Y=I\frac{s(q)}{q}, \qquad x_0=I[1-s(q)]. }$$
 
 这就是式（1.7）。其中 $`0<s(q)<1`$ 表示两部门均消费的内点情况。
 
@@ -216,7 +238,9 @@ $$\boxed{ Y=I\frac{s(q)}{q}, \qquad x_0=I[1-s(q)]. } \tag{1.7}$$
 
 目标是解释：
 
-$$\boxed{ \theta(q)=[1-\sigma(q)]\,[1-s(q)]<1. } \tag{1.8}$$
+**式（1.8）**
+
+$$\boxed{ \theta(q)=[1-\sigma(q)]\,[1-s(q)]<1. }$$
 
 为避免与组内 $`\sigma_{\mathrm{in}}`$ 混淆，这里先将原书的 $`\sigma(q)`$ 记为 $`\sigma_{\mathrm{out}}(q)`$。
 
@@ -230,7 +254,9 @@ $$t(q)\equiv\frac{Y}{x_0}.$$
 
 定义两部门间的**替代弹性**为：
 
-$$\boxed{ \sigma_{\mathrm{out}}(q) \equiv-\frac{\mathrm d\ln(Y/x_0)}{\mathrm d\ln q} =-\frac{\mathrm d\ln t(q)}{\mathrm d\ln q}. } \tag{J}$$
+**式（J）**
+
+$$\boxed{ \sigma_{\mathrm{out}}(q) \equiv-\frac{\mathrm d\ln(Y/x_0)}{\mathrm d\ln q} =-\frac{\mathrm d\ln t(q)}{\mathrm d\ln q}. }$$
 
 这里负号表示相对价格上升时相对需求通常下降。对位似偏好，沿最优需求关系求出的该弹性与标准的等效用曲线替代弹性一致。
 
@@ -246,7 +272,9 @@ $$\frac{Y}{x_0} =\frac{s(q)}{q[1-s(q)]}.$$
 
 所以：
 
-$$\boxed{ \frac{s(q)}{1-s(q)}=q\,\frac{Y}{x_0}. } \tag{K}$$
+**式（K）**
+
+$$\boxed{ \frac{s(q)}{1-s(q)}=q\,\frac{Y}{x_0}. }$$
 
 等式左侧是“差异化商品部门支出”与“同质商品部门支出”的比值（支出赔率），右侧是相对价格乘相对数量。
 
@@ -266,7 +294,9 @@ $$\begin{aligned} \frac{\mathrm d}{\mathrm d\ln q} \{\ln s(q)-\ln[1-s(q)]\} &=\l
 
 因此：
 
-$$\boxed{ \frac{q\,s'(q)}{s(q)[1-s(q)]} =1-\sigma_{\mathrm{out}}(q). } \tag{L}$$
+**式（L）**
+
+$$\boxed{ \frac{q\,s'(q)}{s(q)[1-s(q)]} =1-\sigma_{\mathrm{out}}(q). }$$
 
 ### 5.4 定义 $`s(q)`$ 的价格弹性
 
@@ -276,7 +306,9 @@ $$\boxed{ \theta(q)\equiv\frac{q\,s'(q)}{s(q)} =\frac{\mathrm d\ln s(q)}{\mathrm
 
 在式 (L) 两边乘以 $`1-s(q)`$：
 
-$$\boxed{ \theta(q)= [1-\sigma_{\mathrm{out}}(q)]\,[1-s(q)]. } \tag{1.8}$$
+**式（1.8）**
+
+$$\boxed{ \theta(q)= [1-\sigma_{\mathrm{out}}(q)]\,[1-s(q)]. }$$
 
 恢复原书记号 $`\sigma_{\mathrm{out}}(q)=\sigma(q)`$，即为：
 
