@@ -55,7 +55,9 @@ $$\left. \frac{\mathrm d\ln u_c(x)}{\mathrm d\ln x} \right|_{x_e} = -\frac{\omeg
 
 **式（1.43）**
 
-$$\boxed{ \begin{cases} x_c<x_e,&\rho'(x)>0,\\ x_c>x_e,&\rho'(x)<0. \end{cases} }$$
+```math
+\boxed{ \begin{cases} x_c<x_e,&\rho'(x)>0,\\ x_c>x_e,&\rho'(x)<0. \end{cases} }
+```
 
 如果 $`\rho'(x)=0`$ 且相应最优唯一，二者在这个机制下趋于相同；若符号随 $`x`$ 变化、存在多个局部最优，应解原始问题，不能套用简单双向排序。
 
@@ -73,13 +75,17 @@ $$p=c+\frac{a}{x}$$
 
 求导：
 
-$$\frac{\mathrm dp}{\mathrm dx}=-\frac{a}{x^2}<0.$$
+```math
+\frac{\mathrm dp}{\mathrm dx}=-\frac{a}{x^2}<0.
+```
 
 因此每企业产量越高，**摊到每单位商品上的固定成本越少，零利润价格越低**。从而：
 
 **式（1.44）**
 
-$$\boxed{ \begin{cases} p_c>p_e,&x_c<x_e,\\ p_c<p_e,&x_c>x_e. \end{cases} }$$
+```math
+\boxed{ \begin{cases} p_c>p_e,&x_c<x_e,\\ p_c<p_e,&x_c>x_e. \end{cases} }
+```
 
 合并（1.43）：$`\rho'>0`$ 时 $`p_c>p_e`$；$`\rho'<0`$ 时 $`p_c<p_e`$。
 
@@ -97,13 +103,17 @@ $$\boxed{ n(x)=\frac{\omega(x)}{a+cx}. }$$
 
 **式（E）**
 
-$$\begin{aligned} \frac{\mathrm d\ln n(x)}{\mathrm d\ln x} &=\frac{\mathrm d\ln\omega(x)}{\mathrm d\ln x} -\frac{cx}{a+cx}\\ &=[1-\omega(x)]\frac{x\rho'(x)}{\rho(x)} -\frac{cx}{a+cx}. \end{aligned}$$
+```math
+\begin{aligned} \frac{\mathrm d\ln n(x)}{\mathrm d\ln x} &=\frac{\mathrm d\ln\omega(x)}{\mathrm d\ln x} -\frac{cx}{a+cx}\\ &=[1-\omega(x)]\frac{x\rho'(x)}{\rho(x)} -\frac{cx}{a+cx}. \end{aligned}
+```
 
 于是，在相关均衡分支上若满足
 
 **式（F）**
 
-$$\boxed{ [1-\omega(x)]\frac{x\rho'(x)}{\rho(x)} <\frac{cx}{a+cx}, }$$
+```math
+\boxed{ [1-\omega(x)]\frac{x\rho'(x)}{\rho(x)} <\frac{cx}{a+cx}, }
+```
 
 则 $`n'(x)<0`$，产量较高对应较少企业。这是原书 dd / DD 需求曲线和成本曲线排序的数学版本。
 
@@ -111,7 +121,9 @@ $$\boxed{ [1-\omega(x)]\frac{x\rho'(x)}{\rho(x)} <\frac{cx}{a+cx}, }$$
 
 **式（1.45）**
 
-$$\boxed{ \begin{cases} n_c>n_e,&x_c<x_e,\\ n_c<n_e,&x_c>x_e. \end{cases} }$$
+```math
+\boxed{ \begin{cases} n_c>n_e,&x_c<x_e,\\ n_c<n_e,&x_c>x_e. \end{cases} }
+```
 
 换句话说，若 $`\rho'>0`$，通常有约束规划者会选择**更多企业、每企业更小产量**；若 $`\rho'<0`$，则反过来。
 
@@ -140,13 +152,17 @@ $$\omega'(x)= \frac{\gamma(1-\gamma)\rho'(x)} {[\gamma\rho(x)+1-\gamma]^2},$$
 
 两种情形统一得到：
 
-$$x_{0c}=1-\omega(x_c) > 1-\omega(x_e)=x_{0e}.$$
+```math
+x_{0c}=1-\omega(x_c) > 1-\omega(x_e)=x_{0e}.
+```
 
 所以原书（1.46）为：
 
 **式（1.46）**
 
-$$\boxed{x_{0c}>x_{0e}.}$$
+```math
+\boxed{x_{0c}>x_{0e}.}
+```
 
 这说明有约束福利最优配置在同质商品上的消费量高于市场均衡（在上述比较条件下成立）。
 
@@ -158,7 +174,9 @@ $$\ln\rho=\ln x+\ln v'(x)-\ln v(x).$$
 
 对 $`\ln x`$ 求导：
 
-$$\begin{aligned} \frac{x\rho'(x)}{\rho(x)} &=1+\frac{xv''(x)}{v'(x)} -\frac{xv'(x)}{v(x)}\\ &=1+\frac{xv''(x)}{v'(x)}-\rho(x). \end{aligned}$$
+```math
+\begin{aligned} \frac{x\rho'(x)}{\rho(x)} &=1+\frac{xv''(x)}{v'(x)} -\frac{xv'(x)}{v(x)}\\ &=1+\frac{xv''(x)}{v'(x)}-\rho(x). \end{aligned}
+```
 
 由定义（1.35），有 $`1+xv''/v'=1/[1+\beta(x)]`$，因此：
 
@@ -218,7 +236,9 @@ $$p=\frac{\gamma x_0v'(x)}{(1-\gamma)nv(x)}$$
 
 代入 $`x_{0u}=1-\gamma`$ 与 $`n_u=\gamma/(a+cx_u)`$：
 
-$$\begin{aligned} p_u &=\frac{\gamma}{1-\gamma} \frac{(1-\gamma)v'(x_u)} {[\gamma/(a+cx_u)]v(x_u)}\\ &=(a+cx_u)\frac{v'(x_u)}{v(x_u)}. \end{aligned}$$
+```math
+\begin{aligned} p_u &=\frac{\gamma}{1-\gamma} \frac{(1-\gamma)v'(x_u)} {[\gamma/(a+cx_u)]v(x_u)}\\ &=(a+cx_u)\frac{v'(x_u)}{v(x_u)}. \end{aligned}
+```
 
 而式（G）与（H）相除正好给出 $`v'(x_u)/v(x_u)=c/(a+cx_u)`$，因此：
 
@@ -260,7 +280,9 @@ $$\boxed{ n_u=\frac{\gamma}{a+cx_u}. }$$
 
 定义严格递增的成本份额函数：
 
-$$g(x)=\frac{cx}{a+cx}, \qquad g'(x)=\frac{ca}{(a+cx)^2}>0.$$
+```math
+g(x)=\frac{cx}{a+cx}, \qquad g'(x)=\frac{ca}{(a+cx)^2}>0.
+```
 
 无约束最优要求（1.50）：
 
@@ -272,7 +294,9 @@ $$\boxed{g(x_u)=\rho(x_u)}.$$
 
 **式（L）**
 
-$$\begin{aligned} g(x_c) &=\rho(x_c)+\frac{x_c\rho'(x_c)}{\rho(x_c)} -\frac{\omega(x_c)x_c\rho'(x_c)}{\gamma\rho(x_c)}\\ &=\rho(x_c) +\underbrace{[1-\omega(x_c)]\,[1-\rho(x_c)]}_{>0} \frac{x_c\rho'(x_c)}{\rho(x_c)}. \end{aligned}$$
+```math
+\begin{aligned} g(x_c) &=\rho(x_c)+\frac{x_c\rho'(x_c)}{\rho(x_c)} -\frac{\omega(x_c)x_c\rho'(x_c)}{\gamma\rho(x_c)}\\ &=\rho(x_c) +\underbrace{[1-\omega(x_c)]\,[1-\rho(x_c)]}_{>0} \frac{x_c\rho'(x_c)}{\rho(x_c)}. \end{aligned}
+```
 
 第二行使用了恒等式 $`1-\omega/\gamma=(1-\omega)(1-\rho)`$，该式可以直接从 $`\omega=\gamma\rho/(\gamma\rho+1-\gamma)`$ 验证。
 
@@ -284,7 +308,9 @@ $$\operatorname{sgn}\bigl(g(x_c)-\rho(x_c)\bigr) =\operatorname{sgn}\rho'(x_c).$
 
 **式（1.52）**
 
-$$\boxed{ \begin{cases} x_u<x_c,&\rho'(x)>0,\\ x_u>x_c,&\rho'(x)<0. \end{cases} }$$
+```math
+\boxed{ \begin{cases} x_u<x_c,&\rho'(x)>0,\\ x_u>x_c,&\rho'(x)<0. \end{cases} }
+```
 
 即：若 $`\rho'>0`$，无约束最优选择更小的单企业产出；若 $`\rho'<0`$，则选择更大的单企业产出。只有（1.50）和（1.42）两个方程而没有形状约束时，不应声称这一排序总是无条件成立。
 
