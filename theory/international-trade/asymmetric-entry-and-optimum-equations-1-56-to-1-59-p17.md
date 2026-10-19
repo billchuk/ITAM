@@ -44,7 +44,9 @@ $$\frac{\mathrm dG_2(p_2)}{\mathrm dp_2} =\frac{s c_2}{p_2^2}>0.$$
 
 **式（B）**
 
-$$\boxed{ \sup_{0<p_2<\bar q_1}G_2(p_2) =s\left(1-\frac{c_2}{\bar q_1}\right). }$$
+$$G_{2,\mathrm{sup}}=s\left(1-\frac{c_2}{\bar q_1}\right)$$
+
+这里 $`G_{2,\mathrm{sup}}`$ 表示在 $`0<p_2<\bar q_1`$ 内营业盈余 $`G_2(p_2)`$ 的上确界。
 
 > 数学精度：区间是开区间 $`p_2<\bar q_1`$，严格说是 **supremum（上确界）** 而非必定能够达到的 maximum（最大值）。如果 $`\bar q_1\le c_2`$，所有能抢到需求的售价都不能覆盖边际成本，潜在进入者最优选择不生产，此时需要把不生产的营业盈余 0 作为外部选项。
 
