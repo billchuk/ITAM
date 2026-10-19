@@ -7,9 +7,9 @@
 
 ## 0. 符号与假设
 
-有同质商品消费 $`x_0`$ 与 $`n`$ 个差异化品种的消费 $`x_i`$，每个企业生产一个品种。成本函数为 $`a+cx`$，其中固定成本 $`a>0`$、边际成本 $`c>0`$；同质商品单价规范化为 1，总收入为 $`I`$，均衡与福利计算部分采用 $`I=1`$。
+有同质商品消费 $`x_0`$ 与 $`n`$ 个差异化品种的消费 $`x_i`$，每个企业生产一个品种。成本函数为 $`a+cx`$，其中固定成本 $`a\gt 0`$、边际成本 $`c\gt 0`$；同质商品单价规范化为 1，总收入为 $`I`$，均衡与福利计算部分采用 $`I=1`$。
 
-令 $`v(x)>0`$、$`v'(x)>0`$、$`v''(x)<0`$，$`\gamma\in(0,1)`$。在需要讨论导数时假定 $`v`$ 足够光滑，内点最优存在。
+令 $`v(x)\gt 0`$、$`v'(x)\gt 0`$、$`v''(x)\lt 0`$，$`\gamma\in(0,1)`$。在需要讨论导数时假定 $`v`$ 足够光滑，内点最优存在。
 
 | 记号 | 经济含义 |
 | :--- | :--- |
@@ -30,7 +30,7 @@
 **式（1.33）**
 
 ```math
-\boxed{ u=x_0^{1-\gamma}\left[\sum_{i=1}^{n}v(x_i)\right]^\gamma, \qquad 0<\gamma<1. }
+\boxed{ u=x_0^{1-\gamma}\left[\sum_{i=1}^{n}v(x_i)\right]^\gamma, \qquad 0\lt \gamma\lt 1. }
 ```
 
 对比固定弹性 CES 形式：这里的内层不是 $`\bigl(\sum_i x_i^\rho\bigr)^{1/\rho}`$，而是一般加总 $`V=\sum_i v(x_i)`$。若 $`v`$ 不是齐次幂函数，组内偏好通常**不位似**，需求价格弹性也不再是固定常数。
@@ -41,22 +41,28 @@
 
 **式（A）**
 
-$$p_i=\frac{\partial u/\partial x_i}{\partial u/\partial x_0} =\frac{\gamma}{1-\gamma}\, \frac{x_0\,v'(x_i)}{\sum_j v(x_j)}.$$
+```math
+p_i=\frac{\partial u/\partial x_i}{\partial u/\partial x_0} =\frac{\gamma}{1-\gamma}\, \frac{x_0\,v'(x_i)}{\sum_j v(x_j)}.
+```
 
 在企业足够小、其他品种数量与整体支出/价格的变化可忽略的 dd **局部需求近似**中，把式 (A) 右侧除 $`v'(x_i)`$ 以外的共同因子视作常数，因此：
 
-$$p_i\propto v'(x_i).$$
+```math
+p_i\propto v'(x_i).
+```
 
 对数求导：
 
-$$\frac{\mathrm d\ln p_i}{\mathrm d\ln x_i} =\frac{x_i v''(x_i)}{v'(x_i)}.$$
+```math
+\frac{\mathrm d\ln p_i}{\mathrm d\ln x_i} =\frac{x_i v''(x_i)}{v'(x_i)}.
+```
 
 取倒数并改符号，得到需求弹性的绝对值：
 
 **式（1.34）**
 
 ```math
-\boxed{ -\frac{\partial\ln x_i}{\partial\ln p_i} =-\frac{v'(x_i)}{x_i v''(x_i)}>0. }
+\boxed{ -\frac{\partial\ln x_i}{\partial\ln p_i} =-\frac{v'(x_i)}{x_i v''(x_i)}\gt 0. }
 ```
 
 **严谨性提醒**：式（1.34）是“忽略单企业对整体需求环境的反馈”的 dd 弹性；有限品种数下若允许 $`x_0`$、$`V`$ 同时内生变化，直接从（A）得到的精确个体需求弹性通常还包含额外反馈项。
@@ -67,17 +73,23 @@ $$\frac{\mathrm d\ln p_i}{\mathrm d\ln x_i} =\frac{x_i v''(x_i)}{v'(x_i)}.$$
 
 **式（1.35）**
 
-$$\boxed{ \frac{1+\beta(x)}{\beta(x)} =-\frac{v'(x)}{xv''(x)}. }$$
+```math
+\boxed{ \frac{1+\beta(x)}{\beta(x)} =-\frac{v'(x)}{xv''(x)}. }
+```
 
-因为 $`v'>0`$、$`v''<0`$，右边为正。要使 $`\beta(x)>0`$ 并得到有限的正加成，还需右侧大于 1，例如满足 $`-xv''(x)/v'(x)\in(0,1)`$。此时：
+因为 $`v'\gt 0`$、$`v''\lt 0`$，右边为正。要使 $`\beta(x)\gt 0`$ 并得到有限的正加成，还需右侧大于 1，例如满足 $`-xv''(x)/v'(x)\in(0,1)`$。此时：
 
-$$\frac{\beta(x)}{1+\beta(x)} =-\frac{xv''(x)}{v'(x)},$$
+```math
+\frac{\beta(x)}{1+\beta(x)} =-\frac{xv''(x)}{v'(x)},
+```
 
 从而：
 
 **式（B）**
 
-$$\boxed{ \frac{1}{1+\beta(x)}=1+\frac{xv''(x)}{v'(x)}. }$$
+```math
+\boxed{ \frac{1}{1+\beta(x)}=1+\frac{xv''(x)}{v'(x)}. }
+```
 
 这一恒等式将用来连接市场均衡、福利最优和 $`\rho'(x)`$。
 
@@ -85,31 +97,43 @@ $$\boxed{ \frac{1}{1+\beta(x)}=1+\frac{xv''(x)}{v'(x)}. }$$
 
 令 $`x_i=x`$、$`p_i=p`$，则 $`V=n v(x)`$。由（A）：
 
-$$p=\frac{\gamma}{1-\gamma}\frac{x_0 v'(x)}{n v(x)}.$$
+```math
+p=\frac{\gamma}{1-\gamma}\frac{x_0 v'(x)}{n v(x)}.
+```
 
 乘以 $`nx`$ 并定义：
 
-$$\rho(x)\equiv\frac{xv'(x)}{v(x)},$$
+```math
+\rho(x)\equiv\frac{xv'(x)}{v(x)},
+```
 
 便有：
 
 **式（C）**
 
-$$npx=\frac{\gamma\rho(x)}{1-\gamma}x_0.$$
+```math
+npx=\frac{\gamma\rho(x)}{1-\gamma}x_0.
+```
 
 又因预算 $`x_0+npx=I`$，代入 $`x_0=I-npx`$：
 
-$$npx=\frac{\gamma\rho(x)}{1-\gamma}(I-npx).$$
+```math
+npx=\frac{\gamma\rho(x)}{1-\gamma}(I-npx).
+```
 
 移项并除以 $`I`$：
 
-$$\frac{npx}{I} =\frac{\gamma\rho(x)}{\gamma\rho(x)+1-\gamma}.$$
+```math
+\frac{npx}{I} =\frac{\gamma\rho(x)}{\gamma\rho(x)+1-\gamma}.
+```
 
 将右侧定义为 $`\omega(x)`$，于是：
 
 **式（1.36）**
 
-$$\boxed{ x=\frac{I\,\omega(x)}{np}, \qquad x_0=I[1-\omega(x)]. }$$
+```math
+\boxed{ x=\frac{I\,\omega(x)}{np}, \qquad x_0=I[1-\omega(x)]. }
+```
 
 与此前支出份额 $`s(q)`$ 不同，这里在**对称状态**下，部门份额由单企业的消费量 $`x`$ 经 $`\rho(x)`$ 决定。
 
@@ -119,19 +143,23 @@ $$\boxed{ x=\frac{I\,\omega(x)}{np}, \qquad x_0=I[1-\omega(x)]. }$$
 
 **式（1.37）**
 
-$$\boxed{ \omega(x)=\frac{\gamma\rho(x)} {\gamma\rho(x)+1-\gamma}, \qquad \rho(x)=\frac{xv'(x)}{v(x)}. }$$
+```math
+\boxed{ \omega(x)=\frac{\gamma\rho(x)} {\gamma\rho(x)+1-\gamma}, \qquad \rho(x)=\frac{xv'(x)}{v(x)}. }
+```
 
-如果满足 $`0<\rho(x)<1`$，则 $`0<\omega(x)<\gamma<1`$。例如：
+如果满足 $`0\lt \rho(x)\lt 1`$，则 $`0\lt \omega(x)\lt \gamma\lt 1`$。例如：
 
 ```math
-\omega(x)<\gamma \iff \frac{\rho(x)}{\gamma\rho(x)+1-\gamma}<1 \iff(1-\gamma)\rho(x)<1-\gamma \iff\rho(x)<1.
+\omega(x)\lt \gamma \iff \frac{\rho(x)}{\gamma\rho(x)+1-\gamma}\lt 1 \iff(1-\gamma)\rho(x)\lt 1-\gamma \iff\rho(x)\lt 1.
 ```
 
 还可以对 $`\omega`$ 求导：
 
 **式（D）**
 
-$$\frac{\mathrm d\omega}{\mathrm dx} =\frac{\gamma(1-\gamma)\rho'(x)} {[\gamma\rho(x)+1-\gamma]^2}.$$
+```math
+\frac{\mathrm d\omega}{\mathrm dx} =\frac{\gamma(1-\gamma)\rho'(x)} {[\gamma\rho(x)+1-\gamma]^2}.
+```
 
 所以 **$`\omega'(x)`$ 与 $`\rho'(x)`$ 同号**，这将在 P15 的（1.46）中用到。
 
@@ -139,29 +167,41 @@ $$\frac{\mathrm d\omega}{\mathrm dx} =\frac{\gamma(1-\gamma)\rho'(x)} {[\gamma\r
 
 利润函数：
 
-$$\pi_i=(p_i-c)x_i(p_i)-a.$$
+```math
+\pi_i=(p_i-c)x_i(p_i)-a.
+```
 
 一阶条件为：
 
-$$x_i+(p_i-c)\frac{\partial x_i}{\partial p_i}=0.$$
+```math
+x_i+(p_i-c)\frac{\partial x_i}{\partial p_i}=0.
+```
 
 除以 $`x_i`$，再乘以 $`p_i/p_i`$：
 
-$$1+\frac{p_i-c}{p_i}\frac{\partial\ln x_i}{\partial\ln p_i}=0.$$
+```math
+1+\frac{p_i-c}{p_i}\frac{\partial\ln x_i}{\partial\ln p_i}=0.
+```
 
 由（1.35）可得：
 
-$$\frac{p_i-c}{p_i} =\frac{\beta(x_i)}{1+\beta(x_i)}.$$
+```math
+\frac{p_i-c}{p_i} =\frac{\beta(x_i)}{1+\beta(x_i)}.
+```
 
 于是：
 
-$$p_i-c=\beta(x_i)c.$$
+```math
+p_i-c=\beta(x_i)c.
+```
 
 对称市场中：
 
 **式（1.38）**
 
-$$\boxed{ p_e=c[1+\beta(x_e)]. }$$
+```math
+\boxed{ p_e=c[1+\beta(x_e)]. }
+```
 
 **区别于（1.17）**：现在 $`\beta`$ 随均衡产量变化，因此定价和最优规模需要联合确定，不再是常数加成独立于产量的简单情形。
 
@@ -169,17 +209,23 @@ $$\boxed{ p_e=c[1+\beta(x_e)]. }$$
 
 自由进入均衡要求：
 
-$$(p_e-c)x_e=a.$$
+```math
+(p_e-c)x_e=a.
+```
 
 由（1.38）$`p_e-c=c\beta(x_e)`$，因此：
 
-$$c\beta(x_e)x_e=a \quad\Longrightarrow\quad \beta(x_e)=\frac{a}{cx_e}.$$
+```math
+c\beta(x_e)x_e=a \quad\Longrightarrow\quad \beta(x_e)=\frac{a}{cx_e}.
+```
 
 故：
 
 **式（1.39）**
 
-$$\boxed{ \frac{cx_e}{a+cx_e} =\frac{1}{1+\beta(x_e)}. }$$
+```math
+\boxed{ \frac{cx_e}{a+cx_e} =\frac{1}{1+\beta(x_e)}. }
+```
 
 这是决定市场均衡每企业产量 $`x_e`$ 的**隐式方程**。要保证唯一解还需相应单调性与存在性条件。
 
@@ -187,21 +233,29 @@ $$\boxed{ \frac{cx_e}{a+cx_e} =\frac{1}{1+\beta(x_e)}. }$$
 
 式（1.36）在 $`I=1`$ 时给出：
 
-$$n_e p_e x_e=\omega(x_e).$$
+```math
+n_e p_e x_e=\omega(x_e).
+```
 
 零利润意味着：
 
-$$p_e x_e=a+cx_e.$$
+```math
+p_e x_e=a+cx_e.
+```
 
 结合两式：
 
-$$n_e(a+cx_e)=\omega(x_e),$$
+```math
+n_e(a+cx_e)=\omega(x_e),
+```
 
 所以：
 
 **式（1.40）**
 
-$$\boxed{n_e=\frac{\omega(x_e)}{a+cx_e}.}$$
+```math
+\boxed{n_e=\frac{\omega(x_e)}{a+cx_e}.}
+```
 
 解释：差异化部门总支出是 $`\omega(x_e)`$，其中每家企业的总营业收入刚好覆盖 $`a+cx_e`$，故二者相除是活跃企业数。计算中将 $`n`$ 视为连续变量是大企业数近似。
 
@@ -209,23 +263,33 @@ $$\boxed{n_e=\frac{\omega(x_e)}{a+cx_e}.}$$
 
 **有约束最优**允许规划者选择 $`n,x`$，但必须让企业靠销售收入覆盖成本：
 
-$$px=a+cx,\qquad p=c+\frac ax.$$
+```math
+px=a+cx,\qquad p=c+\frac ax.
+```
 
 仍在 $`I=1`$ 和对称需求式（1.36）的前提下：
 
-$$npx=\omega(x) \quad\Longrightarrow\quad \boxed{n=\frac{\omega(x)}{a+cx}},$$
+```math
+npx=\omega(x) \quad\Longrightarrow\quad \boxed{n=\frac{\omega(x)}{a+cx}},
+```
 
-$$\boxed{x_0=1-\omega(x)}.$$
+```math
+\boxed{x_0=1-\omega(x)}.
+```
 
 代回式（1.33）：
 
 **式（E）**
 
-$$u(x)= [1-\omega(x)]^{1-\gamma} \left[\frac{\omega(x)v(x)}{a+cx}\right]^\gamma.$$
+```math
+u(x)= [1-\omega(x)]^{1-\gamma} \left[\frac{\omega(x)v(x)}{a+cx}\right]^\gamma.
+```
 
 令 $`D(x)=\gamma\rho(x)+1-\gamma`$，则：
 
-$$1-\omega(x)=\frac{1-\gamma}{D(x)}, \qquad \omega(x)=\frac{\gamma\rho(x)}{D(x)}.$$
+```math
+1-\omega(x)=\frac{1-\gamma}{D(x)}, \qquad \omega(x)=\frac{\gamma\rho(x)}{D(x)}.
+```
 
 代回式 (E)，可得：
 
@@ -237,7 +301,9 @@ $$1-\omega(x)=\frac{1-\gamma}{D(x)}, \qquad \omega(x)=\frac{\gamma\rho(x)}{D(x)}
 
 **式（1.41）**
 
-$$\boxed{ u(x)=\gamma^\gamma(1-\gamma)^{1-\gamma} \frac{\left[\dfrac{\rho(x)v(x)}{a+cx}\right]^\gamma} {\gamma\rho(x)+1-\gamma}. }$$
+```math
+\boxed{ u(x)=\gamma^\gamma(1-\gamma)^{1-\gamma} \frac{\left[\dfrac{\rho(x)v(x)}{a+cx}\right]^\gamma} {\gamma\rho(x)+1-\gamma}. }
+```
 
 **这里的社会规划者只剩一个选择变量 $`x`$**，因为约束已经把 $`n`$、$`x_0`$ 表示为 $`x`$ 的函数。
 
@@ -261,19 +327,25 @@ $$\boxed{ u(x)=\gamma^\gamma(1-\gamma)^{1-\gamma} \frac{\left[\dfrac{\rho(x)v(x)
 
 **式（G）**
 
-$$\frac{x\rho'(x)}{\rho(x)} =1+\frac{xv''(x)}{v'(x)}-\rho(x).$$
+```math
+\frac{x\rho'(x)}{\rho(x)} =1+\frac{xv''(x)}{v'(x)}-\rho(x).
+```
 
 由（1.35）：
 
 **式（H）**
 
-$$\boxed{ \rho(x)+\frac{x\rho'(x)}{\rho(x)} =\frac{1}{1+\beta(x)}. }$$
+```math
+\boxed{ \rho(x)+\frac{x\rho'(x)}{\rho(x)} =\frac{1}{1+\beta(x)}. }
+```
 
 在有约束最优内点 $`x_c`$，令（F）为零，利用（H）与 $`\omega(x)/[\gamma\rho(x)]=1/D(x)`$，得：
 
 **式（1.42）**
 
-$$\boxed{ \frac{cx_c}{a+cx_c} =\frac{1}{1+\beta(x_c)} -\frac{\omega(x_c)\,x_c\rho'(x_c)} {\gamma\rho(x_c)}. }$$
+```math
+\boxed{ \frac{cx_c}{a+cx_c} =\frac{1}{1+\beta(x_c)} -\frac{\omega(x_c)\,x_c\rho'(x_c)} {\gamma\rho(x_c)}. }
+```
 
 ### 必须注明的书页疑点
 
