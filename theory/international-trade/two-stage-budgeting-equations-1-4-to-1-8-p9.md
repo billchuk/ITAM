@@ -26,27 +26,27 @@
 
 原书设定：
 
-$$
+```math
 \boxed{
 u=U\left[x_0,\left(\sum_{i=1}^{n}x_i^\rho\right)^{1/\rho}\right],
 \qquad 0<\rho<1.
 }
 \tag{1.4}
-$$
+```
 
 定义差异化商品的 CES 复合数量：
 
-$$
+```math
 \boxed{
 Y\equiv \left(\sum_{i=1}^{n}x_i^\rho\right)^{1/\rho}.
 }
-$$
+```
 
 效用函数于是可以写成：
 
-$$
+```math
 u=U(x_0,Y).
-$$
+```
 
 | 记号 | 经济含义 |
 | :--- | :--- |
@@ -64,9 +64,9 @@ $$
 
 组内替代弹性记为：
 
-$$
+```math
 \boxed{\sigma_{\mathrm{in}}=\frac{1}{1-\rho}>1.}
-$$
+```
 
 **注意符号冲突**：之前公式（1.1）—（1.2）中的 $`\sigma`$ 是**品种之间**的替代弹性；本页（1.8）的 $`\sigma(q)`$ 指**两个部门/两种复合商品之间**的替代弹性。两个层级不可混淆。
 
@@ -74,23 +74,23 @@ $$
 
 因 $`x_0`$ 的单价为 1，而第 $`i`$ 种差异化商品价格为 $`p_i`$，总预算为：
 
-$$
+```math
 \boxed{x_0+\sum_{i=1}^{n}p_ix_i=I.}
 \tag{1.5}
-$$
+```
 
 记差异化商品实际支出 $`E_D=\sum_i p_ix_i`$，故：
 
-$$
+```math
 x_0+E_D=I.
-$$
+```
 
 下文将证明在组内达到最优组合时 $`E_D=qY`$，从而把多品种预算约束化为只有两个对象的预算约束：
 
-$$
+```math
 \boxed{x_0+qY=I.}
 \tag{B}
-$$
+```
 
 ## 3. 组内成本最小化：推导式（1.6）的价格指数
 
@@ -98,133 +98,133 @@ $$
 
 对任意给定的目标综合数量 $`\bar Y>0`$，选择 $`\{x_i\}`$ 使支出最小：
 
-$$
+```math
 \begin{aligned}
 \min_{\{x_i\ge0\}}\quad &E_D=\sum_{i=1}^n p_ix_i,\\
 \text{s.t.}\quad&\sum_{i=1}^{n}x_i^\rho=\bar Y^\rho.
 \end{aligned}
-$$
+```
 
 构造拉格朗日函数：
 
-$$
+```math
 \mathcal L
 =\sum_{i=1}^n p_ix_i+
 \lambda\left(\bar Y^\rho-\sum_{i=1}^n x_i^\rho\right).
-$$
+```
 
 对任意内点 $`x_i>0`$，一阶条件为：
 
-$$
+```math
 \frac{\partial\mathcal L}{\partial x_i}
 =p_i-\lambda\rho x_i^{\rho-1}=0.
-$$
+```
 
 因此：
 
-$$
+```math
 p_i=\lambda\rho\,x_i^{\rho-1}.
-$$
+```
 
 ### 3.2 解出条件品种需求
 
-$$
+```math
 x_i
 =\left(\frac{p_i}{\lambda\rho}\right)^{1/(\rho-1)}.
-$$
+```
 
 定义 $`\sigma_{\mathrm{in}}=1/(1-\rho)`$，有：
 
-$$
+```math
 \frac{1}{\rho-1}=-\sigma_{\mathrm{in}}.
-$$
+```
 
 令 $`A=(\lambda\rho)^{\sigma_{\mathrm{in}}}`$，从而：
 
-$$
+```math
 \boxed{x_i=A\,p_i^{-\sigma_{\mathrm{in}}}.}
 \tag{C}
-$$
+```
 
 定义正参数：
 
-$$
+```math
 \boxed{\beta\equiv\frac{1-\rho}{\rho}>0.}
-$$
+```
 
 则：
 
-$$
+```math
 \sigma_{\mathrm{in}}
 =\frac{1}{1-\rho}
 =1+\frac{\rho}{1-\rho}
 =1+\frac1\beta,
-$$
+```
 
 以及：
 
-$$
+```math
 1-\sigma_{\mathrm{in}}=-\frac1\beta.
-$$
+```
 
 所以式 (C) 还可写为：
 
-$$
+```math
 x_i=A\,p_i^{-(1+1/\beta)}.
-$$
+```
 
 ### 3.3 分别计算综合数量和最小支出
 
 将式 (C) 代入 $`Y`$：
 
-$$
+```math
 \begin{aligned}
 Y
 &=\left(\sum_i (A p_i^{-\sigma_{\mathrm{in}}})^\rho\right)^{1/\rho}\\
 &=A\left(\sum_i p_i^{-\sigma_{\mathrm{in}}\rho}\right)^{1/\rho}.
 \end{aligned}
-$$
+```
 
 由于：
 
-$$
+```math
 -\sigma_{\mathrm{in}}\rho
 =-\frac{\rho}{1-\rho}
 =-\frac1\beta,
-$$
+```
 
 得到：
 
-$$
+```math
 \boxed{
 Y=A\left(\sum_i p_i^{-1/\beta}\right)^{1/\rho}.
 }
 \tag{D}
-$$
+```
 
 总支出则为：
 
-$$
+```math
 \begin{aligned}
 E_D
 &=\sum_i p_i x_i\\
 &=A\sum_i p_i^{1-\sigma_{\mathrm{in}}}\\
 &=A\sum_i p_i^{-1/\beta}.
 \end{aligned}
-$$
+```
 
 因此：
 
-$$
+```math
 \boxed{E_D=A\sum_i p_i^{-1/\beta}.}
 \tag{E}
-$$
+```
 
 ### 3.4 计算单位综合数量的最低成本
 
 定义 $`q`$ 为 $`E_D/Y`$：
 
-$$
+```math
 \begin{aligned}
 q
 =\frac{E_D}{Y}
@@ -232,47 +232,47 @@ q
 {A\left(\sum_i p_i^{-1/\beta}\right)^{1/\rho}}\\
 &=\left(\sum_i p_i^{-1/\beta}\right)^{1-1/\rho}.
 \end{aligned}
-$$
+```
 
 利用：
 
-$$
+```math
 1-\frac1\rho=-\frac{1-\rho}{\rho}=-\beta,
-$$
+```
 
 于是：
 
-$$
+```math
 \boxed{
 q=\left(\sum_{i=1}^{n}p_i^{-1/\beta}\right)^{-\beta}.
 }
-$$
+```
 
 连同 $`Y`$ 的定义，正好是原书式（1.6）：
 
-$$
+```math
 \boxed{
 Y=\left(\sum_{i=1}^{n}x_i^\rho\right)^{1/\rho},
 \qquad
 q=\left(\sum_{i=1}^{n}p_i^{-1/\beta}\right)^{-\beta}.
 }
 \tag{1.6}
-$$
+```
 
 因此在组内最优配置下**严格有**：
 
-$$
+```math
 E_D=qY.
-$$
+```
 
 对应的各品种条件需求可以进一步写成：
 
-$$
+```math
 \boxed{
 x_i=Y\left(\frac{p_i}{q}\right)^{-\sigma_{\mathrm{in}}}.
 }
 \tag{F}
-$$
+```
 
 **核对前文**：本页的 $`q`$ 相当于公式（1.1）中的综合价格指数 $`P`$，而本页的 $`Y`$ 相当于此前的综合数量 $`Q`$；只是此处改为有限个品种的求和形式。
 
@@ -280,52 +280,52 @@ $$
 
 有了 $`E_D=qY`$，原先 $`n+1`$ 种商品的预算约束变成：
 
-$$
+```math
 x_0+qY=I.
-$$
+```
 
 消费者现在选择 $`x_0`$ 与 $`Y`$：
 
-$$
+```math
 \max_{x_0,Y\ge0} U(x_0,Y)
 \quad\text{s.t.}\quad x_0+qY=I.
-$$
+```
 
 对应拉格朗日函数：
 
-$$
+```math
 \mathcal L=U(x_0,Y)+\mu(I-x_0-qY).
-$$
+```
 
 对**内点最优解**，一阶条件：
 
-$$
+```math
 U_{x_0}=\mu,\qquad U_Y=\mu q.
-$$
+```
 
 故：
 
-$$
+```math
 \boxed{\frac{U_Y}{U_{x_0}}=q.}
 \tag{G}
-$$
+```
 
 这表示在最优配置时，差异化复合商品与同质商品的**边际替代率**等于相对价格 $`q`$。
 
 定义差异化商品部门的支出份额：
 
-$$
+```math
 \boxed{s(q,I)\equiv\frac{qY(q,I)}{I}.}
 \tag{H}
-$$
+```
 
 那么仅从预算约束与份额定义就能得到：
 
-$$
+```math
 Y(q,I)=\frac{I\,s(q,I)}{q},
 \qquad
 x_0(q,I)=I[1-s(q,I)].
-$$
+```
 
 **什么时候可以把 $`s(q,I)`$ 缩写为 $`s(q)`$？**
 
@@ -333,14 +333,14 @@ $$
 
 在这一条件下，$`s(q,I)=s(q)`$，得到：
 
-$$
+```math
 \boxed{
 Y=I\frac{s(q)}{q},
 \qquad
 x_0=I[1-s(q)].
 }
 \tag{1.7}
-$$
+```
 
 这就是式（1.7）。其中 $`0<s(q)<1`$ 表示两部门均消费的内点情况。
 
@@ -350,12 +350,12 @@ $$
 
 目标是解释：
 
-$$
+```math
 \boxed{
 \theta(q)=[1-\sigma(q)]\,[1-s(q)]<1.
 }
 \tag{1.8}
-$$
+```
 
 为避免与组内 $`\sigma_{\mathrm{in}}`$ 混淆，这里先将原书的 $`\sigma(q)`$ 记为 $`\sigma_{\mathrm{out}}(q)`$。
 
@@ -363,22 +363,22 @@ $$
 
 设：
 
-$$
+```math
 t(q)\equiv\frac{Y}{x_0}.
-$$
+```
 
 在外层偏好位似、内点解、同质商品价格为 1 的条件下，最优消费比例 $`t`$ 只随相对价格 $`q`$ 变化。
 
 定义两部门间的**替代弹性**为：
 
-$$
+```math
 \boxed{
 \sigma_{\mathrm{out}}(q)
 \equiv-\frac{\mathrm d\ln(Y/x_0)}{\mathrm d\ln q}
 =-\frac{\mathrm d\ln t(q)}{\mathrm d\ln q}.
 }
 \tag{J}
-$$
+```
 
 这里负号表示相对价格上升时相对需求通常下降。对位似偏好，沿最优需求关系求出的该弹性与标准的等效用曲线替代弹性一致。
 
@@ -386,25 +386,25 @@ $$
 
 从式（1.7）：
 
-$$
+```math
 Y=\frac{Is(q)}q,\qquad x_0=I[1-s(q)].
-$$
+```
 
 两式相除：
 
-$$
+```math
 \frac{Y}{x_0}
 =\frac{s(q)}{q[1-s(q)]}.
-$$
+```
 
 所以：
 
-$$
+```math
 \boxed{
 \frac{s(q)}{1-s(q)}=q\,\frac{Y}{x_0}.
 }
 \tag{K}
-$$
+```
 
 等式左侧是“差异化商品部门支出”与“同质商品部门支出”的比值（支出赔率），右侧是相对价格乘相对数量。
 
@@ -412,22 +412,22 @@ $$
 
 对式 (K) 两边取对数：
 
-$$
+```math
 \ln s(q)-\ln[1-s(q)]
 =\ln q+\ln\left(\frac{Y}{x_0}\right).
-$$
+```
 
 两边对 $`\ln q`$ 求导，右侧是：
 
-$$
+```math
 \frac{\mathrm d}{\mathrm d\ln q}
 \left[\ln q+\ln\left(\frac{Y}{x_0}\right)\right]
 =1-\sigma_{\mathrm{out}}(q).
-$$
+```
 
 左侧注意链式法则：
 
-$$
+```math
 \begin{aligned}
 \frac{\mathrm d}{\mathrm d\ln q}
 \{\ln s(q)-\ln[1-s(q)]\}
@@ -435,46 +435,46 @@ $$
 \frac{\mathrm d s(q)}{\mathrm d\ln q}\\[4pt]
 &=\frac{q\,s'(q)}{s(q)[1-s(q)]}.
 \end{aligned}
-$$
+```
 
 因此：
 
-$$
+```math
 \boxed{
 \frac{q\,s'(q)}{s(q)[1-s(q)]}
 =1-\sigma_{\mathrm{out}}(q).
 }
 \tag{L}
-$$
+```
 
 ### 5.4 定义 $`s(q)`$ 的价格弹性
 
 原书将 $`\theta`$ 定义为：
 
-$$
+```math
 \boxed{
 \theta(q)\equiv\frac{q\,s'(q)}{s(q)}
 =\frac{\mathrm d\ln s(q)}{\mathrm d\ln q}.
 }
-$$
+```
 
 在式 (L) 两边乘以 $`1-s(q)`$：
 
-$$
+```math
 \boxed{
 \theta(q)=
 [1-\sigma_{\mathrm{out}}(q)]\,[1-s(q)].
 }
 \tag{1.8}
-$$
+```
 
 恢复原书记号 $`\sigma_{\mathrm{out}}(q)=\sigma(q)`$，即为：
 
-$$
+```math
 \boxed{
 \theta(q)=[1-\sigma(q)][1-s(q)]<1.
 }
-$$
+```
 
 若为严格内点 $`0<s(q)<1`$，且替代弹性 $`\sigma_{\mathrm{out}}(q)>0`$，则 $`1-s(q)\in(0,1)`$，$`1-\sigma_{\mathrm{out}}(q)<1`$，所以 $`\theta(q)<1`$。注意 **$`\theta(q)`$ 不一定大于零**。
 
@@ -482,17 +482,17 @@ $$
 
 若外层 $`U(x_0,Y)`$ **非位似**，最优份额通常是 $`s(q,I)`$ 而非 $`s(q)`$。固定名义收入 $`I`$，式 (K) 仍然成立，但是求导得到的是：
 
-$$
+```math
 \frac{\partial\ln s(q,I)}{\partial\ln q}\bigg|_I
 =\left[1-\varepsilon_t^{M}(q,I)\right][1-s(q,I)],
-$$
+```
 
 其中
 
-$$
+```math
 \varepsilon_t^{M}(q,I)
 \equiv-\frac{\partial\ln[Y(q,I)/x_0(q,I)]}{\partial\ln q}\bigg|_I
-$$
+```
 
 是**固定收入**的相对 Marshallian 需求弹性。这在一般非位似偏好下**不必等于**保持效用不变的部门间替代弹性。
 
@@ -502,12 +502,12 @@ $$
 
 式（1.8）将支出份额对综合价格的反应分成两个部分：
 
-$$
+```math
 \underbrace{\theta(q)}_{\substack{\text{份额}\\\text{价格弹性}}}
 =
 \underbrace{[1-\sigma_{\mathrm{out}}(q)]}_{\text{部门替代程度}}
 \underbrace{[1-s(q)]}_{\text{其他部门支出份额}}.
-$$
+```
 
 在内点且 $`\sigma_{\mathrm{out}}>0`$ 时：
 
@@ -525,68 +525,68 @@ $$
 
 令：
 
-$$
+```math
 U(x_0,Y)=x_0^{1-\alpha}Y^\alpha,\qquad 0<\alpha<1.
-$$
+```
 
 组间最优分配为：
 
-$$
+```math
 x_0=(1-\alpha)I,\qquad
 Y=\frac{\alpha I}{q},
 \qquad
 s(q)=\alpha.
-$$
+```
 
 因 Cobb–Douglas 的部门间替代弹性为 $`\sigma_{\mathrm{out}}=1`$：
 
-$$
+```math
 \theta(q)=\frac{qs'(q)}{s(q)}=0
 =(1-1)(1-\alpha).
-$$
+```
 
 ### 7.2 外层 CES：直接验证式（1.8）
 
 令（为区分组内 $`\rho`$，这里使用另一参数 $`\eta>0`$）：
 
-$$
+```math
 U(x_0,Y)=
 \left[a\,x_0^{(\eta-1)/\eta}
 +b\,Y^{(\eta-1)/\eta}\right]^{\eta/(\eta-1)},
 \quad a,b>0,\quad \eta\ne1.
-$$
+```
 
 一阶条件 $`U_Y/U_{x_0}=q`$ 给出：
 
-$$
+```math
 \frac{Y}{x_0}=\left(\frac{b}{a q}\right)^\eta.
-$$
+```
 
 因此：
 
-$$
+```math
 \frac{s(q)}{1-s(q)}
 =q\,\frac{Y}{x_0}
 =\left(\frac ba\right)^\eta q^{1-\eta}.
-$$
+```
 
 化为显式份额函数：
 
-$$
+```math
 \boxed{
 s(q)=\frac{(b/a)^\eta q^{1-\eta}}
 {1+(b/a)^\eta q^{1-\eta}}.
 }
-$$
+```
 
 取对数导数：
 
-$$
+```math
 \boxed{
 \frac{\mathrm d\ln s(q)}{\mathrm d\ln q}
 =(1-\eta)\,[1-s(q)].
 }
-$$
+```
 
 因为外层 CES 的替代弹性正是 $`\sigma_{\mathrm{out}}=\eta`$，所以与式（1.8）完全一致。
 
@@ -594,35 +594,35 @@ $$
 
 令 $`n=2,\rho=1/2`$、$`p_1=p_2=2`$，则
 
-$$
+```math
 \beta=1,\qquad
 q=(2^{-1}+2^{-1})^{-1}=1.
-$$
+```
 
 令外层效用为 $`U(x_0,Y)=x_0^{1/2}Y^{1/2}`$、收入 $`I=100`$：
 
-$$
+```math
 s(q)=1/2,\qquad x_0=50,\qquad Y=50.
-$$
+```
 
 组内 $`\sigma_{\mathrm{in}}=2`$，条件品种需求：
 
-$$
+```math
 x_1=x_2=Y(2/1)^{-2}=12.5.
-$$
+```
 
 校验总预算：
 
-$$
+```math
 x_0+p_1x_1+p_2x_2
 =50+2(12.5)+2(12.5)=100=I.
-$$
+```
 
 校验复合数量：
 
-$$
+```math
 Y=(\sqrt{12.5}+\sqrt{12.5})^2=50.
-$$
+```
 
 因此（1.4）—（1.7）内部一致，并且外层 Cobb–Douglas 给出（1.8）中的 $`\theta=0`$。
 
@@ -638,7 +638,7 @@ $$
 
 **最值得记住的主线：**
 
-$$
+```math
 \boxed{
 \text{嵌套效用}
 \ \longrightarrow\
@@ -652,7 +652,7 @@ s(q)
 \ \longrightarrow\
 \theta(q).
 }
-$$
+```
 
 ---
 
