@@ -7,13 +7,13 @@
 
 ## 0. 记号与经济问题
 
-两类差异化商品分别属于组 $`k=1,2`$，组内由 $`n_k`$ 个品种组成。第 $`k`$ 组内各企业具有相同固定成本 $`a_k>0`$、边际成本 $`c_k>0`$，CES 参数为 $`0<\rho_k<1`$。定义：
+两类差异化商品分别属于组 $`k=1,2`$，组内由 $`n_k`$ 个品种组成。第 $`k`$ 组内各企业具有相同固定成本 $`a_k\gt 0`$、边际成本 $`c_k\gt 0`$，CES 参数为 $`0\lt \rho_k\lt 1`$。定义：
 
 ```math
-\boxed{ \beta_k=\frac{1-\rho_k}{\rho_k}>0, \qquad \sigma_k=\frac1{1-\rho_k}=1+\frac1{\beta_k}>1. }
+\boxed{ \beta_k=\frac{1-\rho_k}{\rho_k}\gt 0, \qquad \sigma_k=\frac1{1-\rho_k}=1+\frac1{\beta_k}\gt 1. }
 ```
 
-其中 $`x_{ki}`$ 表示第 $`k`$ 组的第 $`i`$ 个品种的消费量，$`p_{ki}`$ 是价格。同质商品 $`x_0`$ 的单价标准化为 1，预算为 $`I=1`$；外层 Cobb–Douglas 支出份额参数为 $`0<s<1`$。
+其中 $`x_{ki}`$ 表示第 $`k`$ 组的第 $`i`$ 个品种的消费量，$`p_{ki}`$ 是价格。同质商品 $`x_0`$ 的单价标准化为 1，预算为 $`I=1`$；外层 Cobb–Douglas 支出份额参数为 $`0\lt s\lt 1`$。
 
 - **组内**：CES，不同品种是不完全替代。
 - **组间**：两组的 CES 复合数量直接相加，是**完全替代**，因而消费者在价格不同时可能只购买一组。
@@ -37,7 +37,9 @@ Y_1=\left(\sum_{i_1=1}^{n_1}x_{i_1}^{\rho_1}\right)^{1/\rho_1}, \qquad Y_2=\left
 
 记 $`Y=Y_1+Y_2`$，则简写为：
 
-$$u=x_0^{1-s}Y^s.$$
+```math
+u=x_0^{1-s}Y^s.
+```
 
 组内 CES 单位综合数量的最小支出（价格指数）分别为：
 
@@ -54,8 +56,8 @@ $$u=x_0^{1-s}Y^s.$$
 ```
 
 所以：
-- 若 $`q_1<q_2`$，最便宜的方案为 $`Y_1=Y,Y_2=0`$；
-- 若 $`q_2<q_1`$，为 $`Y_2=Y,Y_1=0`$；
+- 若 $`q_1\lt q_2`$，最便宜的方案为 $`Y_1=Y,Y_2=0`$；
+- 若 $`q_2\lt q_1`$，为 $`Y_2=Y,Y_1=0`$；
 - 若 $`q_1=q_2`$，消费者在两组间无差异，可能存在多种分配。
 
 这就是为什么要分别计算“仅第 1 组生产”与“仅第 2 组生产”的候选均衡。
@@ -68,51 +70,69 @@ $$u=x_0^{1-s}Y^s.$$
 
 外层效用为 $`u=x_0^{1-s}Y_k^s`$，预算：
 
-$$x_0+q_kY_k=1.$$
+```math
+x_0+q_kY_k=1.
+```
 
 Cobb–Douglas 内点最优时：
 
 **式（B）**
 
-$$\boxed{x_0=1-s,\qquad q_kY_k=s.}$$
+```math
+\boxed{x_0=1-s,\qquad q_kY_k=s.}
+```
 
 对应对称企业：
 
 **式（C）**
 
-$$\boxed{n_kp_kx_k=s,\qquad q_k=p_kn_k^{-\beta_k}.}$$
+```math
+\boxed{n_kp_kx_k=s,\qquad q_k=p_kn_k^{-\beta_k}.}
+```
 
 ### 2.2 CES dd 需求与企业加成
 
 由前面固定弹性推导，单个企业在“单一品种对综合需求影响可忽略”的大品种数近似下面临
 
-$$\varepsilon_{ki} =-\frac{1+\beta_k}{\beta_k}.$$
+```math
+\varepsilon_{ki} =-\frac{1+\beta_k}{\beta_k}.
+```
 
 利润函数：
 
-$$\pi_{ki}=(p_{ki}-c_k)x_{ki}-a_k.$$
+```math
+\pi_{ki}=(p_{ki}-c_k)x_{ki}-a_k.
+```
 
 利润最大化的一阶条件：
 
-$$1+\frac{p_{ki}-c_k}{p_{ki}}\varepsilon_{ki}=0.$$
+```math
+1+\frac{p_{ki}-c_k}{p_{ki}}\varepsilon_{ki}=0.
+```
 
 解得：
 
 **式（D）**
 
-$$\frac{p_k-c_k}{p_k}=\frac{\beta_k}{1+\beta_k}, \qquad \boxed{p_k=c_k(1+\beta_k)}.$$
+```math
+\frac{p_k-c_k}{p_k}=\frac{\beta_k}{1+\beta_k}, \qquad \boxed{p_k=c_k(1+\beta_k)}.
+```
 
 ### 2.3 自由进入零利润决定单企业规模
 
 在自由进入、连续品种数的长期均衡近似下：
 
-$$(p_k-c_k)x_k=a_k.$$
+```math
+(p_k-c_k)x_k=a_k.
+```
 
 由 $`p_k-c_k=c_k\beta_k`$：
 
 **式（E）**
 
-$$\boxed{x_k=\frac{a_k}{c_k\beta_k}}.$$
+```math
+\boxed{x_k=\frac{a_k}{c_k\beta_k}}.
+```
 
 ### 2.4 部门预算决定企业数
 
@@ -173,12 +193,12 @@ $$\boxed{x_k=\frac{a_k}{c_k\beta_k}}.$$
 ## 5. 两种候选方案如何比较？
 
 ```math
-\bar u_1>\bar u_2 \quad\Longleftrightarrow\quad \bar q_1<\bar q_2,
+\bar u_1\gt \bar u_2 \quad\Longleftrightarrow\quad \bar q_1\lt \bar q_2,
 ```
 
-因为 $`s>0`$，$`q^{-s}`$ 随 $`q`$ 严格递减。
+因为 $`s\gt 0`$，$`q^{-s}`$ 随 $`q`$ 严格递减。
 
-**但是福利排序不等于进入稳定性排序**。即便 $`\bar u_1>\bar u_2`$，也仍需检验一家第 2 组企业是否能以低于 $`\bar q_1`$ 的价格吸引所有差异化部门支出、并覆盖固定成本 $`a_2`$。这个检验由下篇（1.56）给出。
+**但是福利排序不等于进入稳定性排序**。即便 $`\bar u_1\gt \bar u_2`$，也仍需检验一家第 2 组企业是否能以低于 $`\bar q_1`$ 的价格吸引所有差异化部门支出、并覆盖固定成本 $`a_2`$。这个检验由下篇（1.56）给出。
 
 ## 6. 条件总结与阅读注意
 
