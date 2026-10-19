@@ -11,18 +11,20 @@
 原书给出连续品种形式的 CES 效用函数：
 
 ```math
-U=\left[\int_{\omega\in\Omega}q(\omega)^\rho\,\mathrm d\omega\right]^{1/\rho}, \qquad 0<\rho<1.
+U=\left[\int_{\omega\in\Omega}q(\omega)^\rho\,\mathrm d\omega\right]^{1/\rho}, \qquad 0\lt \rho\lt 1.
 ```
 
 令替代弹性（elasticity of substitution）为
 
 ```math
-\sigma=\frac{1}{1-\rho}>1, \qquad \rho=\frac{\sigma-1}{\sigma}.
+\sigma=\frac{1}{1-\rho}\gt 1, \qquad \rho=\frac{\sigma-1}{\sigma}.
 ```
 
 要推导第 5 页的**公式（1.1）**：
 
-$$\boxed{P=\left[\int_{\omega\in\Omega}p(\omega)^{1-\sigma}\,\mathrm d\omega\right]^{\!\frac{1}{1-\sigma}}}.$$
+```math
+\boxed{P=\left[\int_{\omega\in\Omega}p(\omega)^{1-\sigma}\,\mathrm d\omega\right]^{\!\frac{1}{1-\sigma}}}.
+```
 
 这里 $`P`$ 是 **CES 综合价格指数**，准确说是达到一单位 CES 效用所需的**最小支出**（unit expenditure function），不是商品价格的算术平均值。
 
@@ -32,53 +34,65 @@ $$\boxed{P=\left[\int_{\omega\in\Omega}p(\omega)^{1-\sigma}\,\mathrm d\omega\rig
 | --- | --- |
 | $`\Omega`$、$`\omega`$ | 可消费的商品品种集合与单个品种索引 |
 | $`q(\omega)`$ | 品种 $`\omega`$ 的消费量 |
-| $`p(\omega)>0`$ | 品种 $`\omega`$ 的单位价格 |
+| $`p(\omega)\gt 0`$ | 品种 $`\omega`$ 的单位价格 |
 | $`U`$、$`\bar U`$ | CES 总效用及给定目标效用 |
 | $`E`$ | 所有品种上的总消费支出 |
-| $`\rho`$ | 效用函数的幂参数，$`0<\rho<1`$ |
-| $`\sigma`$ | 品种间替代弹性，$`\sigma>1`$ |
+| $`\rho`$ | 效用函数的幂参数，$`0\lt \rho\lt 1`$ |
+| $`\sigma`$ | 品种间替代弹性，$`\sigma\gt 1`$ |
 | $`P`$ | CES 价格指数（单位效用的最低成本） |
 
 假设各品种价格为正、所涉积分有限且为正，且消费者可以选择最优消费组合。
 
 ## 2. 建立支出最小化问题
 
-在效用至少达到 $`\bar U>0`$ 的条件下，使消费总支出最小：
+在效用至少达到 $`\bar U\gt 0`$ 的条件下，使消费总支出最小：
 
 ```math
 \begin{aligned} \min_{\{q(\omega)\ge 0\}}\quad &E=\int_\Omega p(\omega)q(\omega)\,\mathrm d\omega,\\ \text{s.t.}\quad &\left[\int_\Omega q(\omega)^\rho\,\mathrm d\omega\right]^{1/\rho}\ge\bar U. \end{aligned}
 ```
 
-因价格均为正，最优解满足效用约束等号成立。利用 $`\rho>0`$，等价约束是
+因价格均为正，最优解满足效用约束等号成立。利用 $`\rho\gt 0`$，等价约束是
 
-$$\int_\Omega q(\omega)^\rho\,\mathrm d\omega=\bar U^\rho.$$
+```math
+\int_\Omega q(\omega)^\rho\,\mathrm d\omega=\bar U^\rho.
+```
 
 拉格朗日函数为
 
-$$\mathcal L =\int_\Omega p(\omega)q(\omega)\,\mathrm d\omega +\lambda\left[\bar U^\rho-\int_\Omega q(\omega)^\rho\,\mathrm d\omega\right].$$
+```math
+\mathcal L =\int_\Omega p(\omega)q(\omega)\,\mathrm d\omega +\lambda\left[\bar U^\rho-\int_\Omega q(\omega)^\rho\,\mathrm d\omega\right].
+```
 
 ## 3. 一阶条件给出价格与需求的关系
 
 对任意品种 $`\omega`$ 的 $`q(\omega)`$ 求一阶条件（连续品种下理解为变分）：
 
-$$\frac{\delta\mathcal L}{\delta q(\omega)} =p(\omega)-\lambda\rho\,q(\omega)^{\rho-1}=0.$$
+```math
+\frac{\delta\mathcal L}{\delta q(\omega)} =p(\omega)-\lambda\rho\,q(\omega)^{\rho-1}=0.
+```
 
 所以
 
-$$p(\omega)=\lambda\rho\,q(\omega)^{\rho-1},$$
+```math
+p(\omega)=\lambda\rho\,q(\omega)^{\rho-1},
+```
 
-$$q(\omega)=\left[\frac{p(\omega)}{\lambda\rho}\right]^{\!\frac{1}{\rho-1}}.$$
+```math
+q(\omega)=\left[\frac{p(\omega)}{\lambda\rho}\right]^{\!\frac{1}{\rho-1}}.
+```
 
 由于
 
-$$\frac{1}{\rho-1}=-\frac{1}{1-\rho}=-\sigma,$$
+```math
+\frac{1}{\rho-1}=-\frac{1}{1-\rho}=-\sigma,
+```
 
 得到
 
 **式（A）**
 
 ```math
-\boxed{q(\omega)=A\,p(\omega)^{-\sigma}}, \qquad A\equiv(\lambda\rho)^\sigma>0.
+\boxed{q(\omega)=A\,p(\omega)^{-\sigma}}, \qquad A\equiv(\lambda\rho)^\sigma\gt 0.
 ```
 
 **解释**：不同商品最优消费量的相对比例由其相对价格决定，且 $`\sigma`$ 越大，消费者在品种之间替代得越容易。
@@ -93,13 +107,17 @@ $$\frac{1}{\rho-1}=-\frac{1}{1-\rho}=-\sigma,$$
 
 注意关键的参数恒等式：
 
-$$-\sigma\rho =-\sigma\cdot\frac{\sigma-1}{\sigma} =1-\sigma.$$
+```math
+-\sigma\rho =-\sigma\cdot\frac{\sigma-1}{\sigma} =1-\sigma.
+```
 
 于是
 
 **式（B）**
 
-$$\boxed{U=A\left[\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega\right]^{1/\rho}}.$$
+```math
+\boxed{U=A\left[\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega\right]^{1/\rho}}.
+```
 
 ## 5. 计算最优总支出
 
@@ -113,7 +131,9 @@ $$\boxed{U=A\left[\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega\right]^{1/\r
 
 **式（C）**
 
-$$\boxed{E=A\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega}.$$
+```math
+\boxed{E=A\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega}.
+```
 
 ## 6. 两式相除，得到原书公式（1.1）
 
@@ -127,13 +147,17 @@ CES 效用函数对消费数量是**一次齐次**的。最优支出与目标效
 
 剩下的关键只是变换幂指数：
 
-$$1-\frac{1}{\rho} =1-\frac{\sigma}{\sigma-1} =-\frac{1}{\sigma-1} =\frac{1}{1-\sigma}.$$
+```math
+1-\frac{1}{\rho} =1-\frac{\sigma}{\sigma-1} =-\frac{1}{\sigma-1} =\frac{1}{1-\sigma}.
+```
 
 最终证明：
 
 **式（1.1）**
 
-$$\boxed{P=\left[\int_{\omega\in\Omega}p(\omega)^{1-\sigma}\,\mathrm d\omega\right]^{\!\frac{1}{1-\sigma}}}.$$
+```math
+\boxed{P=\left[\int_{\omega\in\Omega}p(\omega)^{1-\sigma}\,\mathrm d\omega\right]^{\!\frac{1}{1-\sigma}}}.
+```
 
 **推导逻辑一句话概括**：效用函数 $`\to`$ 支出最小化 $`\to`$ 一阶条件 $`\to`$ 最优数量与价格关系 $`\to`$ 分别代入 $`U`$、$`E`$ $`\to`$ 求 $`E/U`$。
 
@@ -141,17 +165,23 @@ $$\boxed{P=\left[\int_{\omega\in\Omega}p(\omega)^{1-\sigma}\,\mathrm d\omega\rig
 
 定义 $`I\equiv\int_\Omega p(\omega)^{1-\sigma}\,\mathrm d\omega=P^{1-\sigma}`$。由 (B)，
 
-$$A=\frac{U}{I^{1/\rho}}.$$
+```math
+A=\frac{U}{I^{1/\rho}}.
+```
 
 而 $`I^{1/\rho}=P^{(1-\sigma)/\rho}=P^{-\sigma}`$，所以 $`A=UP^\sigma`$。
 
 代入式 (A)，得到**给定效用水平**的 Hicksian（补偿）需求：
 
-$$\boxed{q^h(\omega;p,U)=U\left(\frac{p(\omega)}P\right)^{-\sigma}}.$$
+```math
+\boxed{q^h(\omega;p,U)=U\left(\frac{p(\omega)}P\right)^{-\sigma}}.
+```
 
 由 $`E=PU`$ 得到**给定名义总支出**的 Marshallian（非补偿）需求：
 
-$$\boxed{q^m(\omega;p,E)=E\,p(\omega)^{-\sigma}P^{\sigma-1}}.$$
+```math
+\boxed{q^m(\omega;p,E)=E\,p(\omega)^{-\sigma}P^{\sigma-1}}.
+```
 
 这是将 CES 结构进一步用于 Krugman、Melitz、Armington 等国际贸易模型的基础；但完整的双边贸易引力方程还需要贸易成本、供给和市场出清等条件。
 
@@ -167,11 +197,15 @@ $$\boxed{q^m(\omega;p,E)=E\,p(\omega)^{-\sigma}P^{\sigma-1}}.$$
 
 考虑两种等权重离散商品，$`p_1=p_2=10`$，$`\sigma=2`$（因此 $`\rho=1/2`$）：
 
-$$P=(10^{-1}+10^{-1})^{-1}=5.$$
+```math
+P=(10^{-1}+10^{-1})^{-1}=5.
+```
 
 若目标效用 $`U=(\sqrt{q_1}+\sqrt{q_2})^2=1`$，支出最优时 $`q_1=q_2=1/4`$，于是
 
-$$E=10\times\frac14+10\times\frac14=5=PU.$$
+```math
+E=10\times\frac14+10\times\frac14=5=PU.
+```
 
 $`P`$ 低于商品的单价，是因为效用聚合器存在品种效应，并不意味着出现了打折价格。
 
