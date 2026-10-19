@@ -26,6 +26,9 @@
 | P14 | [(1.33)–(1.42)](theory/international-trade/variable-elasticity-equations-1-33-to-1-42-p14.md) | 第一章·可变弹性的情形：一般效用、可变需求弹性与有约束福利最优 |
 | P15 | [(1.43)–(1.52)](theory/international-trade/variable-elasticity-welfare-equations-1-43-to-1-52-p15.md) | 第一章·可变弹性的情形：市场均衡、约束最优与无约束最优比较 |
 | P16 | [(1.53)](theory/international-trade/variable-elasticity-variety-equation-1-53-p16.md) | 第一章·可变弹性的情形：最优企业数量比较 |
+| P16 | [(1.54)–(1.55b)](theory/international-trade/asymmetric-two-groups-equations-1-54-to-1-55b-p16.md) | 第一章第三节第三部分非对称情形：两商品组效用与单组候选均衡 |
+| P17 | [(1.56)–(1.59)](theory/international-trade/asymmetric-entry-and-optimum-equations-1-56-to-1-59-p17.md) | 第一章第三节第三部分非对称情形：盈利进入阻止条件与福利角点 |
+| P18 | [(1.60)](theory/international-trade/asymmetric-elasticity-equation-1-60-p18.md) | 第一章第三节第三部分非对称情形：均衡价格指数对替代弹性参数的导数 |
 
 ## 整理规范
 
