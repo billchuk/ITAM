@@ -31,13 +31,17 @@ $$\boxed{ \omega(x)= \frac{\gamma\rho(x)}{\gamma\rho(x)+1-\gamma}, \quad \rho(x)
 
 直接计算二者之差：
 
-$$\begin{aligned} \gamma-\omega(x) &=\gamma-\frac{\gamma\rho(x)} {\gamma\rho(x)+1-\gamma}\\ &=\gamma\frac{\gamma\rho(x)+1-\gamma-\rho(x)} {\gamma\rho(x)+1-\gamma}\\ &=\boxed{ \frac{\gamma(1-\gamma)[1-\rho(x)]} {\gamma\rho(x)+1-\gamma}>0. } \end{aligned}$$
+```math
+\begin{aligned} \gamma-\omega(x) &=\gamma-\frac{\gamma\rho(x)} {\gamma\rho(x)+1-\gamma}\\ &=\gamma\frac{\gamma\rho(x)+1-\gamma-\rho(x)} {\gamma\rho(x)+1-\gamma}\\ &=\boxed{ \frac{\gamma(1-\gamma)[1-\rho(x)]} {\gamma\rho(x)+1-\gamma}>0. } \end{aligned}
+```
 
 所以**无论 $`\rho'(x)`$ 的符号如何**，只要 $`0<\rho(x)<1`$：
 
 **式（C）**
 
-$$\boxed{0<\omega(x)<\gamma.}$$
+```math
+\boxed{0<\omega(x)<\gamma.}
+```
 
 注意：这是$`\omega`$ 与 $`\gamma`$ 的**水平比较**，不需要另外讨论 $`\rho'`$ 的正负；而 P15 比较 $`x_u`$ 与 $`x_c`$ 则需要 $`\rho'`$ 和相关最优解的单交叉条件。
 
@@ -45,13 +49,17 @@ $$\boxed{0<\omega(x)<\gamma.}$$
 
 将不等式（C）代入有约束企业数（A），分母为正：
 
-$$\begin{aligned} n_c =\frac{\omega(x_c)}{a+cx_c} &<\frac{\gamma}{a+cx_c}. \end{aligned}$$
+```math
+\begin{aligned} n_c =\frac{\omega(x_c)}{a+cx_c} &<\frac{\gamma}{a+cx_c}. \end{aligned}
+```
 
 这就是书中公式：
 
 **式（1.53）**
 
-$$\boxed{ n_c=\frac{\omega(x_c)}{a+cx_c} <\frac{\gamma}{a+cx_c}. }$$
+```math
+\boxed{ n_c=\frac{\omega(x_c)}{a+cx_c} <\frac{\gamma}{a+cx_c}. }
+```
 
 **含义**：在相同的单企业成本规模 $`a+cx_c`$ 下，有约束最优分配给差异化商品部门的资源份额 $`\omega(x_c)`$ 小于无约束最优的部门资源份额 $`\gamma`$，故可支持的企业数低于 $`\gamma/(a+cx_c)`$。
 
@@ -61,31 +69,43 @@ $$\boxed{ n_c=\frac{\omega(x_c)}{a+cx_c} <\frac{\gamma}{a+cx_c}. }$$
 
 如果根据 P15 的比较静态与正则性条件，有：
 
-$$x_u<x_c,$$
+```math
+x_u<x_c,
+```
 
 由于 $`a,c>0`$：
 
-$$a+cx_u<a+cx_c \quad\Longrightarrow\quad \frac{\gamma}{a+cx_u}> \frac{\gamma}{a+cx_c}.$$
+```math
+a+cx_u<a+cx_c \quad\Longrightarrow\quad \frac{\gamma}{a+cx_u}> \frac{\gamma}{a+cx_c}.
+```
 
 与（1.53）连接：
 
 **式（D）**
 
-$$\boxed{ n_u=\frac{\gamma}{a+cx_u} > \frac{\gamma}{a+cx_c} >n_c. }$$
+```math
+\boxed{ n_u=\frac{\gamma}{a+cx_u} > \frac{\gamma}{a+cx_c} >n_c. }
+```
 
 因此：
 
-$$\boxed{ x_u<x_c\ \Longrightarrow\ n_u>n_c. }$$
+```math
+\boxed{ x_u<x_c\ \Longrightarrow\ n_u>n_c. }
+```
 
 在 P15 的充分条件下，若 $`\rho'(x)>0`$ 导致 $`x_u<x_c`$，就得到**无约束最优需要更多品种、更小的单企业生产规模**。
 
 反过来，如果 $`x_u>x_c`$，那么：
 
-$$\frac{\gamma}{a+cx_u} < \frac{\gamma}{a+cx_c}.$$
+```math
+\frac{\gamma}{a+cx_u} < \frac{\gamma}{a+cx_c}.
+```
 
 但是 $`n_c`$ 本来就小于右端，因此**两者都小于同一个上界，不能直接排序**：
 
-$$n_c<\frac{\gamma}{a+cx_c}, \qquad n_u<\frac{\gamma}{a+cx_c}.$$
+```math
+n_c<\frac{\gamma}{a+cx_c}, \qquad n_u<\frac{\gamma}{a+cx_c}.
+```
 
 是否仍有 $`n_u>n_c`$，取决于“无约束资源份额更高”能否抵消“无约束每企业成本更高”的效应。
 
@@ -93,11 +113,15 @@ $$n_c<\frac{\gamma}{a+cx_c}, \qquad n_u<\frac{\gamma}{a+cx_c}.$$
 
 **式（E）**
 
-$$\begin{aligned} n_u>n_c &\iff\frac{\gamma}{a+cx_u}> \frac{\omega(x_c)}{a+cx_c}\\ &\iff \boxed{ \frac{a+cx_u}{a+cx_c}< \frac{\gamma}{\omega(x_c)}. } \end{aligned}$$
+```math
+\begin{aligned} n_u>n_c &\iff\frac{\gamma}{a+cx_u}> \frac{\omega(x_c)}{a+cx_c}\\ &\iff \boxed{ \frac{a+cx_u}{a+cx_c}< \frac{\gamma}{\omega(x_c)}. } \end{aligned}
+```
 
 其中：
 
-$$\frac{\gamma}{\omega(x_c)} =\frac{\gamma\rho(x_c)+1-\gamma}{\rho(x_c)}>1.$$
+```math
+\frac{\gamma}{\omega(x_c)} =\frac{\gamma\rho(x_c)+1-\gamma}{\rho(x_c)}>1.
+```
 
 式（E）将两种力量清楚拆分为**企业规模/成本差异**与**部门资源份额差异**。它比孤立看（1.53）更有解释力。
 
@@ -109,11 +133,15 @@ $$x_e=x_c=x_u=\frac{ar}{c(1-r)}.$$
 
 于是两种制度的每企业成本一样，记为 $`D=a+cx`$，但是：
 
-$$\omega=\frac{\gamma r}{\gamma r+1-\gamma}<\gamma.$$
+```math
+\omega=\frac{\gamma r}{\gamma r+1-\gamma}<\gamma.
+```
 
 所以：
 
-$$\boxed{ n_c=\frac{\omega}{D} < \frac{\gamma}{D}=n_u. }$$
+```math
+\boxed{ n_c=\frac{\omega}{D} < \frac{\gamma}{D}=n_u. }
+```
 
 例如 $`\gamma=1/2`$、$`r=1/2`$、$`a=0.01`$、$`c=1`$：
 
