@@ -13,35 +13,35 @@
 
 维持 P9–P11 的记号：
 
-$$
+```math
 y=\left(\sum_{i=1}^{n}x_i^\rho\right)^{1/\rho},
 \quad \rho\in(0,1),\quad
 \beta=\frac{1-\rho}{\rho}>0.
-$$
+```
 
 对称状态下，所有品种数量相同 $`x_i=x`$，故根据（1.12）：
 
-$$
+```math
 \boxed{y=xn^{1/\rho}=x n^{1+\beta}}.
 \tag{A}
-$$
+```
 
 每家企业的总成本是 $`a+cx`$，其中 $`a>0`$ 是固定成本，$`c>0`$ 是边际成本。社会有 1 单位可用于消费和生产的资源，故：
 
-$$
+```math
 \boxed{x_0+n(a+cx)=1},
 \qquad
 x_0=1-n(a+cx)\ge0.
 \tag{B}
-$$
+```
 
 设外层效用函数为 $`U(x_0,y)`$，两个边际效用记为：
 
-$$
+```math
 U_0\equiv\frac{\partial U}{\partial x_0}>0,
 \qquad
 U_y\equiv\frac{\partial U}{\partial y}>0.
-$$
+```
 
 以下默认连续 $`n>0`$、$`x>0`$ 的内点解、可微偏好和可行资源约束。现实企业数需取整数时，上述连续解是一种近似。
 
@@ -49,22 +49,22 @@ $$
 
 规划者选择 $`(n,x)`$ 最大化福利：
 
-$$
+```math
 \max_{n>0,\ x>0}\;
 u=U(x_0,y)
-$$
+```
 
 受制于资源约束 (B) 和 CES 对称聚合器 (A)。
 
 代入：
 
-$$
+```math
 \boxed{
 \max_{n,x}\;
 u(n,x)=U\!\left(1-n(a+cx),\,x n^{1+\beta}\right).
 }
 \tag{1.25}
-$$
+```
 
 特别注意：“所有企业产量相同”是这里采用的对称最优安排；最优化的**目标是效用 $`u`$，不是简单地把物理产量 $`n x`$ 最大化**。
 
@@ -72,49 +72,49 @@ $$
 
 记：
 
-$$
+```math
 x_0(n,x)=1-n(a+cx),\qquad
 y(n,x)=x n^{1+\beta}.
-$$
+```
 
 固定 $`n`$，有：
 
-$$
+```math
 \frac{\partial x_0}{\partial x}=-nc,
 \qquad
 \frac{\partial y}{\partial x}=n^{1+\beta}.
-$$
+```
 
 利用复合函数链式法则：
 
-$$
+```math
 \begin{aligned}
 \frac{\partial u}{\partial x}
 &=U_0\frac{\partial x_0}{\partial x}
 +U_y\frac{\partial y}{\partial x}\\
 &=-nc\,U_0+n^{1+\beta}U_y.
 \end{aligned}
-$$
+```
 
 内点最优要求 $`\partial u/\partial x=0`$：
 
-$$
+```math
 \boxed{-nc\,U_0+n^{1+\beta}U_y=0.}
 \tag{1.26}
-$$
+```
 
 将其移项：
 
-$$
+```math
 n^{1+\beta}U_y=ncU_0.
-$$
+```
 
 在 $`n>0`$ 和 $`U_0>0`$ 的条件下除以 $`n^{1+\beta}U_0`$：
 
-$$
+```math
 \boxed{\frac{U_y}{U_0}=c n^{-\beta}.}
 \tag{C}
-$$
+```
 
 经济含义：再多生产一单位每品种产量，会消耗 $`nc`$ 单位同质商品资源，同时提高综合数量 $`n^{1+\beta}`$ 单位；最优时两种变化的边际效用价值相等。
 
@@ -122,34 +122,34 @@ $$
 
 固定每家企业产量 $`x`$，有：
 
-$$
+```math
 \frac{\partial x_0}{\partial n}=-(a+cx),
-$$
+```
 
-$$
+```math
 \frac{\partial y}{\partial n}
 =\frac{\partial}{\partial n}\bigl[x n^{1+\beta}\bigr]
 =(1+\beta)x n^\beta.
-$$
+```
 
 应用链式法则：
 
-$$
+```math
 \begin{aligned}
 \frac{\partial u}{\partial n}
 &=U_0[-(a+cx)]
 +U_y[(1+\beta)x n^\beta].
 \end{aligned}
-$$
+```
 
 内点最优条件：
 
-$$
+```math
 \boxed{
 -(a+cx)U_0+(1+\beta)x n^\beta U_y=0.
 }
 \tag{1.27}
-$$
+```
 
 它是在“**增加一个品种**”时，固定和可变生产资源的额外消耗与多样性带来的额外效用相等的条件。
 
@@ -157,39 +157,39 @@ $$
 
 从上层消费选择（P9 两阶段预算最优化），消费者在 $`x_0`$ 与差异化品种综合数量 $`y`$ 之间的最优条件为：
 
-$$
+```math
 \boxed{q=\frac{U_y}{U_0},}
 \tag{D}
-$$
+```
 
 这里同质商品价格被标准化为 1，$`q`$ 是 CES 综合价格指数。
 
 而规划者关于产量的条件（C）显示：
 
-$$
+```math
 \frac{U_y}{U_0}=c n^{-\beta}.
-$$
+```
 
 因此实施规划者最优配置所需的综合相对价格满足：
 
-$$
+```math
 q_u=c n^{-\beta}.
-$$
+```
 
 对称 CES 价格指数为：
 
-$$
+```math
 q=p n^{-\beta}.
-$$
+```
 
 所以若以共同单品种售价 $`p_u`$ 实施最优安排：
 
-$$
+```math
 p_u n^{-\beta}=c n^{-\beta}
 \quad\Longrightarrow\quad
 \boxed{p_u=c.}
 \tag{1.28}
-$$
+```
 
 **理解重点**：规划者原始选择变量是 $`n,x`$，而非 $`p`$。（1.28）的 $`p_u`$ 是由最优边际替代率映射得到的**实施价格／影子价格**，并非对规划者原始目标直接对 $`p`$ 求导得出。
 
@@ -199,41 +199,41 @@ $$
 
 由（1.27）：
 
-$$
+```math
 (a+cx)U_0=(1+\beta)x n^\beta U_y.
-$$
+```
 
 将（1.26）给出的 $`U_y/U_0=c n^{-\beta}`$ 代入：
 
-$$
+```math
 \begin{aligned}
 a+cx
 &=(1+\beta)x n^\beta \frac{U_y}{U_0}\\
 &=(1+\beta)x n^\beta(c n^{-\beta})\\
 &=(1+\beta)cx.
 \end{aligned}
-$$
+```
 
 整理：
 
-$$
+```math
 a+cx=cx+\beta cx
 \quad\Longrightarrow\quad
 a=\beta cx.
-$$
+```
 
 所以：
 
-$$
+```math
 \boxed{x_u=\frac{a}{c\beta}.}
 \tag{1.29}
-$$
+```
 
 与 P11 的自由进入均衡产出（1.20）比较：
 
-$$
+```math
 \boxed{x_u=x_e=\frac{a}{c\beta}.}
-$$
+```
 
 两种制度下**每家企业最优产量可以相同，但品种数、售价、综合价格指数及社会福利未必相同**。
 
@@ -241,63 +241,63 @@ $$
 
 按（1.28），无约束最优应采用 $`p_u=c`$。企业自行销售收入：
 
-$$
+```math
 p_u x_u=c x_u.
-$$
+```
 
 企业需要负担的总成本是 $`a+c x_u`$，所以**每家企业仍缺少固定成本 $`a`$**：
 
-$$
+```math
 \pi_u=(p_u-c)x_u-a=-a.
-$$
+```
 
 如果由消费者通过一次性税收筹集资金、再向每家企业补贴 $`a`$，共需 $`a n`$ 单位资源或收入。由此，消费者可用于市场购货的净名义收入为：
 
-$$
+```math
 \boxed{I_{\mathrm{net}}=1-an.}
 \tag{E}
-$$
+```
 
 必须满足 $`0<an<1`$，以保证净收入为正；**这些支付是再分配而非新生产资源**，但它们覆盖了企业需要预先支付的固定成本。
 
 沿用对称市场需求（1.13）：
 
-$$
+```math
 x=\frac{I_{\mathrm{net}}s(q)}{pn}.
-$$
+```
 
 代入 $`I_{\mathrm{net}}=1-an`$、$`q=pn^{-\beta}`$：
 
-$$
+```math
 \boxed{
 x=(1-an)\frac{s(pn^{-\beta})}{pn}.
 }
 \tag{F}
-$$
+```
 
 最后在福利最优安排下，代入 $`p_u=c`$ 和 $`x_u=a/(c\beta)`$：
 
-$$
+```math
 \frac{a}{c\beta}
 =(1-a n_u)\frac{s(cn_u^{-\beta})}{c n_u}.
-$$
+```
 
 左右同乘 $`c`$：
 
-$$
+```math
 \frac{a}{\beta}
 =(1-a n_u)\frac{s(cn_u^{-\beta})}{n_u}.
-$$
+```
 
 再移项：
 
-$$
+```math
 \boxed{
 \frac{s(cn_u^{-\beta})}{n_u}
 =\frac{a/\beta}{1-a n_u}.
 }
 \tag{1.30}
-$$
+```
 
 这是用来确定**无约束最优的活跃企业数 $`n_u`$** 的隐式方程，其解还须落在 $`0<n_u<1/a`$ 的可行域内。
 
@@ -307,16 +307,16 @@ $$
 
 将（1.30）写为：
 
-$$
+```math
 h(n)\equiv (1-an)\frac{s(cn^{-\beta})}{n}=\frac{a}{\beta}.
-$$
+```
 
 对 $`0<n<1/a`$：
 
-$$
+```math
 \frac{\mathrm d\ln h(n)}{\mathrm d\ln n}
 =-\frac{an}{1-an}-1-\beta\theta(cn^{-\beta}).
-$$
+```
 
 如果此前（1.19）的条件 $`1+\beta\theta(q)>0`$ 在所有相关 $`q`$ 上成立，那么 $`h(n)`$ 在可行域内严格下降，因此方程**至多有一个解**；存在性仍须另行核查。
 
@@ -336,97 +336,97 @@ $$
 
 取外层 Cobb–Douglas 效用使差异化部门的支出份额恒为：
 
-$$
+```math
 s(q)=\alpha=\frac12,\qquad \theta(q)=0,
-$$
+```
 
 以及：
 
-$$
+```math
 \beta=1,\quad c=2,\quad a=\frac1{300}.
-$$
+```
 
 **市场均衡／约束最优**（见上一篇）：
 
-$$
+```math
 p_e=p_c=4,\qquad
 x_e=x_c=\frac{a}{c\beta}=\frac1{600},
 \qquad n_e=n_c=75.
-$$
+```
 
 于是综合价格指数 $`q_c=4/75`$。
 
 **无约束最优**：
 
-$$
+```math
 p_u=c=2,\qquad
 x_u=\frac1{600}.
-$$
+```
 
 对（1.30）代入 $`s=\alpha=1/2`$：
 
-$$
+```math
 \frac{\alpha}{n_u}
 =\frac{a/\beta}{1-a n_u}.
-$$
+```
 
 解出：
 
-$$
+```math
 \alpha\beta(1-a n_u)=a n_u
 \quad\Longrightarrow\quad
 \boxed{n_u=\frac{\alpha\beta}{a(1+\alpha\beta)}}.
-$$
+```
 
 再代入数值：
 
-$$
+```math
 n_u
 =\frac{1/2}{(1/300)(1+1/2)}=100.
-$$
+```
 
 净收入为：
 
-$$
+```math
 I_{\mathrm{net}}=1-a n_u
 =1-\frac{100}{300}=\frac23.
-$$
+```
 
 综合价格指数：
 
-$$
+```math
 q_u=p_u n_u^{-\beta}
 =\frac{2}{100}=0.02.
-$$
+```
 
 验证对称需求：
 
-$$
+```math
 \begin{aligned}
 x
 &=\frac{I_{\mathrm{net}}\alpha}{p_u n_u}\\
 &=\frac{(2/3)(1/2)}{2\times100}
 =\frac1{600}=x_u.
 \end{aligned}
-$$
+```
 
 验证资源约束：
 
-$$
+```math
 x_0
 =1-n_u(a+c x_u)
 =1-100\left(\frac1{300}+\frac2{600}\right)
 =\frac13.
-$$
+```
 
 验证总购货预算：
 
-$$
+```math
 x_0+n_u p_u x_u
 =\frac13+100\times2\times\frac1{600}
 =\frac23
 =I_{\mathrm{net}}.
-$$
+```
 
 因此：在**这个例子**中，最优无约束方案的品种数 $`100`$ 大于受约束的 $`75`$，边际成本价格低于市场价格，但每种商品的产出相同。这个数值结果是示例，不应直接概括成所有偏好下的定量规律。
 
@@ -443,7 +443,7 @@ $$
 
 **推导主线**：
 
-$$
+```math
 \boxed{
 \begin{gathered}
 u=U[1-n(a+cx),xn^{1+\beta}]\\
@@ -457,7 +457,7 @@ I_{\mathrm{net}}=1-an_u\\
 s(cn_u^{-\beta})/n_u=(a/\beta)/(1-an_u).
 \end{gathered}
 }
-$$
+```
 
 ---
 
