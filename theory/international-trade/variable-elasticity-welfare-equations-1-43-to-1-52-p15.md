@@ -18,11 +18,15 @@ $$\rho(x)=\frac{xv'(x)}{v(x)},\quad \omega(x)=\frac{\gamma\rho(x)}{\gamma\rho(x)
 
 P14 的市场均衡条件（1.39）为：
 
-$$\boxed{ \frac{cx_e}{a+cx_e} =\frac{1}{1+\beta(x_e)}. } \tag{1.39}$$
+**式（1.39）**
+
+$$\boxed{ \frac{cx_e}{a+cx_e} =\frac{1}{1+\beta(x_e)}. }$$
 
 约束社会最优的一阶条件（数学一致的版本）为：
 
-$$\boxed{ \frac{cx_c}{a+cx_c} =\frac{1}{1+\beta(x_c)} -\frac{\omega(x_c)x_c\rho'(x_c)}{\gamma\rho(x_c)}. } \tag{1.42}$$
+**式（1.42）**
+
+$$\boxed{ \frac{cx_c}{a+cx_c} =\frac{1}{1+\beta(x_c)} -\frac{\omega(x_c)x_c\rho'(x_c)}{\gamma\rho(x_c)}. }$$
 
 设有约束目标效用写为 P14 的 $`u_c(x)`$，便可逐一比较。
 
@@ -30,11 +34,15 @@ $$\boxed{ \frac{cx_c}{a+cx_c} =\frac{1}{1+\beta(x_c)} -\frac{\omega(x_c)x_c\rho'
 
 先回忆 P14 求出的福利目标的对数导数：
 
-$$\frac{\mathrm d\ln u_c(x)}{\mathrm d\ln x} =\gamma\left[ \frac{1}{1+\beta(x)} -\frac{cx}{a+cx} -\frac{\omega(x)x\rho'(x)}{\gamma\rho(x)} \right]. \tag{A}$$
+**式（A）**
+
+$$\frac{\mathrm d\ln u_c(x)}{\mathrm d\ln x} =\gamma\left[ \frac{1}{1+\beta(x)} -\frac{cx}{a+cx} -\frac{\omega(x)x\rho'(x)}{\gamma\rho(x)} \right].$$
 
 **在市场均衡点 $`x_e`$ 上**，前两项根据（1.39）抵消：
 
-$$\left. \frac{\mathrm d\ln u_c(x)}{\mathrm d\ln x} \right|_{x_e} = -\frac{\omega(x_e)x_e\rho'(x_e)}{\rho(x_e)}. \tag{B}$$
+**式（B）**
+
+$$\left. \frac{\mathrm d\ln u_c(x)}{\mathrm d\ln x} \right|_{x_e} = -\frac{\omega(x_e)x_e\rho'(x_e)}{\rho(x_e)}.$$
 
 因 $`\omega,x_e,\rho>0`$，其符号恰好**与 $`\rho'(x_e)`$ 相反**。
 
@@ -45,7 +53,9 @@ $$\left. \frac{\mathrm d\ln u_c(x)}{\mathrm d\ln x} \right|_{x_e} = -\frac{\omeg
 
 用无歧义的方式写出原书（1.43）：
 
-$$\boxed{ \begin{cases} x_c<x_e,&\rho'(x)>0,\\ x_c>x_e,&\rho'(x)<0. \end{cases} } \tag{1.43}$$
+**式（1.43）**
+
+$$\boxed{ \begin{cases} x_c<x_e,&\rho'(x)>0,\\ x_c>x_e,&\rho'(x)<0. \end{cases} }$$
 
 如果 $`\rho'(x)=0`$ 且相应最优唯一，二者在这个机制下趋于相同；若符号随 $`x`$ 变化、存在多个局部最优，应解原始问题，不能套用简单双向排序。
 
@@ -53,7 +63,9 @@ $$\boxed{ \begin{cases} x_c<x_e,&\rho'(x)>0,\\ x_c>x_e,&\rho'(x)<0. \end{cases} 
 
 有约束解和市场解均要求企业零利润：
 
-$$(p-c)x=a\quad\Longrightarrow\quad \boxed{p=c+\frac ax.} \tag{C}$$
+**式（C）**
+
+$$(p-c)x=a\quad\Longrightarrow\quad \boxed{p=c+\frac ax.}$$
 
 求导：
 
@@ -61,7 +73,9 @@ $$\frac{\mathrm dp}{\mathrm dx}=-\frac{a}{x^2}<0.$$
 
 因此每企业产量越高，**摊到每单位商品上的固定成本越少，零利润价格越低**。从而：
 
-$$\boxed{ \begin{cases} p_c>p_e,&x_c<x_e,\\ p_c<p_e,&x_c>x_e. \end{cases} } \tag{1.44}$$
+**式（1.44）**
+
+$$\boxed{ \begin{cases} p_c>p_e,&x_c<x_e,\\ p_c<p_e,&x_c>x_e. \end{cases} }$$
 
 合并（1.43）：$`\rho'>0`$ 时 $`p_c>p_e`$；$`\rho'<0`$ 时 $`p_c<p_e`$。
 
@@ -71,21 +85,29 @@ $$\boxed{ \begin{cases} p_c>p_e,&x_c<x_e,\\ p_c<p_e,&x_c>x_e. \end{cases} } \tag
 
 P14 的对称支出份额和零利润条件给出：
 
-$$\boxed{ n(x)=\frac{\omega(x)}{a+cx}. } \tag{D}$$
+**式（D）**
+
+$$\boxed{ n(x)=\frac{\omega(x)}{a+cx}. }$$
 
 注意：比较产量并不能仅仅通过固定的分母得出企业数排序，因为分子 $`\omega(x)`$ 也会随产量变化。严格求导：
 
-$$\begin{aligned} \frac{\mathrm d\ln n(x)}{\mathrm d\ln x} &=\frac{\mathrm d\ln\omega(x)}{\mathrm d\ln x} -\frac{cx}{a+cx}\\ &=[1-\omega(x)]\frac{x\rho'(x)}{\rho(x)} -\frac{cx}{a+cx}. \end{aligned} \tag{E}$$
+**式（E）**
+
+$$\begin{aligned} \frac{\mathrm d\ln n(x)}{\mathrm d\ln x} &=\frac{\mathrm d\ln\omega(x)}{\mathrm d\ln x} -\frac{cx}{a+cx}\\ &=[1-\omega(x)]\frac{x\rho'(x)}{\rho(x)} -\frac{cx}{a+cx}. \end{aligned}$$
 
 于是，在相关均衡分支上若满足
 
-$$\boxed{ [1-\omega(x)]\frac{x\rho'(x)}{\rho(x)} <\frac{cx}{a+cx}, } \tag{F}$$
+**式（F）**
+
+$$\boxed{ [1-\omega(x)]\frac{x\rho'(x)}{\rho(x)} <\frac{cx}{a+cx}, }$$
 
 则 $`n'(x)<0`$，产量较高对应较少企业。这是原书 dd / DD 需求曲线和成本曲线排序的数学版本。
 
 在该单调分支下：
 
-$$\boxed{ \begin{cases} n_c>n_e,&x_c<x_e,\\ n_c<n_e,&x_c>x_e. \end{cases} } \tag{1.45}$$
+**式（1.45）**
+
+$$\boxed{ \begin{cases} n_c>n_e,&x_c<x_e,\\ n_c<n_e,&x_c>x_e. \end{cases} }$$
 
 换句话说，若 $`\rho'>0`$，通常有约束规划者会选择**更多企业、每企业更小产量**；若 $`\rho'<0`$，则反过来。
 
@@ -118,7 +140,9 @@ $$x_{0c}=1-\omega(x_c) > 1-\omega(x_e)=x_{0e}.$$
 
 所以原书（1.46）为：
 
-$$\boxed{x_{0c}>x_{0e}.} \tag{1.46}$$
+**式（1.46）**
+
+$$\boxed{x_{0c}>x_{0e}.}$$
 
 这说明有约束福利最优配置在同质商品上的消费量高于市场均衡（在上述比较条件下成立）。
 
@@ -134,7 +158,9 @@ $$\begin{aligned} \frac{x\rho'(x)}{\rho(x)} &=1+\frac{xv''(x)}{v'(x)} -\frac{xv'
 
 由定义（1.35），有 $`1+xv''/v'=1/[1+\beta(x)]`$，因此：
 
-$$\boxed{ \frac{x\rho'(x)}{\rho(x)} =\frac{1}{1+\beta(x)}-\rho(x). } \tag{1.47}$$
+**式（1.47）**
+
+$$\boxed{ \frac{x\rho'(x)}{\rho(x)} =\frac{1}{1+\beta(x)}-\rho(x). }$$
 
 这条公式解释了为何**需求弹性与效用规模弹性有关，但它们变化的符号未必相同**。若 $`v(x)=x^r`$、$`0<r<1`$，则 $`\rho=r`$ 是常数、$`\rho'=0`$，并且 $`\beta=(1-r)/r`$ 也是常数。
 
@@ -146,7 +172,9 @@ $$x_0+n(a+cx)=1.$$
 
 对称的差异化品种效用贡献是 $`\sum_i v(x_i)=n v(x)`$。代入（1.33）：
 
-$$\boxed{ u(n,x)=\bigl[nv(x)\bigr]^\gamma \bigl[1-n(a+cx)\bigr]^{1-\gamma}. } \tag{1.48}$$
+**式（1.48）**
+
+$$\boxed{ u(n,x)=\bigl[nv(x)\bigr]^\gamma \bigl[1-n(a+cx)\bigr]^{1-\gamma}. }$$
 
 这里约束已体现在括号中，须满足 $`n>0`$、$`x>0`$、$`n(a+cx)<1`$。
 
@@ -156,21 +184,29 @@ $$\boxed{ u(n,x)=\bigl[nv(x)\bigr]^\gamma \bigl[1-n(a+cx)\bigr]^{1-\gamma}. } \t
 
 对 $`x`$ 的 FOC：
 
-$$\boxed{ \frac{\gamma v'(x)}{v(x)} =\frac{(1-\gamma)nc}{x_0}. } \tag{G}$$
+**式（G）**
+
+$$\boxed{ \frac{\gamma v'(x)}{v(x)} =\frac{(1-\gamma)nc}{x_0}. }$$
 
 对 $`n`$ 的 FOC：
 
-$$\boxed{ \frac{\gamma}{n} =\frac{(1-\gamma)(a+cx)}{x_0}. } \tag{H}$$
+**式（H）**
+
+$$\boxed{ \frac{\gamma}{n} =\frac{(1-\gamma)(a+cx)}{x_0}. }$$
 
 这里下标 $`u`$ 表示将 $`x,n,x_0`$ 替换为无约束最优值。式（H）可以简化：
 
-$$\gamma[1-n(a+cx)] =(1-\gamma)n(a+cx) \quad\Longrightarrow\quad \boxed{n_u(a+cx_u)=\gamma}. \tag{I}$$
+**式（I）**
+
+$$\gamma[1-n(a+cx)] =(1-\gamma)n(a+cx) \quad\Longrightarrow\quad \boxed{n_u(a+cx_u)=\gamma}.$$
 
 故 $`x_{0u}=1-\gamma`$。
 
 在消费者分配的一阶条件（见 P14）中，对称单品种价格需满足：
 
-$$p=\frac{\gamma}{1-\gamma}\, \frac{x_0 v'(x)}{n v(x)}. \tag{J}$$
+**式（J）**
+
+$$p=\frac{\gamma}{1-\gamma}\, \frac{x_0 v'(x)}{n v(x)}.$$
 
 代入 $`x_{0u}=1-\gamma`$ 与 $`n_u=\gamma/(a+cx_u)`$：
 
@@ -178,7 +214,9 @@ $$\begin{aligned} p_u &=\frac{\gamma}{1-\gamma} \frac{(1-\gamma)v'(x_u)} {[\gamm
 
 而式（G）与（H）相除正好给出 $`v'(x_u)/v(x_u)=c/(a+cx_u)`$，因此：
 
-$$\boxed{p_u=c.} \tag{1.49}$$
+**式（1.49）**
+
+$$\boxed{p_u=c.}$$
 
 同样，这里的 $`p_u`$ 是**实现规划者配置的边际成本价格/影子实施价格**。企业按这一价格出售时无法自行收回固定成本，需要一次性转移支付。
 
@@ -194,7 +232,9 @@ $$\frac{x_uv'(x_u)}{v(x_u)} =\frac{cx_u}{a+cx_u}.$$
 
 按 $`\rho(x)`$ 的定义：
 
-$$\boxed{ \frac{cx_u}{a+cx_u}=\rho(x_u). } \tag{1.50}$$
+**式（1.50）**
+
+$$\boxed{ \frac{cx_u}{a+cx_u}=\rho(x_u). }$$
 
 它是决定无约束最优单企业产量的隐式方程；只有具体给定 $`v(x)`$ 后才能进一步求解。
 
@@ -202,7 +242,9 @@ $$\boxed{ \frac{cx_u}{a+cx_u}=\rho(x_u). } \tag{1.50}$$
 
 由式（I），直接解出：
 
-$$\boxed{ n_u=\frac{\gamma}{a+cx_u}. } \tag{1.51}$$
+**式（1.51）**
+
+$$\boxed{ n_u=\frac{\gamma}{a+cx_u}. }$$
 
 因为同质品消费 $`x_{0u}=1-\gamma`$，在没有定价加成的社会规划者解中，差异化部门**资源份额**为 $`\gamma`$。
 
@@ -214,11 +256,15 @@ $$g(x)=\frac{cx}{a+cx}, \qquad g'(x)=\frac{ca}{(a+cx)^2}>0.$$
 
 无约束最优要求（1.50）：
 
-$$\boxed{g(x_u)=\rho(x_u)}. \tag{K}$$
+**式（K）**
+
+$$\boxed{g(x_u)=\rho(x_u)}.$$
 
 而根据 P14 的受约束一阶条件（1.42）和恒等式（1.47），可将受约束 FOC 改写为：
 
-$$\begin{aligned} g(x_c) &=\rho(x_c)+\frac{x_c\rho'(x_c)}{\rho(x_c)} -\frac{\omega(x_c)x_c\rho'(x_c)}{\gamma\rho(x_c)}\\ &=\rho(x_c) +\underbrace{[1-\omega(x_c)]\,[1-\rho(x_c)]}_{>0} \frac{x_c\rho'(x_c)}{\rho(x_c)}. \end{aligned} \tag{L}$$
+**式（L）**
+
+$$\begin{aligned} g(x_c) &=\rho(x_c)+\frac{x_c\rho'(x_c)}{\rho(x_c)} -\frac{\omega(x_c)x_c\rho'(x_c)}{\gamma\rho(x_c)}\\ &=\rho(x_c) +\underbrace{[1-\omega(x_c)]\,[1-\rho(x_c)]}_{>0} \frac{x_c\rho'(x_c)}{\rho(x_c)}. \end{aligned}$$
 
 第二行使用了恒等式 $`1-\omega/\gamma=(1-\omega)(1-\rho)`$，该式可以直接从 $`\omega=\gamma\rho/(\gamma\rho+1-\gamma)`$ 验证。
 
@@ -228,7 +274,9 @@ $$\operatorname{sgn}\bigl(g(x_c)-\rho(x_c)\bigr) =\operatorname{sgn}\rho'(x_c).$
 
 如果 $`g(x)-\rho(x)`$ 在比较区间内严格递增、具有唯一零点（这是**额外的单交叉/规律性条件**），则：
 
-$$\boxed{ \begin{cases} x_u<x_c,&\rho'(x)>0,\\ x_u>x_c,&\rho'(x)<0. \end{cases} } \tag{1.52}$$
+**式（1.52）**
+
+$$\boxed{ \begin{cases} x_u<x_c,&\rho'(x)>0,\\ x_u>x_c,&\rho'(x)<0. \end{cases} }$$
 
 即：若 $`\rho'>0`$，无约束最优选择更小的单企业产出；若 $`\rho'<0`$，则选择更大的单企业产出。只有（1.50）和（1.42）两个方程而没有形状约束时，不应声称这一排序总是无条件成立。
 
